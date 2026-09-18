@@ -1,0 +1,8 @@
+official_url,title,retrieval_date,variable_supported,definition,limitation,status
+https://github.com/teamookla/ookla-open-data,Performance Maps Overview,2026-09-13,avg_d_kbps,"Average download speed of all tests in a tile; kilobits per second","Participation and within-tile test composition",VERIFIED
+https://github.com/teamookla/ookla-open-data,Performance Maps Overview,2026-09-13,avg_u_kbps,"Average upload speed of all tests in a tile; kilobits per second","Participation and within-tile test composition",VERIFIED
+https://github.com/teamookla/ookla-open-data,Performance Maps Overview,2026-09-13,avg_lat_ms,"Average latency of all tests in a tile; milliseconds","Participation and within-tile test composition",VERIFIED
+https://github.com/teamookla/ookla-open-data,Performance Maps Overview,2026-09-13,tests,"Number of tests taken in the tile","Not a population denominator",VERIFIED
+https://github.com/teamookla/ookla-open-data,Performance Maps Overview,2026-09-13,devices,"Number of unique devices contributing tests in the tile","Not a population denominator",VERIFIED
+https://github.com/teamookla/ookla-open-data,Performance Maps Overview,2026-09-13,quadkey,"Zoom-level-16 Web Mercator tile identifier","Centroid assignment differs from area-weighted assignment",VERIFIED
+https://registry.opendata.aws/speedtest-global-performance/,AWS Open Data Registry,2026-09-13,release_provenance,"Ookla-managed global fixed/mobile quarterly tile aggregates","Historical files may be reaggregated",VERIFIED_WITH_LIMITATIONS

@@ -1,0 +1,37 @@
+{
+  "measurement_validation_classification": "MIXED_MEASUREMENT_SUPPORT",
+  "researcher_defined_thresholds": true,
+  "coverage_pass": true,
+  "rank_threshold_pass": false,
+  "change_direction_threshold_pass": true,
+  "dispersion_direction_agreement_count": 5,
+  "dispersion_directions": {
+    "sd_level": {
+      "ookla": 1.0,
+      "vnnic": 1.0
+    },
+    "sd_log": {
+      "ookla": 1.0,
+      "vnnic": 1.0
+    },
+    "coefficient_of_variation": {
+      "ookla": 1.0,
+      "vnnic": 1.0
+    },
+    "interquartile_range": {
+      "ookla": 1.0,
+      "vnnic": 1.0
+    },
+    "p90_p10_ratio": {
+      "ookla": 1.0,
+      "vnnic": -1.0
+    },
+    "max_min_ratio": {
+      "ookla": 1.0,
+      "vnnic": 1.0
+    }
+  },
+  "same_change_direction_proportion": 1.0,
+  "ch3_speed_test_composition": "REMAINS_UNRESOLVED",
+  "vnnic_descriptive_classification": "DESCRIPTIVE_DIVERGENCE_UNCHANGED"
+}

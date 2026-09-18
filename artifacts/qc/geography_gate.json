@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "rows": 63,
+  "unique_province_id": 63,
+  "unique_vnnic_code": 63,
+  "unique_shapeISO": 63,
+  "unique_shapeID": 63,
+  "unmatched": 0,
+  "ambiguous": 0,
+  "canonical_sha256": "c64a07c3fd5d3ca0339a5002983dc76ddd60a0ef88e889522e37ca2408f74400",
+  "post_2025_geography_rows": 0,
+  "geometry_validation_reused": "D:\\Q1_RESEARCH\\GIS_LOGS\\adm1_2021_geometry_validation.csv",
+  "unique_geometry_hashes": 63,
+  "rowwise_crosswalk_identity": "PASS"
+}

@@ -1,0 +1,21 @@
+2026-09-13 14:03:20,752 INFO START connectivity_enterprise.stages.s00_preflight
+2026-09-13 14:03:21,970 INFO DONE connectivity_enterprise.stages.s00_preflight
+2026-09-13 14:03:21,970 INFO START connectivity_enterprise.stages.s10_ookla_pilot
+2026-09-13 14:03:39,400 ERROR Pipeline failed
+Traceback (most recent call last):
+  File "D:\Q1_RESEARCH\CONNECTIVITY_ENTERPRISE_STUDY\src\connectivity_enterprise\cli.py", line 79, in main
+    outputs = module.run(ctx)
+  File "D:\Q1_RESEARCH\CONNECTIVITY_ENTERPRISE_STUDY\src\connectivity_enterprise\stages\s10_ookla_pilot.py", line 146, in run
+    decision={"measurement_validation_classification":classification,"researcher_defined_thresholds":True,"coverage_pass":coverage_ok,"rank_threshold_pass":rank_ok,"change_direction_threshold_pass":change_ok,"dispersion_direction_agreement_count":agree,"dispersion_directions":dirs,"same_change_direction_proportion":float(same.mean()),"ch3_speed_test_composition":ch3,"vnnic_descriptive_classification":"DESCRIPTIVE_DIVERGENCE_UNCHANGED"}; decp=WORKING_ROOT/"artifacts/qc/measurement_validation_decision.json"; decp.write_text(json.dumps(decision,indent=2),encoding="utf-8")
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bool is not JSON serializable

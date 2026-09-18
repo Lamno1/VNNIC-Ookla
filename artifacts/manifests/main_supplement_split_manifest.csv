@@ -1,0 +1,21 @@
+artifact_type,artifact_number,source_artifact,disposition,rationale,status
+TABLE,02,artifacts/tables/table_02_connectivity_summary_by_year.csv,SUPPLEMENT,Full annual distribution detail supports the main trend evidence,LOCKED
+TABLE,04,artifacts/tables/table_04_connectivity_dispersion.csv,MAIN,Directly answers the dispersion question,LOCKED
+TABLE,05,artifacts/tables/table_05_connectivity_rank_persistence.csv,SUPPLEMENT,Within-source persistence is supporting evidence,LOCKED
+TABLE,06,artifacts/tables/table_06_connectivity_quartile_transitions.csv,SUPPLEMENT,Detailed mobility counts are supporting evidence,LOCKED
+TABLE,07,artifacts/tables/table_07_change_distributions.csv,SUPPLEMENT,Distribution detail supports province-change interpretation,LOCKED
+TABLE,08,artifacts/tables/table_08_measurement_validation_by_year.csv,MAIN,Directly answers annual cross-source agreement,LOCKED
+TABLE,09,artifacts/tables/table_09_measurement_change_concordance.csv,MAIN,Directly answers province-specific change agreement,LOCKED
+TABLE,10,artifacts/tables/table_10_dispersion_source_comparison.csv,MAIN,Directly compares dispersion direction across sources,LOCKED
+TABLE,11,artifacts/tables/table_11_ookla_aggregation_sensitivity.csv,SUPPLEMENT,Documents four prespecified aggregation variants,LOCKED
+TABLE,12,artifacts/tables/table_12_aggregation_agreement.csv,MAIN,Summarizes aggregation robustness for the five questions,LOCKED
+TABLE,13,artifacts/tables/table_13_measurement_influence_audit.csv,ARCHIVAL_ONLY,Full leave-one-province-out ledger is too long for submission but remains auditable,LOCKED
+TABLE,14,artifacts/tables/table_14_composition_sensitivity.csv,SUPPLEMENT,Full composition diagnostics support the stated concern,LOCKED
+FIGURE,01,artifacts/figures/figure_01_ftth_distribution_by_year.png,MAIN,Shows the VNNIC distribution by year,LOCKED
+FIGURE,02,artifacts/figures/figure_02_ftth_average_province_trend.png,MAIN,Shows the unweighted common-direction trend,LOCKED
+FIGURE,03,artifacts/figures/figure_03_ftth_maps_2021_2024.png,MAIN,Shows spatial distribution on fixed legacy geography,LOCKED
+FIGURE,04,artifacts/figures/figure_04_ftth_change_map_2021_2024.png,SUPPLEMENT,Province-change map supports but does not determine the conclusion,LOCKED
+FIGURE,05,artifacts/figures/figure_05_ftth_rank_mobility.png,SUPPLEMENT,Within-source rank mobility is supporting evidence,LOCKED
+FIGURE,10,artifacts/figures/figure_10_vnnic_ookla_rank_comparison.png,MAIN,Directly answers cross-source rank agreement,LOCKED
+FIGURE,11,artifacts/figures/figure_11_measurement_change_comparison.png,MAIN,Directly shows province-specific change disagreement,LOCKED
+FIGURE,12,artifacts/figures/figure_12_dispersion_source_comparison.png,MAIN,Directly shows the dual-source dispersion pattern,LOCKED

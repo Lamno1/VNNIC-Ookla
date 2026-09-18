@@ -1,0 +1,179 @@
+{
+  "run_id": "run_20260913T063323Z",
+  "gates": {
+    "G0": {
+      "status": "PASS",
+      "finding": "Output root is separate; all allow-listed roots exist; direct mode; credential exclusions active.",
+      "evidence": {
+        "environment": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T063323Z\\environment.json",
+        "treatment_readiness_evidence": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T063323Z\\treatment_readiness_evidence.json",
+        "credential_files_accessed": false
+      },
+      "updated_at_utc": "2026-09-13T06:33:24.899819+00:00"
+    },
+    "G1": {
+      "status": "PASS",
+      "finding": "Primary NSO PXWeb and VNNIC endpoint provenance pass with documented limitations; local NSO workbook candidates remain quarantined and unused.",
+      "evidence": {
+        "classification": "PASS_WITH_LIMITATIONS",
+        "source_inventory": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\manifests\\source_inventory.csv",
+        "declared_inputs": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\manifests\\declared_inputs.csv",
+        "local_nso_candidates": "QUARANTINED_NOT_USED"
+      },
+      "updated_at_utc": "2026-09-13T06:33:26.036297+00:00"
+    },
+    "G2": {
+      "status": "PASS",
+      "finding": "Primary VNNIC and NSO semantics are verified with documented limitations; entry-intensity proxy is unavailable.",
+      "evidence": {
+        "semantic_registry": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\semantic_registry.csv",
+        "vnnic_decision": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\vnnic_semantic_decision.json",
+        "nso_decision": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\nso_semantic_decision.json",
+        "document_request": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\reports\\missing_document_request.md"
+      },
+      "updated_at_utc": "2026-09-13T06:33:26.056472+00:00"
+    },
+    "G3": {
+      "status": "PASS",
+      "finding": "Legacy-63 geography is deterministic, one-to-one, geometry-validated, and hash-locked.",
+      "evidence": {
+        "dimension": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\data\\reference\\dim_province_legacy63.parquet",
+        "audit": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\geography_gate.json"
+      },
+      "updated_at_utc": "2026-09-13T06:33:26.287112+00:00"
+    },
+    "G5": {
+      "status": "PASS",
+      "finding": "Official PXWeb V05.05 snapshot and deterministic 63-code audit pass; local workbook candidates remain quarantined.",
+      "evidence": {
+        "status": "PASS_OFFICIAL_SNAPSHOT_PRIMARY_LOCAL_DERIVATIVES_QUARANTINED",
+        "workbooks": 3,
+        "candidate_fact_rows": 1575,
+        "province_candidates_per_table": 63,
+        "aggregate_exclusions_per_table": 7,
+        "missing_numeric_cells": 0,
+        "name_mapping_review_status": "LOCAL_WORKBOOK_MAPPING_NOT_USED",
+        "semantic_status": "PASS_WITH_LIMITATIONS",
+        "released_fact_nso_measure": false,
+        "released_fact_enterprise_outcomes": false,
+        "official_primary_source_available": true,
+        "local_candidate_status": "QUARANTINED_NOT_USED",
+        "official_snapshot_primary_outcome": "PASS_WITH_LIMITATIONS",
+        "local_candidates_remain_quarantined": true,
+        "official_decision": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\nso_semantic_decision.json"
+      },
+      "updated_at_utc": "2026-09-13T06:33:36.224568+00:00"
+    },
+    "G4": {
+      "status": "PASS",
+      "finding": "Primary FTTH April-December structural and non-null coverage passes; metric semantics remain governed by G2.",
+      "evidence": {
+        "source_rows": 7360,
+        "duplicate_source_key_rows": 0,
+        "province_count": 63,
+        "legacy_expected_cells": 8442,
+        "legacy_observed_cells": 7360,
+        "legacy_missing_expected_cells": 1082,
+        "unexpected_legacy_cells": 0,
+        "primary_ftth_rows": 2268,
+        "primary_province_year_cells": 252,
+        "complete_nine_month_valid_download_cells": 252,
+        "primary_download_null_or_nonfinite": 0,
+        "primary_download_nonpositive": 0,
+        "primary_expected_rows": 2268,
+        "semantic_status": "PASS_WITH_LIMITATIONS"
+      },
+      "updated_at_utc": "2026-09-13T06:33:36.412949+00:00"
+    },
+    "G4_EXPOSURE_CONSTRUCTION": {
+      "status": "PASS",
+      "finding": "Primary FTTH monthly and annual facts satisfy the locked April-December design.",
+      "evidence": {
+        "monthly_rows": 2268,
+        "annual_rows": 252,
+        "distinct_months_all_nine": true,
+        "invalid_download": 0,
+        "median_max_absolute_difference": 0.0,
+        "value_field_present": false,
+        "value_field_use": "NOT_USED"
+      },
+      "updated_at_utc": "2026-09-13T06:33:36.526543+00:00"
+    },
+    "G1_PRIMARY_PROVENANCE": {
+      "status": "PASS",
+      "finding": "Primary provenance passes with documented limitations.",
+      "evidence": {
+        "classification": "PASS_WITH_LIMITATIONS",
+        "local_nso_candidates": "QUARANTINED_NOT_USED"
+      },
+      "updated_at_utc": "2026-09-13T06:33:36.645389+00:00"
+    },
+    "G2_PRIMARY_SEMANTICS": {
+      "status": "PASS",
+      "finding": "Primary semantics pass with documented limitations.",
+      "evidence": {
+        "classification": "PASS_WITH_LIMITATIONS",
+        "value": "NOT_USED",
+        "entry_intensity": "EXPLORATORY_UNAVAILABLE"
+      },
+      "updated_at_utc": "2026-09-13T06:33:36.645786+00:00"
+    },
+    "G5_PRIMARY_OUTCOME": {
+      "status": "PASS",
+      "finding": "Official PXWeb snapshot is the sole primary-outcome source.",
+      "evidence": {
+        "rows": 252,
+        "source": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\data\\reference\\nso_official_snapshot_20260913\\nso_official_snapshot_long.parquet",
+        "quarantine_used": false
+      },
+      "updated_at_utc": "2026-09-13T06:33:36.646138+00:00"
+    },
+    "G6_PANEL_AND_MERGE": {
+      "status": "PASS",
+      "finding": "Explicit 252-row skeleton retained through two 1:1 complete merges.",
+      "evidence": {
+        "skeleton_rows": 252,
+        "panel_rows": 252,
+        "panel_duplicate_key_rows": 0,
+        "province_count_by_year": {
+          "2021": 63,
+          "2022": 63,
+          "2023": 63,
+          "2024": 63
+        },
+        "connectivity_matched": 252,
+        "nso_matched": 252,
+        "entry_rate_field_present": false
+      },
+      "updated_at_utc": "2026-09-13T06:33:36.646472+00:00"
+    },
+    "G7_PANEL_READINESS": {
+      "status": "PASS",
+      "finding": "Panel is ready for descriptive analysis with limitations.",
+      "evidence": {
+        "classification": "PASS_WITH_LIMITATIONS",
+        "lagged_model_potential_observations": 189
+      },
+      "updated_at_utc": "2026-09-13T06:33:36.646813+00:00"
+    },
+    "G8_CLAIM": {
+      "status": "PASS",
+      "finding": "No descriptive-result, model or causal claim was produced.",
+      "evidence": {
+        "descriptive_run": false,
+        "model_run": false,
+        "causal_gate": "CLOSED"
+      },
+      "updated_at_utc": "2026-09-13T06:33:36.647159+00:00"
+    },
+    "G9_REPRODUCIBILITY": {
+      "status": "PASS",
+      "finding": "Core values/schema reproduce across runs.",
+      "evidence": {
+        "comparison_tolerance": 1e-12,
+        "stable_value_hashes_match": true
+      },
+      "updated_at_utc": "2026-09-13T06:33:36.653877+00:00"
+    }
+  }
+}

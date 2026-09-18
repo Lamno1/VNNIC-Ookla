@@ -1,0 +1,4 @@
+﻿claim_id,exact_claim,claim_level,supporting_artifact,sample,status,unresolved_alternative_explanation
+MR001,Both sources show a common upward connectivity trend across all 63 provinces.,MEASUREMENT,table_12_aggregation_agreement.csv,63 provinces; 2021-2024,SUPPORTED,Common national trend does not validate province-specific exposure
+MR002,Province rank and relative improvement agreement are weak or unstable across sources and aggregation variants.,MEASUREMENT,table_12_aggregation_agreement.csv,Four aggregation variants; 63 provinces,SUPPORTED_POST_HOC,Sources may measure different participation-weighted estimands
+MR003,Composition diagnostics heighten concern but do not identify or eliminate composition bias.,MEASUREMENT,table_14_composition_sensitivity.csv,2021-2024 changes,SUPPORTED_POST_HOC,Tests and devices are themselves endogenous participation measures

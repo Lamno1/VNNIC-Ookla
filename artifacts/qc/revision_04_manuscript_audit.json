@@ -1,0 +1,16 @@
+{
+  "source_revision": "REVISION_03",
+  "output_revision": "REVISION_04",
+  "source_sha256": "1492d8119d7e3d007f6b7f59ae4b1c8c073ecf9eb386ef99837cacf33a00bfd0",
+  "output_sha256": "7d613053f3dc3c7b83b8a14643109a7f535c259d84422b775d311e72caba1f2f",
+  "body_word_count": 2830,
+  "reference_count_total": 20,
+  "academic_reference_count": 17,
+  "new_result_analysis_run": false,
+  "model_run": false,
+  "causal_gate": "CLOSED",
+  "locked_change_rank_preserved": true,
+  "composition_coefficients_preserved": true,
+  "response_matrix_status": "COMPLETE_WITH_DEFERRED_REGISTERED_EXTENSIONS",
+  "manuscript_only_revision_gate": "PASS"
+}

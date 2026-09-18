@@ -1,0 +1,1 @@
+{"primary_key":["province_id_legacy63","year","measure_id"],"required_columns":["province_id_legacy63","year","measure_id","value","source_workbook","source_sheet","source_row_or_range","original_label","unit","price_basis","semantic_status","exclusion_status","exclusion_reason"]}

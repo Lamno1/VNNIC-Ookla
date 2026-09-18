@@ -1,0 +1,35 @@
+2026-09-13 19:08:37,584 INFO START connectivity_enterprise.stages.s00_preflight
+2026-09-13 19:08:38,773 INFO DONE connectivity_enterprise.stages.s00_preflight
+2026-09-13 19:08:38,774 INFO START connectivity_enterprise.stages.s17_latex_conversion
+2026-09-13 19:08:39,226 ERROR Pipeline failed
+Traceback (most recent call last):
+  File "D:\Q1_RESEARCH\CONNECTIVITY_ENTERPRISE_STUDY\src\connectivity_enterprise\cli.py", line 86, in main
+    outputs = module.run(ctx)
+  File "D:\Q1_RESEARCH\CONNECTIVITY_ENTERPRISE_STUDY\src\connectivity_enterprise\stages\s17_latex_conversion.py", line 108, in run
+    if proc.returncode: raise RuntimeError("FAIL-CLOSED: PDF build failed\n"+(proc.stdout+proc.stderr)[-4000:])
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: FAIL-CLOSED: PDF build failed
+20 [0x000031bc] INFO pdflatex null - this process (32052) started by python in directory D:\Q1_RESEARCH\CONNECTIVITY_ENTERPRISE_STUDY\latex with command line: pdflatex -interaction=nonstopmode -halt-on-error manuscript.tex
+
+20 [0x000031bc] INFO pdflatex null - running on Windows 10.0.26200
+
+31 [0x000031bc] INFO pdflatex null - this process (32052) finishes with exit code 1
+
+34 [0x000031bc] ERROR trace.pdflatex.core null - Access is denied.
+
+
+
+34 [0x000031bc] ERROR trace.pdflatex.core null - Function: CreateDirectoryW
+
+34 [0x000031bc] ERROR trace.pdflatex.core null - Result: 5
+
+34 [0x000031bc] ERROR trace.pdflatex.core null - Data: path="C:\Users\NVT\AppData\Roaming\MiKTeX\2.9"
+
+34 [0x000031bc] ERROR trace.pdflatex.core null - Source: Libraries\MiKTeX\Core\win\win.cpp:271
+
+
+It seems that this is a fresh TeX installation.
+Please finish the setup before proceeding.
+For more information, visit:
+https://miktex.org/howto/install-miktex-win
+

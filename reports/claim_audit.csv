@@ -1,0 +1,8 @@
+﻿claim_id,claim,claim_level,supporting_artifact,status,unresolved_alternative
+C001,Canonical geography contains 63 deterministically linked legacy provinces,MEASUREMENT,artifacts/qc/geography_gate.json,SUPPORTED,
+C002,The primary FTTH structural window contains 2268 valid observations,MEASUREMENT,artifacts/qc/vnnic_structural_audit.json,SUPPORTED,Metric semantics and export construction remain unresolved
+C003,NSO primary tables are structurally parseable into province candidates,MEASUREMENT,artifacts/qc/nso_structural_audit.json,QUALIFIED,Official vintage and identifier approval remain unresolved
+C004,Decision 2269 cannot currently support locality-level treatment timing,MEASUREMENT,runs/<run_id>/treatment_readiness_evidence.json,SUPPORTED,Actual implementation records may exist outside acquired evidence
+D001,The panel contains complete unweighted observations for 63 provinces in each year 2021–2024.,DESCRIPTIVE,artifacts/tables/table_01_panel_coverage.csv,SUPPORTED,Measurement limitations remain
+D002,The cross-province FTTH distribution is classified as DESCRIPTIVE_DIVERGENCE under the preregistered multi-measure rule.,DESCRIPTIVE,artifacts/tables/table_04_connectivity_dispersion.csv,SUPPORTED,CH1–CH4 remain unresolved
+D003,"Active enterprises per 1,000 inhabitants are described separately by year using the 2026 PXWeb snapshot.",DESCRIPTIVE,artifacts/tables/table_03_enterprise_summary_by_year.csv,SUPPORTED_WITH_LIMITATIONS,Denominator universe and historical revisions remain limitations

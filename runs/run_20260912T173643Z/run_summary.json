@@ -1,0 +1,21 @@
+{
+  "run_id": "run_20260912T173643Z",
+  "requested_stage": "all",
+  "status": "PASS",
+  "error": null,
+  "config_hash": "875011d0224092da477dd0547a60ccf58a9d9b19cce7b8623052dde23962b69e",
+  "created_artifacts": [
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260912T173643Z\\environment.json",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\manifests\\source_inventory.csv",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\manifests\\declared_inputs.csv",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\semantic_registry.csv",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\reports\\missing_document_request.md",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\data\\reference\\dim_province_legacy63.parquet",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\geography_gate.json",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\data\\interim\\fact_vnnic_province_month.parquet",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\vnnic_structural_audit.json"
+  ],
+  "causal_gate": "CLOSED",
+  "decision_2269_gate": "FAIL_PRIMARY_ROUTE",
+  "completed_at_utc": "2026-09-12T17:36:46.682588+00:00"
+}

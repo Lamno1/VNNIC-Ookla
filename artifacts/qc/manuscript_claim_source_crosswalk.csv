@@ -1,0 +1,8 @@
+﻿claim_id,claim,claim_level,supporting_artifact,status,unresolved_limitation
+M001,Both systems record higher measured download performance in all 63 provinces from 2021 to 2024.,DESCRIPTIVE_MEASUREMENT,table_09_measurement_change_concordance.csv; figure_11_measurement_change_comparison,SUPPORTED,Common sign does not establish province-specific agreement.
+M002,Five of six registered dispersion indicators agree on endpoint direction across sources.,DESCRIPTIVE_MEASUREMENT,table_10_dispersion_source_comparison.csv; figure_12_dispersion_source_comparison,SUPPORTED,One indicator differs and no generating process is identified.
+M003,Yearly cross-source provincial rank agreement declines from 0.542 in 2021 to 0.248 in 2024.,DESCRIPTIVE_MEASUREMENT,table_08_measurement_validation_by_year.csv; figure_10_vnnic_ookla_rank_comparison,SUPPORTED,Rank agreement depends on source construction.
+M004,The primary province-change rank correlation is -0.247.,DESCRIPTIVE_MEASUREMENT,table_09_measurement_change_concordance.csv; figure_11_measurement_change_comparison,SUPPORTED,Different participation and aggregation remain plausible.
+M005,All four Ookla aggregation variants retain negative change-rank correlations.,DESCRIPTIVE_MEASUREMENT,table_12_aggregation_agreement.csv,SUPPORTED,Post-hoc diagnostic; no variant is selected as preferred.
+M006,Ookla change co-varies materially with changes in observed tests and devices.,DESCRIPTIVE_MEASUREMENT,table_14_composition_sensitivity.csv,SUPPORTED_WITH_LIMITATIONS,The diagnostic does not isolate a single explanation.
+M007,No province is removed in the leave-one-province-out audit.,MEASUREMENT,table_13_measurement_influence_audit.csv,SUPPORTED,Influence assessment does not establish source equivalence.

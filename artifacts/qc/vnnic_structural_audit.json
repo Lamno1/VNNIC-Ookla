@@ -1,0 +1,16 @@
+{
+  "source_rows": 7360,
+  "duplicate_source_key_rows": 0,
+  "province_count": 63,
+  "legacy_expected_cells": 8442,
+  "legacy_observed_cells": 7360,
+  "legacy_missing_expected_cells": 1082,
+  "unexpected_legacy_cells": 0,
+  "primary_ftth_rows": 2268,
+  "primary_province_year_cells": 252,
+  "complete_nine_month_valid_download_cells": 252,
+  "primary_download_null_or_nonfinite": 0,
+  "primary_download_nonpositive": 0,
+  "primary_expected_rows": 2268,
+  "semantic_status": "PASS_WITH_LIMITATIONS"
+}

@@ -1,0 +1,26 @@
+{
+  "decision_date": "2026-09-13",
+  "source_revision": "REVISION_03",
+  "source_format": "journal-neutral LaTeX",
+  "target_journal": "Information Development",
+  "article_type": "Original Article",
+  "backup_journals": [
+    "Digital Geography and Society",
+    "The Electronic Journal of Information Systems in Developing Countries"
+  ],
+  "scope_fit": "PASS",
+  "article_type_confirmed": true,
+  "submission_requirements_verified": true,
+  "main_supplement_split_plan": "LOCKED",
+  "original_tables_accounted_for": 12,
+  "original_figures_accounted_for": 8,
+  "main_tables": 5,
+  "supplement_tables": 6,
+  "archival_only_tables": 1,
+  "main_figures": 6,
+  "supplement_figures": 2,
+  "archival_only_figures": 0,
+  "model_run": false,
+  "causal_gate": "CLOSED",
+  "next_stage": "JOURNAL_SPECIFIC_PACKAGING"
+}

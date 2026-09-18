@@ -1,0 +1,41 @@
+﻿province_id_legacy63,province_name_canonical,year,ftth_download_median_apr_dec_mbps,active_firms_per_1000,source_lineage_ids,fact_reconciliation
+VN_LEGACY63_02,Ha Giang,2021,50.85,1.406853450511,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_02,Ha Giang,2022,58.27,1.42597423836957,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_02,Ha Giang,2023,91.51,1.6,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_02,Ha Giang,2024,88.87,1.6,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_14,Son La,2021,44.74,1.61836732655665,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_14,Son La,2022,49.15,1.63984232285357,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_14,Son La,2023,94.34,1.66674407750017,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_14,Son La,2024,55.48,1.71053224909438,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_33,Hung Yen,2021,52.3,6.48008034448491,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_33,Hung Yen,2022,53.11,6.94734950249912,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_33,Hung Yen,2023,85.27,7.4972290843911,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_33,Hung Yen,2024,91.14,8.23103652337526,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_35,Ha Nam,2021,44.01,5.48436071404222,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_35,Ha Nam,2022,44.79,5.86297850241216,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_35,Ha Nam,2023,72.14,6.12136166715957,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_35,Ha Nam,2024,88.82,6.50626527177468,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_38,Thanh Hoa,2021,45.51,3.79073669663451,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_38,Thanh Hoa,2022,62.13,4.16274970386015,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_38,Thanh Hoa,2023,81.17,4.4,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_38,Thanh Hoa,2024,77.42,4.5,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_52,Binh Dinh,2021,45.01,4.67937217649812,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_52,Binh Dinh,2022,52.2,5.14862542669773,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_52,Binh Dinh,2023,83.51,5.4,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_52,Binh Dinh,2024,84.05,5.5,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_75,Dong Nai,2021,51.83,7.90602261901869,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_75,Dong Nai,2022,77.3,7.93874082178115,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_75,Dong Nai,2023,97.37,8.0,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_75,Dong Nai,2024,108.01,8.2,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_79,TP. Ho Chi Minh,2021,58.16,29.28653576450852,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_79,TP. Ho Chi Minh,2022,74.93,29.18799363175695,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_79,TP. Ho Chi Minh,2023,95.97,28.9,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_79,TP. Ho Chi Minh,2024,105.13,28.3,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_94,Soc Trang,2021,49.01,2.33092158675357,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_94,Soc Trang,2022,67.25,2.41688463153571,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_94,Soc Trang,2023,98.6,2.4,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_94,Soc Trang,2024,97.1,2.5,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_96,Ca Mau,2021,46.71,3.02708942305741,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_96,Ca Mau,2022,57.44,3.1814459265982,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_96,Ca Mau,2023,90.28,3.2,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS
+VN_LEGACY63_96,Ca Mau,2024,97.33,3.1,fact_vnnic_province_month_primary | nso_pxweb_V05.05_retrieved_20260913,PASS

@@ -1,0 +1,1 @@
+{"primary_key":["province_id_legacy63","year"],"expected_rows":252,"required_columns":["province_id_legacy63","pxweb_geo_code","shapeISO","year","active_firms_per_1000","unit","table_code","source_snapshot_id","source_retrieval_date","semantic_status","denominator_universe_limitation","official_statistics_designation","run_id","config_hash"]}

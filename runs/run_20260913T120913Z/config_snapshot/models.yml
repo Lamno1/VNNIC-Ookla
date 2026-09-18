@@ -1,0 +1,12 @@
+primary_specification_id: ASSOC_LAG_FTTH_ACTIVE_DENSITY_V1
+enabled: false
+enable_condition: G1_G2_G3_G4_G5_G6_G7_PASS
+formula: 'log(active_firms_per_1000) ~ province_fe + year_fe + log(ftth_download_median_apr_dec_lag1)'
+standard_errors: cluster_by_province
+claim_level: ASSOCIATIONAL
+sensitivities:
+  - contemporaneous_exposure
+  - leave_one_province_out
+  - balanced_cells
+multiple_testing:
+  exploratory_family: benjamini_hochberg_fdr

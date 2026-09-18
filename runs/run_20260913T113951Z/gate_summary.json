@@ -1,0 +1,63 @@
+{
+  "run_id": "run_20260913T113951Z",
+  "gates": {
+    "G0": {
+      "status": "PASS",
+      "finding": "Output root is separate; all allow-listed roots exist; direct mode; credential exclusions active.",
+      "evidence": {
+        "environment": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T113951Z\\environment.json",
+        "treatment_readiness_evidence": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T113951Z\\treatment_readiness_evidence.json",
+        "credential_files_accessed": false
+      },
+      "updated_at_utc": "2026-09-13T11:39:53.244032+00:00"
+    },
+    "INTERNAL_SCIENTIFIC_REVIEW": {
+      "status": "PASS",
+      "finding": "Independent findings resolved in Revision 01.",
+      "evidence": {
+        "INTERNAL_SCIENTIFIC_REVIEW": "PASS",
+        "CLAIM_CEILING_COMPLIANCE": "PASS",
+        "CONSTRUCT_DISTINCTION": "PASS",
+        "CAUSAL_LANGUAGE_AUDIT": "PASS",
+        "NUMERIC_RECONCILIATION": "PASS",
+        "MODEL_RUN": false,
+        "CAUSAL_GATE": "CLOSED",
+        "original_draft_immutable": true,
+        "major_open": 0
+      },
+      "updated_at_utc": "2026-09-13T11:39:53.281289+00:00"
+    },
+    "INTERNAL_REVIEW_CLAIM_GATE": {
+      "status": "PASS",
+      "finding": "Construct and claim scope remain descriptive measurement.",
+      "evidence": {
+        "INTERNAL_SCIENTIFIC_REVIEW": "PASS",
+        "CLAIM_CEILING_COMPLIANCE": "PASS",
+        "CONSTRUCT_DISTINCTION": "PASS",
+        "CAUSAL_LANGUAGE_AUDIT": "PASS",
+        "NUMERIC_RECONCILIATION": "PASS",
+        "MODEL_RUN": false,
+        "CAUSAL_GATE": "CLOSED",
+        "original_draft_immutable": true,
+        "major_open": 0
+      },
+      "updated_at_utc": "2026-09-13T11:39:53.281698+00:00"
+    },
+    "INTERNAL_REVIEW_NUMERIC_GATE": {
+      "status": "PASS",
+      "finding": "All decimal result values reconcile to allowed artifacts.",
+      "evidence": {
+        "INTERNAL_SCIENTIFIC_REVIEW": "PASS",
+        "CLAIM_CEILING_COMPLIANCE": "PASS",
+        "CONSTRUCT_DISTINCTION": "PASS",
+        "CAUSAL_LANGUAGE_AUDIT": "PASS",
+        "NUMERIC_RECONCILIATION": "PASS",
+        "MODEL_RUN": false,
+        "CAUSAL_GATE": "CLOSED",
+        "original_draft_immutable": true,
+        "major_open": 0
+      },
+      "updated_at_utc": "2026-09-13T11:39:53.282034+00:00"
+    }
+  }
+}

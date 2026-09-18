@@ -1,0 +1,63 @@
+{
+  "run_id": "run_20260913T075214Z",
+  "gates": {
+    "G0": {
+      "status": "PASS",
+      "finding": "Output root is separate; all allow-listed roots exist; direct mode; credential exclusions active.",
+      "evidence": {
+        "environment": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T075214Z\\environment.json",
+        "treatment_readiness_evidence": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T075214Z\\treatment_readiness_evidence.json",
+        "credential_files_accessed": false
+      },
+      "updated_at_utc": "2026-09-13T07:52:15.253390+00:00"
+    },
+    "MANUSCRIPT_DRAFT": {
+      "status": "PASS",
+      "finding": "Markdown manuscript and supplement created from locked evidence only.",
+      "evidence": {
+        "manuscript_status": "DRAFT_COMPLETE",
+        "claim_audit": "PASS",
+        "allow_list_compliance": "PASS",
+        "numeric_reconciliation": "PASS",
+        "authorized_tables": 12,
+        "authorized_figures": 8,
+        "model_run": false,
+        "causal_gate": "CLOSED",
+        "next_stage": "INTERNAL_SCIENTIFIC_REVIEW"
+      },
+      "updated_at_utc": "2026-09-13T07:52:15.303018+00:00"
+    },
+    "MANUSCRIPT_CLAIM_AUDIT": {
+      "status": "PASS",
+      "finding": "All manuscript claims remain at descriptive-measurement level.",
+      "evidence": {
+        "manuscript_status": "DRAFT_COMPLETE",
+        "claim_audit": "PASS",
+        "allow_list_compliance": "PASS",
+        "numeric_reconciliation": "PASS",
+        "authorized_tables": 12,
+        "authorized_figures": 8,
+        "model_run": false,
+        "causal_gate": "CLOSED",
+        "next_stage": "INTERNAL_SCIENTIFIC_REVIEW"
+      },
+      "updated_at_utc": "2026-09-13T07:52:15.303401+00:00"
+    },
+    "MANUSCRIPT_NUMERIC_RECONCILIATION": {
+      "status": "PASS",
+      "finding": "Every reported result is registered to an allow-listed source cell.",
+      "evidence": {
+        "manuscript_status": "DRAFT_COMPLETE",
+        "claim_audit": "PASS",
+        "allow_list_compliance": "PASS",
+        "numeric_reconciliation": "PASS",
+        "authorized_tables": 12,
+        "authorized_figures": 8,
+        "model_run": false,
+        "causal_gate": "CLOSED",
+        "next_stage": "INTERNAL_SCIENTIFIC_REVIEW"
+      },
+      "updated_at_utc": "2026-09-13T07:52:15.303707+00:00"
+    }
+  }
+}

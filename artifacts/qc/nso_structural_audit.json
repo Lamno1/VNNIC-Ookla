@@ -1,0 +1,16 @@
+{
+  "status": "PASS_OFFICIAL_SNAPSHOT_PRIMARY_LOCAL_DERIVATIVES_QUARANTINED",
+  "workbooks": 3,
+  "candidate_fact_rows": 1575,
+  "province_candidates_per_table": 63,
+  "aggregate_exclusions_per_table": 7,
+  "missing_numeric_cells": 0,
+  "name_mapping_review_status": "LOCAL_WORKBOOK_MAPPING_NOT_USED",
+  "semantic_status": "PASS_WITH_LIMITATIONS",
+  "released_fact_nso_measure": false,
+  "released_fact_enterprise_outcomes": false,
+  "official_primary_source_available": true,
+  "local_candidate_status": "QUARANTINED_NOT_USED",
+  "official_snapshot_primary_outcome": "PASS_WITH_LIMITATIONS",
+  "local_candidates_remain_quarantined": true
+}

@@ -1,0 +1,3 @@
+﻿review_id,severity,decision,response,status
+ISR02-01,MAJOR,ACCEPT,Replaced remaining underlying-inequality wording in abstract and introduction.,RESOLVED
+ISR02-02,MAJOR,ACCEPT,Registered every body numeric token or assigned an explicit structural exemption.,RESOLVED

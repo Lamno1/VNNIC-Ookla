@@ -1,0 +1,9 @@
+﻿review_id,severity,decision,response,revision_path,status
+ISR01-01,MAJOR,ACCEPT,Expanded numeric registry and validator coverage.,reports\measurement_divergence_manuscript_revision_01.md,RESOLVED
+ISR01-02,MAJOR,ACCEPT,Expanded claim ledger.,reports\measurement_divergence_manuscript_revision_01.md,RESOLVED
+ISR01-03,MAJOR,ACCEPT,Replaced national-direction wording.,reports\measurement_divergence_manuscript_revision_01.md,RESOLVED
+ISR01-04,MAJOR,ACCEPT,Restricted conclusions to measured differences.,reports\measurement_divergence_manuscript_revision_01.md,RESOLVED
+ISR01-05,MAJOR,ACCEPT,Added matched-Q2 endpoint scope.,reports\measurement_divergence_manuscript_revision_01.md,RESOLVED
+ISR01-06,MINOR,ACCEPT,Weakened composition interpretation.,reports\measurement_divergence_manuscript_revision_01.md,RESOLVED
+ISR01-07,MINOR,ACCEPT,Clarified leave-one-out interpretation and retention.,reports\measurement_divergence_manuscript_revision_01.md,RESOLVED
+ISR01-08,MINOR,PARTIAL,Deferred literature positioning; no unreviewed reference added.,reports\measurement_divergence_manuscript_revision_01.md,DEFERRED_NONBLOCKING

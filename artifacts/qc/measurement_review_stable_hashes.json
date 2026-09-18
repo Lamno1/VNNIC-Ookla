@@ -1,0 +1,8 @@
+{
+  "artifacts\\tables\\table_12_aggregation_agreement.csv": "3890859069cf684c543119d8949f411049350540562d0e1bf2abfaa30a9bf0d3",
+  "artifacts\\tables\\table_13_measurement_influence_audit.csv": "90f2c1d9c278dc9bb4b8630e080c13794c27d77054ee90234d73673e463072c7",
+  "artifacts\\tables\\table_14_composition_sensitivity.csv": "e9582cb7a91b04ec7886a9622138fb418a70b856f4428b27a317a2e5e5cace1b",
+  "artifacts\\qc\\exposure_adjudication_decision.json": "15558332a7a49728b8877af40bb34e5bb55fa025d63b64a0e004bff7d482cf4a",
+  "artifacts\\qc\\measurement_review_claim_audit.csv": "406ccff34de44afccf051bed9f096c253870a30eaacd903dd4897a552501d8b3",
+  "protocol\\human_measurement_review_ledger_lock.json": "c68378daddcafde2c47972d1887da21f7ab2e7fd02f7df78b9bd08a03ac19948"
+}

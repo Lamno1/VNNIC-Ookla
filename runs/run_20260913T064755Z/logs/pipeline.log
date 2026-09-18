@@ -1,0 +1,4 @@
+2026-09-13 13:47:55,347 INFO START connectivity_enterprise.stages.s00_preflight
+2026-09-13 13:47:56,609 INFO DONE connectivity_enterprise.stages.s00_preflight
+2026-09-13 13:47:56,609 INFO START connectivity_enterprise.stages.s08_descriptive
+2026-09-13 13:48:01,498 INFO DONE connectivity_enterprise.stages.s08_descriptive

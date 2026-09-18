@@ -1,0 +1,24 @@
+primary_exposure:
+  id: ftth_download_median_apr_dec
+  source: VNNIC i-Speed
+  raw_column: download
+  network: ftth
+  aggregation: unweighted_median
+  months: [4, 5, 6, 7, 8, 9, 10, 11, 12]
+  semantic_status: UNVERIFIED
+  weighting: none
+primary_outcome:
+  id: active_firms_per_1000
+  source_table: V05.05
+  semantic_status: UNVERIFIED
+secondary_outcome:
+  id: enterprise_entry_rate
+  numerator_table: V05.02
+  denominator_table: V05.04
+  denominator_timing: lag_one_year
+  semantic_status: UNVERIFIED
+secondary_connectivity:
+  - ftth_upload_median_apr_dec
+  - ftth_ping_median_apr_dec
+  - ftth_jitter_median_apr_dec
+value_raw_policy: retain_unweighted_until_verified

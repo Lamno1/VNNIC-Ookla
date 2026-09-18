@@ -1,0 +1,29 @@
+# Manuscript LaTeX submitted directly to the journal, not tracked here
+latex/
+submission/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# Credentials / secrets (mirrors config/sources.yml credential_exclusions)
+client_secret*
+*credential*
+*.pem
+*.key
+*token*
+*cookie*
+.env
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

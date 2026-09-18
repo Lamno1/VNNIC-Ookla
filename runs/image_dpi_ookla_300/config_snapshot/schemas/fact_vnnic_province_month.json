@@ -1,0 +1,1 @@
+{"primary_key":["network","province_id_legacy63","month"],"required_columns":["network","province_id_legacy63","month","year","download","upload","ping","jitter","value_raw","source_file","semantic_status","coverage_flag"]}

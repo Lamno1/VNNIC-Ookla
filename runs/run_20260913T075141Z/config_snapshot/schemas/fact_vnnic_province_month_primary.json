@@ -1,0 +1,1 @@
+{"primary_key":["province_id_legacy63","year","month"],"expected_rows":2268,"required_columns":["province_id_legacy63","shapeISO","vnnic_code","year","month","date","network","download_mbps","upload_mbps","ping_ms","jitter_ms","source_file","semantic_status","source_artifact_id","run_id","config_hash"]}

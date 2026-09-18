@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi">
+<head>
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta property="og:image" content="https://vnnic.vn/sites/all/themes/vnnic_new/css/images/logo.png">
+		<meta property="og:title" content="VNNIC Internet Atlas
+">
+		<meta property="og:description" content="VNNIC Internet Atlas
+">
+		<title>VNNIC Internet Atlas
+</title>
+		<link rel="shortcut icon" href="/themes/img/favicon.png">
+		<link href="/themes/css/bootstrap.css" rel="stylesheet">
+		<link href="/plugins/bootstrap-toggle/bootstrap4-toggle.min.css"
+			rel="stylesheet">
+		<link rel="stylesheet" href="/plugins/daterangepicker/css/bootstrap-datepicker.min.css">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+		<!-- EKMap CSS -->
+		<link href="https://files.ekgis.vn/sdks/v2.0.0/ekmap-platform.min.css" rel="stylesheet" />
+		<!-- Image zoom-->
+		<link rel="stylesheet" href="/plugins/image-zoom/css/image-zoom.css">
+		<link href="/themes/css/loading.css" rel="stylesheet">
+		<link href="/themes/css/styles.css?v=1.0.1" rel="stylesheet">
+		<!-- EKMap JS -->
+		<script src="https://files.ekgis.vn/sdks/v2.0.0/ekmap-platform.min.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-073Z8605T4"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-073Z8605T4', {
+				cookie_domain: 'internetatlas.vnnic.vn',
+				cookie_flags: 'Secure;SameSite=None'
+			});
+		</script>
+	
+</head>
+<!-- Vietmap GL JS CSS -->
+<link href="https://unpkg.com/@vietmap/vietmap-gl-js@6.0.1/dist/vietmap-gl.css" rel="stylesheet" />
+
+<body>
+	<header id="header-bar" class="site__header">
+		<!-- mobile menu -->
+		<div id="mobile-menu" class="d-lg-none">
+			<div class="menu-mb__head">
+				<div class="menu-mb__logo">
+					<a href="/">
+						<img src="/themes/img/internet_atlas_logo.svg"
+							alt="logo">
+					</a>
+				</div>
+				<div class="menu-mb__close">
+					<svg width="30" height="30" class="svg-icon" viewBox="0 0 20 20">
+						<path
+							d="M10.185,1.417c-4.741,0-8.583,3.842-8.583,8.583c0,4.74,3.842,8.582,8.583,8.582S18.768,14.74,18.768,10C18.768,5.259,14.926,1.417,10.185,1.417 M10.185,17.68c-4.235,0-7.679-3.445-7.679-7.68c0-4.235,3.444-7.679,7.679-7.679S17.864,5.765,17.864,10C17.864,14.234,14.42,17.68,10.185,17.68 M10.824,10l2.842-2.844c0.178-0.176,0.178-0.46,0-0.637c-0.177-0.178-0.461-0.178-0.637,0l-2.844,2.841L7.341,6.52c-0.176-0.178-0.46-0.178-0.637,0c-0.178,0.176-0.178,0.461,0,0.637L9.546,10l-2.841,2.844c-0.178,0.176-0.178,0.461,0,0.637c0.178,0.178,0.459,0.178,0.637,0l2.844-2.841l2.844,2.841c0.178,0.178,0.459,0.178,0.637,0c0.178-0.176,0.178-0.461,0-0.637L10.824,10z">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div class="menu-mb__body">
+				<ul class="menu-mb__list">
+					<li class="menu-mb__item main-link">
+						<a href="/">Trang chủ</a>
+					</li>
+					<li class="menu-mb__item main-link has-child">
+						<a href="#" onClick="expandSub(this)">Tài nguyên Internet <i
+								class="fas fa-chevron-down"></i></a>
+						<ul class="menu-mb__sub">
+							<li class="menu-mb__sub-item">
+								<a href="/ten-mien-vn">Tên miền .vn</a>
+							</li>
+							<li class="menu-mb__sub-item">
+								<a href="/ip-asn">IP/ASN</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-mb__item main-link has-child">
+						<a href="#" onClick="expandSub(this)">Hạ tầng Internet <i class="fas fa-chevron-down"></i></a>
+						<ul class="menu-mb__sub">
+							<li class="menu-mb__sub-item">
+								<a href="/vnix">Hệ thống VNIX</a>
+							</li>
+							<li class="menu-mb__sub-item">
+								<a href="/dns-map">Hệ thống DNS</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-mb__item main-link">
+						<a href="/i-speed">i-SPEED</a>
+						<!-- <a href="/i-speed" th:href="@{https://speedtest.vn/thong-ke-co-dinh}">i-SPEED</a> -->
+					</li>
+					<li class="menu-mb__item main-link">
+						<a href="/dns-watch">DNS Watch</a>
+					</li>
+					<li class="menu-mb__item main-link">
+						<a href="https://vnnic.vn/gioi-thieu" target="_blank">Về
+							chúng tôi</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--/mobile menu-->
+		<nav id="navbar" class="navbar navbar-expand-lg">
+			<a class="navbar-brand" href="/" title="Trang chủ">
+				<img id="logo" src="/themes/img/internet_atlas_logo.svg"
+					alt="vnnic-logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-target="#navbarResponsive" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul id="main-menu" class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="/" title="Trang chủ">
+							Trang chủ
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="false">
+							Tài nguyên Internet
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/ten-mien-vn">Tên miền .vn</a>
+							</li>
+							<li><a class="dropdown-item" href="/ip-asn">IP/ASN</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="true">
+							Hạ tầng Internet
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/vnix">Hệ thống VNIX</a></li>
+							<li><a class="dropdown-item" href="/dns-map">Hệ thống DNS</a></li>
+						</ul>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="/i-speed">i-SPEED</a></li>
+					<!-- <li class="nav-item"><a class="nav-link" th:href="@{https://speedtest.vn/thong-ke-co-dinh}">i-SPEED</a></li> -->
+					<li class="nav-item"><a class="nav-link" href="/dns-watch">DNS Watch</a></li>
+					<li class="nav-item"><a class="nav-link"
+							href="https://vnnic.vn/gioi-thieu" target="_blank">Về
+							chúng tôi</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!--Main body-->
+	<div class="body-container__page">
+		<div class="wrapper">
+			<!--Main content-->
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="col-md-12 align-self-center">
+						<h2 class="big-title">HỆ THỐNG ĐO <span class="orange">TỐC ĐỘ TRUY CẬP INTERNET</span>
+							<br>(VNNIC INTERNET SPEED)
+						</h2>
+					</div>
+					<img class="logo align-self-center m-2" src="/themes/img/logo/internet_speed_logo.svg"
+						alt="">
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6 my-3">
+						<div class="card  tm-block text-center h-100 justify-content-between">
+							<h4 class="card-title badge-text">
+								Tổng số điểm đo
+							</h4>
+							<span>
+								<h1 class="orange badge-primary-text">59</h1>
+								<p class="card-text">
+									điểm đo
+								</p>
+							</span>
+						</div>
+					</div>
+					<div class="col-lg-6 my-3">
+						<div class="card  tm-block text-center h-100 justify-content-between">
+							<h4 class="card-title badge-text">
+								Tổng số lượt đo
+							</h4>
+							<h1 class="orange badge-primary-text">78.190.600</h1>
+							<p class="card-text">
+								lượt đo
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-wrapper">
+			<div class="container">
+				<div class="row sticky-form">
+					<div class="col-md-12 form-date">
+						<div class="ispeed-btn">
+							<div class="internet-type-btn">
+								<input id="internettype" type="checkbox" checked="checked" onchange="changeType(this)"
+									data-toggle="toggle" data-on="Băng rộng cố định" data-off="Băng rộng di động"
+									data-width="220" data-height="35" data-onstyle="primary" data-offstyle="danger">
+							</div>
+							<!-- <div class="stats-method-btn">
+								<input id="statsmethod" type="checkbox" checked="checked" onchange="changeMethod(this)" data-toggle="toggle" data-on="Phương pháp trung vị" 
+									data-off="Phương pháp trung bình" data-width="240" data-height="35" data-onstyle="primary" data-offstyle="danger">
+							</div> -->
+
+							<select title="ISP" class="form-control ml-lg-2 mt-lg-0 mt-2" id="valueIspId">
+								<option value="ALL">Tất cả doanh nghiệp</option>
+								<option value="CMC Telecom">CMC Telecom</option>
+								<option value="FPT Telecom">FPT Telecom</option>
+								<option value="NETNAM">NETNAM</option>
+								<option value="SCTV">SCTV</option>
+								<option value="VIETTEL">VIETTEL</option>
+								<option value="VNPT">VNPT</option>
+							</select>
+
+							<select title="PROVINCE" class="form-control ml-lg-2 mt-lg-0 mt-2" id="provinceId">
+								<option value="-1">Tất cả tỉnh/thành phố</option>
+								<option value="01">Hà Nội</option>
+								<option value="04">Cao Bằng</option>
+								<option value="08">Tuyên Quang</option>
+								<option value="11">Điện Biên</option>
+								<option value="12">Lai Châu</option>
+								<option value="14">Sơn La</option>
+								<option value="15">Lào Cai</option>
+								<option value="19">Thái Nguyên</option>
+								<option value="20">Lạng Sơn</option>
+								<option value="22">Quảng Ninh</option>
+								<option value="24">Bắc Ninh</option>
+								<option value="25">Phú Thọ</option>
+								<option value="31">Hải Phòng</option>
+								<option value="33">Hưng Yên</option>
+								<option value="37">Ninh Bình</option>
+								<option value="38">Thanh Hóa</option>
+								<option value="40">Nghệ An</option>
+								<option value="42">Hà Tĩnh</option>
+								<option value="44">Quảng Trị</option>
+								<option value="46">Huế</option>
+								<option value="48">Đà Nẵng</option>
+								<option value="51">Quảng Ngãi</option>
+								<option value="52">Gia Lai</option>
+								<option value="56">Khánh Hòa</option>
+								<option value="66">Đắk Lắk</option>
+								<option value="68">Lâm Đồng</option>
+								<option value="75">Đồng Nai</option>
+								<option value="79">TP HCM</option>
+								<option value="80">Tây Ninh</option>
+								<option value="82">Đồng Tháp</option>
+								<option value="86">Vĩnh Long</option>
+								<option value="91">An Giang</option>
+								<option value="92">Cần Thơ</option>
+								<option value="96">Cà Mau</option>
+							</select>
+						</div>
+						<!-- <div class="block-datepicker d-flex flex-md-row flex-column">
+							<div class="text-pick-date px-2">
+								Chọn thời gian
+							</div>
+							<div class="datepicker-filter">
+								<input id="datepicker" onchange="handleDate()" readonly="readonly">
+								<label class="label-filter" for="datepicker">
+									<i class="fas fa-calendar-alt"></i>
+								</label>
+							</div>
+						</div> -->
+					</div>
+				</div>
+				<div id="brcd">
+					<div id="ftth-stats" class="row">
+						<div class="col-12 my-3">
+							<div class="card  tm-block text-center p-0 h-100 justify-content-between">
+								<h4 class="card-header">Tốc độ download/upload và latency của mạng BRCĐ<br>
+									<small class="text-muted">(Tháng 8/2026)</small>
+								</h4>
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-3">
+											<h4 class="card-title badge-text">
+												Download
+											</h4>
+											<span>
+												<h1 id="ftth-download" class="orange badge-primary-text">263.68</h1>
+												<p class="card-text">
+													Mbps
+												</p>
+											</span>
+										</div>
+										<div class="col-lg-3">
+											<h4 class="card-title badge-text">
+												Upload
+											</h4>
+											<span>
+												<h1 id="ftth-upload" class="orange badge-primary-text">188.13</h1>
+												<p class="card-text">
+													Mbps
+												</p>
+											</span>
+										</div>
+										<div class="col-lg-3">
+											<h4 class="card-title badge-text">
+												Ping
+											</h4>
+											<span>
+												<h1 id="ftth-ping" class="orange badge-primary-text">7.95</h1>
+												<p class="card-text">
+													ms
+												</p>
+											</span>
+										</div>
+										<div class="col-lg-3">
+											<h4 class="card-title badge-text">
+												Jitter
+											</h4>
+											<span>
+												<h1 id="ftth-jitter" class="orange badge-primary-text">1.33</h1>
+												<p class="card-text">
+													ms
+												</p>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="mobile-stats" class="row" style="display: none;">
+						<div class="col-12 my-3">
+							<div class="card  tm-block text-center h-100 p-0 justify-content-between">
+								<h4 class="card-header">Tốc độ download/upload và latency của mạng BRDĐ<br>
+									<small class="text-muted">(Tháng 8/2026)</small>
+								</h4>
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-3">
+											<h4 class="card-title badge-text">
+												Download
+											</h4>
+											<span>
+												<h1 id="mobile-download" class="orange badge-primary-text">90.68</h1>
+												<p class="card-text">
+													Mbps
+												</p>
+											</span>
+										</div>
+										<div class="col-lg-3">
+											<h4 class="card-title badge-text">
+												Upload
+											</h4>
+											<span>
+												<h1 id="mobile-upload" class="orange badge-primary-text">29.30</h1>
+												<p class="card-text">
+													Mbps
+												</p>
+											</span>
+										</div>
+										<div class="col-lg-3">
+											<h4 class="card-title badge-text">
+												Ping
+											</h4>
+											<span>
+												<h1 id="mobile-ping" class="orange badge-primary-text">32.50</h1>
+												<p class="card-text">
+													ms
+												</p>
+											</span>
+										</div>
+										<div class="col-lg-3">
+											<h4 class="card-title badge-text">
+												Jitter
+											</h4>
+											<span>
+												<h1 id="mobile-jitter" class="orange badge-primary-text">7.29</h1>
+												<p class="card-text">
+													ms
+												</p>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div id="ftth-charts" class="col-lg-7 col-md-12 my-2">
+							<div class="tm-bg-primary-dark tm-block">
+								<div id="bandwidthLatencyChartFtth" style="width:100%; height:375px; overflow: hidden;">
+								</div>
+							</div>
+							<div class="tm-bg-primary-dark tm-block mt-3">
+								<div id="mainCityChartFtth" style="width:100%; height:375px; overflow: hidden;"></div>
+							</div>
+							<div id="byIspFtth" class="mt-3">
+								
+									<div class="tm-bg-primary-dark tm-block mb-3">
+										<div id="CMCTelecom_MedianMonthlyChartFtth"
+											style="width:100%; height:375px; overflow: hidden;">
+											FTTH NAME
+										</div>
+									</div>
+								
+									<div class="tm-bg-primary-dark tm-block mb-3">
+										<div id="FPTTelecom_MedianMonthlyChartFtth"
+											style="width:100%; height:375px; overflow: hidden;">
+											FTTH NAME
+										</div>
+									</div>
+								
+									<div class="tm-bg-primary-dark tm-block mb-3">
+										<div id="NETNAM_MedianMonthlyChartFtth"
+											style="width:100%; height:375px; overflow: hidden;">
+											FTTH NAME
+										</div>
+									</div>
+								
+									<div class="tm-bg-primary-dark tm-block mb-3">
+										<div id="SCTV_MedianMonthlyChartFtth"
+											style="width:100%; height:375px; overflow: hidden;">
+											FTTH NAME
+										</div>
+									</div>
+								
+									<div class="tm-bg-primary-dark tm-block mb-3">
+										<div id="VIETTEL_MedianMonthlyChartFtth"
+											style="width:100%; height:375px; overflow: hidden;">
+											FTTH NAME
+										</div>
+									</div>
+								
+									<div class="tm-bg-primary-dark tm-block mb-3">
+										<div id="VNPT_MedianMonthlyChartFtth"
+											style="width:100%; height:375px; overflow: hidden;">
+											FTTH NAME
+										</div>
+									</div>
+								
+							</div>
+						</div>
+						<div id="mobile-charts" class="col-lg-7 col-md-12 my-2" style="display: none;">
+							<div class="tm-bg-primary-dark tm-block">
+								<div id="bandwidthLatencyChartMobile"
+									style="width:100%; height:375px; overflow: hidden;"></div>
+							</div>
+							<div class="tm-bg-primary-dark tm-block mt-3">
+								<div id="mainCityChartMobile" style="width:100%; height:375px; overflow: hidden;"></div>
+							</div>
+							<div id="byIspMobile" class="mt-3">
+								
+									<div class="tm-bg-primary-dark tm-block mb-3">
+										<div id="MOBIFONE_MedianMonthlyChartMobile"
+											style="width:100%; height:375px; overflow: hidden;">
+											FTTH NAME
+										</div>
+									</div>
+								
+									<div class="tm-bg-primary-dark tm-block mb-3">
+										<div id="VIETTEL_MedianMonthlyChartMobile"
+											style="width:100%; height:375px; overflow: hidden;">
+											FTTH NAME
+										</div>
+									</div>
+								
+									<div class="tm-bg-primary-dark tm-block mb-3">
+										<div id="VNPT_MedianMonthlyChartMobile"
+											style="width:100%; height:375px; overflow: hidden;">
+											FTTH NAME
+										</div>
+									</div>
+								
+									<div class="tm-bg-primary-dark tm-block mb-3">
+										<div id="Vietnamobile_MedianMonthlyChartMobile"
+											style="width:100%; height:375px; overflow: hidden;">
+											FTTH NAME
+										</div>
+									</div>
+								
+							</div>
+						</div>
+						<div class="col-lg-5 col-md-12 my-2 pl-lg-0">
+							<div class="tm-bg-primary-dark tm-block p-0">
+								<div style="background-color: #fff;
+						        z-index: 1;
+						        position: absolute;
+						        top: 10px;
+						        left: 20px;
+						        padding:8px;
+						        border: 0.5px solid rgb(218, 218, 218);
+						        border-radius: 10px;
+						        font-size: 12px;">
+									<strong style="color: black">Tháng
+										8/2026</strong>
+								</div>
+								<div class="ekmap" id="mapChart"
+									style="width:100%; height:850px; border-radius: 10px; overflow: hidden;">
+								</div>
+							</div>
+							<p style="color: #f00; text-align: center;"><em>Chỉ đánh giá, thống kê các địa phương có tối
+									thiểu 30 mẫu/tháng</em>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--./Main content-->
+		</div>
+	</div>
+	<!--./Main body-->
+	<footer class="footer-container py-2">
+		<div class="section__container">
+
+			<div class="col-lg-7 col-md-7 col-sm-12 footer-menu footer-text order-md-1">
+				<div class="footer-menu__column">
+					<div class="footer-menu__title">Tài nguyên Internet</div>
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item">
+							<a href="/ten-mien-vn">Tên miền .vn</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="/ip-asn">IP/ASN</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-menu__column">
+					<div class="footer-menu__title">Hạ tầng Internet</div>
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item">
+							<a href="/vnix">Hệ thống VNIX</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="/dns-map">Hệ thống DNS</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-menu__column">
+					<div class="footer-menu__title"><a href="/i-speed">i-SPEED</a></div>
+					<!-- <div class="footer-menu__title"><a href="" th:href="@{https://speedtest.vn/thong-ke-co-dinh}">i-SPEED</a></div> -->
+				</div>
+				<div class="footer-menu__column">
+					<div class="footer-menu__title"><a href="/dns-watch">DNS Watch</a></div>
+				</div>
+				<div class="footer-menu__column">
+					<div class="footer-menu__title"><a
+							href="https://vnnic.vn/gioi-thieu" target="_blank">Về
+							chúng tôi</a></div>
+				</div>
+			</div>
+			<div class="col-lg-5 col-md-5 col-sm-12 footer-text order-xs-0">
+				<h3 class="footer-title">TRUNG TÂM INTERNET VIỆT NAM</h3>
+				<div class="footer-icon-list my-2">
+					<a class="mr-2" href="https://www.facebook.com/myVNNIC/" target="_blank">
+						<img src="/themes/img/footer-icon/fb-icon.svg"
+							alt="">
+					</a>
+					<a class="mr-2" href="https://www.youtube.com/channel/UCLvuvINvucsfLAPrasmz9Cw" target="_blank">
+						<img src="/themes/img/footer-icon/youtube-icon.svg"
+							alt="">
+					</a>
+					<a class="mr-2" href="mailto:webmaster@vnnic.vn" target="_blank">
+						<img src="/themes/img/footer-icon/mail-icon.svg"
+							alt="">
+					</a>
+					<a class="mr-2" href="https://www.vnnic.vn/#contact" target="_blank">
+						<img src="/themes/img/footer-icon/location-icon.svg"
+							alt="">
+					</a>
+				</div>
+				<p class="my-2 footer-address">
+					Địa chỉ: 18 Nguyễn Du, Hà nội <br>
+					Điện thoại: +84-24-35564944 <br>
+					Email: webmaster@vnnic.vn
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!--Scripts-->
+	
+		<script src="/themes/js/jquery.min.js"></script>
+		<!-- Image zoom -->
+		<script src="/plugins/image-zoom/js/image-zoom.min.js"></script>
+		<script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/plugins/bootstrap-toggle/bootstrap4-toggle.min.js"></script>
+		
+		<script src="/plugins/highcharts/highcharts.js"></script>
+		<script src="/plugins/highcharts/modules/map.js"></script>
+		<script src="/plugins/highcharts/world.js"></script>
+		<script src="/plugins/highcharts/modules/exporting.js"></script>
+		<script src="/plugins/highcharts/modules/offline-exporting.js"></script>
+		<script src="/plugins/highcharts/drawcharts.js"></script>
+
+		<script src="/plugins/daterangepicker/js/bootstrap-datepicker.min.js"></script>
+		<script src="/plugins/daterangepicker/locales/bootstrap-datepicker.vi.min.js"></script>
+		<!--Custom-->
+		<script src="/themes/js/custom.js"></script>
+	
+	<!--	<script-->
+	<!--		th:if="${ispeedRecentStats.yearRecent < 2025 or (ispeedRecentStats.yearRecent == 2025 and ispeedRecentStats.monthRecent < 7)}"-->
+	<!--		type="text/javascript" th:src="@{/themes/js/ekmap.js?v=1.1.0}"></script>-->
+	<!--	<script-->
+	<!--		th:unless="${ispeedRecentStats.yearRecent < 2025 or (ispeedRecentStats.yearRecent == 2025 and ispeedRecentStats.monthRecent < 7)}"-->
+	<!--		type="text/javascript" th:src="@{/themes/js/new-ekmap.js?v=1.1.0}"></script>-->
+	<script src="https://unpkg.com/@vietmap/vietmap-gl-js@6.0.1/dist/vietmap-gl.js"></script>
+	<script type="text/javascript" src="/plugins/vietmap/vietmap-chart.js"></script>
+	<script>
+		//create var for i-speed.js
+		const baseUrl = null;
+		const recentMonth = 8;
+		const recentYear = 2026;
+		const ispeedRecentStats = {"noTotalServer":59,"noTotalSample":78190600,"ftthDownload":292.86,"ftthUpload":250.09,"ftthPing":11.46,"ftthJitter":8.42,"mobileDownload":186.58,"mobileUpload":53.07,"mobilePing":35.29,"mobileJitter":20.26,"medianFtthDownload":263.68,"medianFtthUpload":188.13,"medianFtthPing":7.95,"medianFtthJitter":1.33,"medianMobileDownload":90.68,"medianMobileUpload":29.3,"medianMobilePing":32.5,"medianMobileJitter":7.29,"yearRecent":2026,"monthRecent":8};
+		const cityList = [{"id":1,"shortName":"H\u00E0 N\u1ED9i","code":"01"},{"id":4,"shortName":"Cao B\u1EB1ng","code":"04"},{"id":8,"shortName":"Tuy\u00EAn Quang","code":"08"},{"id":11,"shortName":"\u0110i\u1EC7n Bi\u00EAn","code":"11"},{"id":12,"shortName":"Lai Ch\u00E2u","code":"12"},{"id":14,"shortName":"S\u01A1n La","code":"14"},{"id":15,"shortName":"L\u00E0o Cai","code":"15"},{"id":19,"shortName":"Th\u00E1i Nguy\u00EAn","code":"19"},{"id":20,"shortName":"L\u1EA1ng S\u01A1n","code":"20"},{"id":22,"shortName":"Qu\u1EA3ng Ninh","code":"22"},{"id":24,"shortName":"B\u1EAFc Ninh","code":"24"},{"id":25,"shortName":"Ph\u00FA Th\u1ECD","code":"25"},{"id":31,"shortName":"H\u1EA3i Ph\u00F2ng","code":"31"},{"id":33,"shortName":"H\u01B0ng Y\u00EAn","code":"33"},{"id":37,"shortName":"Ninh B\u00ECnh","code":"37"},{"id":38,"shortName":"Thanh H\u00F3a","code":"38"},{"id":40,"shortName":"Ngh\u1EC7 An","code":"40"},{"id":42,"shortName":"H\u00E0 T\u0129nh","code":"42"},{"id":44,"shortName":"Qu\u1EA3ng Tr\u1ECB","code":"44"},{"id":46,"shortName":"Hu\u1EBF","code":"46"},{"id":48,"shortName":"\u0110\u00E0 N\u1EB5ng","code":"48"},{"id":51,"shortName":"Qu\u1EA3ng Ng\u00E3i","code":"51"},{"id":52,"shortName":"Gia Lai","code":"52"},{"id":56,"shortName":"Kh\u00E1nh H\u00F2a","code":"56"},{"id":66,"shortName":"\u0110\u1EAFk L\u1EAFk","code":"66"},{"id":68,"shortName":"L\u00E2m \u0110\u1ED3ng","code":"68"},{"id":75,"shortName":"\u0110\u1ED3ng Nai","code":"75"},{"id":79,"shortName":"TP HCM","code":"79"},{"id":80,"shortName":"T\u00E2y Ninh","code":"80"},{"id":82,"shortName":"\u0110\u1ED3ng Th\u00E1p","code":"82"},{"id":86,"shortName":"V\u0129nh Long","code":"86"},{"id":91,"shortName":"An Giang","code":"91"},{"id":92,"shortName":"C\u1EA7n Th\u01A1","code":"92"},{"id":96,"shortName":"C\u00E0 Mau","code":"96"}];
+		const ftthIspList = ["CMC Telecom","FPT Telecom","NETNAM","SCTV","VIETTEL","VNPT"];
+		const mobileIspList = ["MOBIFONE","VIETTEL","VNPT","Vietnamobile"];
+		const vietmapChart = new VietmapChart('mapChart', {
+			placeBaseUrl: '/plugins/vietmap'
+		});
+	</script>
+	<script src="/themes/js/pages/statistic/i-speed-new.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{
+  "run_id": "run_20260912T174708Z",
+  "requested_stage": "all",
+  "status": "BLOCKED_BY_SEMANTICS",
+  "error": null,
+  "config_hash": "533db80c1a96e4834d1c6b91881d195641668b189cdb18c999a47b65f6cc087f",
+  "created_artifacts": [
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260912T174708Z\\environment.json",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260912T174708Z\\treatment_readiness_evidence.json",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\manifests\\source_inventory.csv",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\manifests\\declared_inputs.csv",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\semantic_registry.csv",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\reports\\missing_document_request.md",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\data\\reference\\dim_province_legacy63.parquet",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\geography_gate.json",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\data\\quarantine\\fact_nso_measure_candidates.parquet",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\nso_name_crosswalk_review.csv",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\nso_row_exclusions.csv",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\nso_structural_audit.json",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\data\\interim\\fact_vnnic_province_month.parquet",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\vnnic_expected_grid_missing.csv",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\vnnic_structural_audit.json"
+  ],
+  "artifact_registry": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260912T174708Z\\artifact_registry.csv",
+  "lineage_edges": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260912T174708Z\\lineage_edges.csv",
+  "causal_gate": "CLOSED",
+  "decision_2269_gate": "FAIL_PRIMARY_ROUTE",
+  "completed_at_utc": "2026-09-12T17:47:21.300974+00:00"
+}

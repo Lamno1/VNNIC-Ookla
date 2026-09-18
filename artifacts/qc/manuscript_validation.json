@@ -1,0 +1,14 @@
+{
+  "manuscript_status": "DRAFT_COMPLETE",
+  "claim_audit": "PASS",
+  "allow_list_compliance": "PASS",
+  "numeric_reconciliation": "PASS",
+  "references_cited": 3,
+  "uncited_references": 0,
+  "unsupported_numeric_claims": 0,
+  "prohibited_content_matches": 0,
+  "model_run": false,
+  "causal_gate": "CLOSED",
+  "next_stage": "INTERNAL_SCIENTIFIC_REVIEW",
+  "validated_at_utc": "2026-09-13T07:52:15.302796+00:00"
+}

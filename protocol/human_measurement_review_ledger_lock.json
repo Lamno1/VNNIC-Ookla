@@ -1,0 +1,9 @@
+{
+  "ledger_path": "protocol/human_measurement_review_ledger_20260913.md",
+  "sha256": "d07417d2041c65bec19a607140613e3e2f0a870432fd176ab3878877c28c706e",
+  "diagnostic_label": "POST_HOC_MEASUREMENT_DIAGNOSTIC",
+  "initial_ch3_status": "HEIGHTENED_CONCERN_PENDING_REVIEW",
+  "preregistered_failure_preserved": true,
+  "enterprise_outcome_access_prohibited": true,
+  "model_run_prohibited": true
+}

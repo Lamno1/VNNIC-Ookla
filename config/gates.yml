@@ -1,0 +1,25 @@
+hard_fail_blocks_dependents: true
+gates:
+  G0: security
+  G1: provenance
+  G2: semantics
+  G3: geography
+  G4: key_and_coverage
+  G5: nso_outcome
+  G6: merge
+  G7: analysis_readiness
+  G8: claim
+  G9: reproducibility
+initial_status:
+  G0: PENDING
+  G1: PENDING
+  G2: PENDING
+  G3: PENDING
+  G4: PENDING
+  G5: PENDING
+  G6: PENDING
+  G7: PENDING
+  G8: PASS_ASSOCIATIONAL_CEILING_LOCKED
+  G9: PENDING
+  CAUSAL_GATE: CLOSED
+  DECISION_2269_GATE: FAIL_PRIMARY_ROUTE
