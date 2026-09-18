@@ -32,10 +32,10 @@ Mã nguồn được viết chủ yếu bằng Python với chức năng cụ th
 
 ## Thông tin về Dữ liệu (Data)
 
-**Lưu ý quan trọng**: Do giới hạn dung lượng lưu trữ trên GitHub và tính chất bảo mật của dữ liệu, toàn bộ các tệp tin dữ liệu thực tế không được đẩy (push) lên kho lưu trữ này. 
+**Lưu ý quan trọng**: Do giới hạn dung lượng lưu trữ trên GitHub và tính chất bảo mật của dữ liệu, toàn bộ các tệp tin dữ liệu thực tế không được đẩy (push) lên kho lưu trữ này. Thay vào đó, chúng tôi quản lý dữ liệu thô bằng **Mã nguồn tự động tải (Automated Download Scripts)**.
 
-- **Dữ liệu thô (RAW)**: Dữ liệu tải trực tiếp từ nguồn (Ookla và VNNIC). Không upload lên Git.
-- **Dữ liệu phái sinh (DERIVED)**: Dữ liệu đã qua làm sạch, hợp nhất và xử lý sẵn sàng để phân tích. Không upload lên Git.
+- **Dữ liệu thô (RAW)**: Không upload lên Git. Để lấy dữ liệu thô, bạn chỉ cần chạy các file mã nguồn (ví dụ: `VNNIC/CODE/download_vnnic.py`). Mã nguồn sẽ tự động kết nối đến các API công khai (như hệ thống Internet Atlas của VNNIC) để tải toàn bộ dữ liệu thô và lưu vào thư mục `RAW` trên máy tính của bạn.
+- **Dữ liệu phái sinh (DERIVED)**: Không upload lên Git. Sau khi có dữ liệu thô, bạn chạy tiếp các script xử lý (ví dụ: `attach_crosswalk_audit_panel.py`) để làm sạch và lưu dữ liệu đầu ra vào thư mục `DERIVED`.
 - **Log (LOGS)**: Các tệp ghi lại quá trình chạy mã nguồn. Không upload lên Git.
 
-Tất cả các thư mục này đã được định nghĩa trong file `.gitignore` để đảm bảo chúng luôn nằm trên máy cục bộ của bạn và không đẩy lên server GitHub. Bạn chỉ cần clone repository này về và chạy các tệp mã nguồn tương ứng trong thư mục `CODE` để tải và sinh ra dữ liệu.
+Tất cả các thư mục này đã được định nghĩa trong file `.gitignore` để đảm bảo chúng luôn nằm trên máy cục bộ của bạn và không đẩy lên server GitHub. Cách tiếp cận này giúp repository luôn nhẹ, sạch sẽ và bất kỳ ai cũng có thể **tái tạo lại bộ dữ liệu (reproduce data)** bằng cách chạy code.
