@@ -1,0 +1,10 @@
+{
+  "base_protocol_path": "protocol/research_protocol.md",
+  "base_protocol_sha256": "c74cb55b57e4ecd0c37a7ec3b753ea38826dbdc49bb8b97fac10358dda0c31d1",
+  "amendment_path": "protocol/protocol_amendment_20260913.md",
+  "amendment_sha256": "39bd5ef67bd3c3276ae3dfd3ed52cefa0010b61a1f8a7304af7aa57647203e51",
+  "composite_rule": "SHA256(lowercase_base_hash + '|' + lowercase_amendment_hash)",
+  "effective_protocol_sha256": "40045050b64094e9aececae8d0007bcdad46c5208a28a5fcf011260d255ddb88",
+  "effective_date": "2026-09-13",
+  "reason": "Adopt official NSO PXWeb snapshot and mark gross entry-intensity proxy exploratory unavailable"
+}

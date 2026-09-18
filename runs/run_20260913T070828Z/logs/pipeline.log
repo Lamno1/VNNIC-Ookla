@@ -1,0 +1,4 @@
+2026-09-13 14:08:28,454 INFO START connectivity_enterprise.stages.s00_preflight
+2026-09-13 14:08:29,620 INFO DONE connectivity_enterprise.stages.s00_preflight
+2026-09-13 14:08:29,620 INFO START connectivity_enterprise.stages.s10_ookla_pilot
+2026-09-13 14:08:47,459 INFO DONE connectivity_enterprise.stages.s10_ookla_pilot

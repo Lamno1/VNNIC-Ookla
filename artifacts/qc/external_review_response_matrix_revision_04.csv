@@ -1,0 +1,15 @@
+﻿comment_id,review_request,decision,response,evidence
+R01,Add a 500–800 word Related Work section,ACCEPT,"Added thematic construct-validity, broadband-measurement, and Vietnam subsections.",Revision 04 §2
+R02,Clarify theoretical contribution,ACCEPT,Defined a reusable four-level agreement framework.,Revision 04 §§1–2
+R03,Run partial correlations/regressions controlling tests/devices,REQUIRES_PROTOCOL_AMENDMENT,Adjustment cannot identify composition bias and would create a new post-result model.,Deferred; no new statistic
+R04,Add confidence intervals or p-values,REQUIRES_PROTOCOL_AMENDMENT,Requires a registered inferential extension and a declared sampling/bootstrapping target.,Deferred; point estimates preserved
+R05,Quantify VNNIC observations excluded below 30 samples,PARTIAL,Aggregate publications do not expose upstream suppressed cells; limitation stated explicitly.,Revision 04 §7
+R06,Add other Ookla quarters,DEFER,Requires opening additional raw partitions under a separate temporal-reliability protocol.,Revision 04 §7
+R07,Clarify centroid-to-province assignment,ACCEPT,"Added coordinate, geometry, ambiguity, accounting, and boundary rules.",Revision 04 §4.1
+R08,Reduce Results repetition,ACCEPT,Condensed broad-change and dispersion prose while retaining locked tables.,Revision 04 §5.1
+R09,Discuss provincial outliers and causes,PARTIAL,Influential provinces remain retained; causal explanations are not inferred without evidence.,Existing influence audit; Revision 04 §6
+R10,Explain lack of ground truth,ACCEPT,Made non-identification of true change versus source error explicit.,"Revision 04 §§2.1,6,7"
+R11,Explain fixed 2016-vintage geography,ACCEPT,"Retained fixed-comparison rationale and clarified it is analytical, not current administrative geography.","Revision 04 §§4.1,7"
+R12,Add policy relevance,PARTIAL,Added indicator-governance warning; no funding-allocation recommendation or policy effect.,Revision 04 §6
+R13,Change title,ACCEPT,New title foregrounds common direction and divergent rankings.,Revision 04 title
+R14,Complete author disclosures,PENDING_AUTHOR_INPUT,"Placeholders cannot be resolved without author, funding, conflict, and repository metadata.",Submission package placeholders

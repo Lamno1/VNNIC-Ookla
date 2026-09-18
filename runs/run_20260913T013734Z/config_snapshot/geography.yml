@@ -1,0 +1,11 @@
+geography_id: legacy63_fixed_reference
+canonical_key: province_id_legacy63
+canonical_path: 'D:\Q1_RESEARCH\GIS_DERIVED\CANONICAL_ADM1_63.geojson'
+sha256: c64a07c3fd5d3ca0339a5002983dc76ddd60a0ef88e889522e37ca2408f74400
+release: '4.0.0 / 2021'
+commit: '299e006'
+metadata_boundary_year: 2016
+crs: EPSG:4326
+features: 63
+description: 'Fixed 63-province analytical spatial reference; not a claim of month-specific historical boundaries.'
+post_2025_geography_allowed: false

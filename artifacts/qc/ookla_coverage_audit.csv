@@ -1,0 +1,5 @@
+﻿year,source_rows,row_groups,rows_scanned,bbox_candidates,assigned_unique,outside_vietnam_within_bbox,ambiguous,boundary_review,invalid_coordinates,failed_rows,batch_count,failed_batches,provinces_represented,aggregate_rows,elapsed_seconds,peak_rss_bytes,rows_per_second,source_sha256,geometry_engine,geometry_engine_version,reproducibility_rescan_rows,aggregate_reproducible,pilot_gate
+2024,6492072,12,6492072,191857,121163,70694,0,0,0,0,26,0,63,63,3.583279400016181,579846144,1811768.2924671415,e6b0581e5db260f301ac0e719de235d2279613111f6cc826a13e6aeefacffd5b,matplotlib.path.Path,3.10.3,6492072.0,True,PASS
+2021,4335355,7,4335355,98769,55042,43727,0,0,0,0,18,0,63,63,1.9687617999734357,851963904,2202071.880944915,,,,,,
+2022,6598700,11,6598700,192360,112560,79800,0,0,0,0,27,0,63,63,3.3602619000012055,860958720,1963745.7425558504,,,,,,
+2023,6370238,12,6370238,182408,112564,69844,0,0,0,0,26,0,63,63,3.3588515000010375,883322880,1896552.4376406735,,,,,,

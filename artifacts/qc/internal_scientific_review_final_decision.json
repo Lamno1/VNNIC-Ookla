@@ -1,0 +1,19 @@
+{
+  "revision": "02",
+  "critical_open": 0,
+  "major_open": 0,
+  "internal_scientific_review": "PASS",
+  "claim_ceiling_compliance": "PASS",
+  "construct_distinction": "PASS",
+  "causal_language_audit": "PASS",
+  "numeric_reconciliation": "PASS",
+  "revision_01_sha256": "e76d9a5785de4a0b94c2e4c6eae1117e74a681e046c03aa6dd460c439535b460",
+  "revision_01_archive_sha256": "e76d9a5785de4a0b94c2e4c6eae1117e74a681e046c03aa6dd460c439535b460",
+  "revision_02_sha256": "59c31063e850a7f25766435130169bc8e76b7dd09c6566fc43736a935f4a6e69",
+  "numeric_tokens": 58,
+  "structural_exemptions": 10,
+  "model_run": false,
+  "causal_gate": "CLOSED",
+  "next_stage": "JOURNAL_STYLE_EDIT",
+  "timestamp": "2026-09-13T11:43:45.008360+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "internal_scientific_review_revision_04": "PASS",
+  "checks": {
+    "revision03_hash_preserved": true,
+    "related_work_present": true,
+    "construct_distinction_present": true,
+    "ground_truth_boundary_present": true,
+    "spatial_assignment_documented": true,
+    "locked_numbers_preserved": true,
+    "reference_count_20": true,
+    "academic_reference_count_at_least_15": true,
+    "doi_count_at_least_15": true,
+    "response_matrix_complete": true,
+    "new_analysis_not_claimed": true,
+    "causal_language_clean": true
+  },
+  "response_rows": 14,
+  "model_run": false,
+  "causal_gate": "CLOSED",
+  "latex_conversion_authorized": true
+}

@@ -1,0 +1,12 @@
+2026-09-13 00:36:43,772 INFO START connectivity_enterprise.stages.s00_preflight
+2026-09-13 00:36:44,853 INFO DONE connectivity_enterprise.stages.s00_preflight
+2026-09-13 00:36:44,853 INFO START connectivity_enterprise.stages.s01_inventory
+2026-09-13 00:36:45,958 INFO DONE connectivity_enterprise.stages.s01_inventory
+2026-09-13 00:36:45,958 INFO START connectivity_enterprise.stages.s02_semantics
+2026-09-13 00:36:45,960 INFO DONE connectivity_enterprise.stages.s02_semantics
+2026-09-13 00:36:45,960 INFO START connectivity_enterprise.stages.s03_geography
+2026-09-13 00:36:46,264 INFO DONE connectivity_enterprise.stages.s03_geography
+2026-09-13 00:36:46,264 INFO START connectivity_enterprise.stages.s05_vnnic
+2026-09-13 00:36:46,682 INFO DONE connectivity_enterprise.stages.s05_vnnic
+2026-09-13 00:36:46,682 INFO START connectivity_enterprise.stages.s06_connectivity_features
+2026-09-13 00:36:46,682 INFO DONE connectivity_enterprise.stages.s06_connectivity_features

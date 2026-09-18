@@ -1,0 +1,47 @@
+{
+  "run_id": "run_20260913T120913Z",
+  "gates": {
+    "G0": {
+      "status": "PASS",
+      "finding": "Output root is separate; all allow-listed roots exist; direct mode; credential exclusions active.",
+      "evidence": {
+        "environment": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T120913Z\\environment.json",
+        "treatment_readiness_evidence": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T120913Z\\treatment_readiness_evidence.json",
+        "credential_files_accessed": false
+      },
+      "updated_at_utc": "2026-09-13T12:09:14.411126+00:00"
+    },
+    "LATEX_CONVERSION": {
+      "status": "PASS",
+      "finding": "Journal-neutral LaTeX and PDF built.",
+      "evidence": {
+        "LATEX_CONVERSION": "PASS",
+        "CONTENT_RECONCILIATION": "PASS",
+        "NUMERIC_RECONCILIATION": "PASS",
+        "TABLE_FIGURE_ALLOWLIST": "PASS",
+        "CITATION_RECONCILIATION": "PASS",
+        "PDF_BUILD": "PASS",
+        "SOURCE_REVISION": "REVISION_03",
+        "MODEL_RUN": false,
+        "CAUSAL_GATE": "CLOSED"
+      },
+      "updated_at_utc": "2026-09-13T12:09:14.712879+00:00"
+    },
+    "LATEX_RECONCILIATION": {
+      "status": "PASS",
+      "finding": "Content, numbers, citations, tables, and figures reconcile.",
+      "evidence": {
+        "LATEX_CONVERSION": "PASS",
+        "CONTENT_RECONCILIATION": "PASS",
+        "NUMERIC_RECONCILIATION": "PASS",
+        "TABLE_FIGURE_ALLOWLIST": "PASS",
+        "CITATION_RECONCILIATION": "PASS",
+        "PDF_BUILD": "PASS",
+        "SOURCE_REVISION": "REVISION_03",
+        "MODEL_RUN": false,
+        "CAUSAL_GATE": "CLOSED"
+      },
+      "updated_at_utc": "2026-09-13T12:09:14.713251+00:00"
+    }
+  }
+}

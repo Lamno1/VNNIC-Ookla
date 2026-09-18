@@ -1,0 +1,1 @@
+{"primary_key":["province_id_legacy63"],"required_columns":["province_id_legacy63","vnnic_code","province_name_official","province_name_canonical","shapeISO","shapeID","boundary_vintage","source_artifact"],"expected_rows":63}

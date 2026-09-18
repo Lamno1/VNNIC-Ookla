@@ -1,0 +1,20 @@
+{
+  "initial_verdict": "REVISE",
+  "revision": "01",
+  "critical_open": 0,
+  "major_open": 0,
+  "minor_open": 0,
+  "deferred_nonblocking": 1,
+  "internal_scientific_review": "PASS",
+  "claim_ceiling_compliance": "PASS",
+  "construct_distinction": "PASS",
+  "causal_language_audit": "PASS",
+  "numeric_reconciliation": "PASS",
+  "original_draft_sha256": "723b3c0bc757e79fb94c50aff4c7d0bbfbcc2c64597efa1dd92cf64a73ad7281",
+  "archived_draft_sha256": "723b3c0bc757e79fb94c50aff4c7d0bbfbcc2c64597efa1dd92cf64a73ad7281",
+  "revision_sha256": "e76d9a5785de4a0b94c2e4c6eae1117e74a681e046c03aa6dd460c439535b460",
+  "model_run": false,
+  "causal_gate": "CLOSED",
+  "next_stage": "JOURNAL_STYLE_EDIT",
+  "reviewed_at_utc": "2026-09-13T11:39:53.280722+00:00"
+}

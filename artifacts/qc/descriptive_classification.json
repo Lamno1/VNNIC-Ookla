@@ -1,0 +1,13 @@
+{
+  "classification": "DESCRIPTIVE_DIVERGENCE",
+  "relative_change_2021_2024": {
+    "sd_level": 1.697839282999975,
+    "sd_log": 0.6036464678245553,
+    "coefficient_of_variation": 0.4568597176785504,
+    "interquartile_range": 1.825829383886256,
+    "p90_p10_ratio": 0.09249526890705946,
+    "max_min_ratio": 0.32044549913035103
+  },
+  "material_threshold": 0.02,
+  "causal_interpretation": false
+}

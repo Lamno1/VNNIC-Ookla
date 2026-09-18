@@ -1,0 +1,10 @@
+2026-09-13 18:39:26,458 INFO START connectivity_enterprise.stages.s00_preflight
+2026-09-13 18:39:27,767 INFO DONE connectivity_enterprise.stages.s00_preflight
+2026-09-13 18:39:27,767 INFO START connectivity_enterprise.stages.s14_internal_review
+2026-09-13 18:39:27,781 ERROR Pipeline failed
+Traceback (most recent call last):
+  File "D:\Q1_RESEARCH\CONNECTIVITY_ENTERPRISE_STUDY\src\connectivity_enterprise\cli.py", line 83, in main
+    outputs = module.run(ctx)
+  File "D:\Q1_RESEARCH\CONNECTIVITY_ENTERPRISE_STUDY\src\connectivity_enterprise\stages\s14_internal_review.py", line 135, in run
+    raise RuntimeError(f"FAIL-CLOSED: unregistered result numbers: {sorted(displayed-set(value_sources))}")
+RuntimeError: FAIL-CLOSED: unregistered result numbers: ['4.1', '4.2', '4.3', '4.4', '4.5', '4.6']

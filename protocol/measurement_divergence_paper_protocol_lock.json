@@ -1,0 +1,18 @@
+{
+  "protocol_path": "protocol/measurement_divergence_paper_protocol_20260913.md",
+  "protocol_sha256": "bdb3cf5d5c90eb4798f6b6db46c57deac1ab7d666efdb3a78f218e5dec1c6447",
+  "locked_date": "2026-09-13",
+  "primary_study_path": "DESCRIPTIVE_MEASUREMENT_DIVERGENCE",
+  "h2_recovery_path": "SEPARATE_PROTOCOL_REQUIRED",
+  "h2_status": "NOT_TESTABLE_WITH_CURRENT_EXPOSURE",
+  "model_run": false,
+  "causal_gate": "CLOSED",
+  "claim_ceiling": "DESCRIPTIVE_MEASUREMENT",
+  "exposure_adjudication_sha256": "15558332a7a49728b8877af40bb34e5bb55fa025d63b64a0e004bff7d482cf4a",
+  "table_12_sha256": "3890859069cf684c543119d8949f411049350540562d0e1bf2abfaa30a9bf0d3",
+  "table_13_sha256": "90f2c1d9c278dc9bb4b8630e080c13794c27d77054ee90234d73673e463072c7",
+  "table_14_sha256": "e9582cb7a91b04ec7886a9622138fb418a70b856f4428b27a317a2e5e5cace1b",
+  "enterprise_outcomes_allowed": false,
+  "new_raw_ookla_processing_allowed": false,
+  "manuscript_status": "NOT_STARTED"
+}

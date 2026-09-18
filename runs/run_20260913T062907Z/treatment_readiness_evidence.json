@@ -1,0 +1,17 @@
+{
+  "treatment_gate_status": "FAIL_PRIMARY_ROUTE",
+  "verified_actual_treatment_village_count": 0,
+  "earliest_verified_treatment": null,
+  "latest_verified_treatment": null,
+  "econometrics_run": false,
+  "outcome_data_merged": false,
+  "ookla_processed": false,
+  "readiness_causal_verdict": "NOT_FEASIBLE",
+  "readiness_descriptive_verdict": "FEASIBLE_WITH_LIMITATIONS",
+  "source_hashes": {
+    "readiness_report": "859303caad1969d07aa9143246dc8e397443cb6f34c16f378777603a9aceb44d",
+    "readiness_summary": "1d476d667cc614c9db6c302f3bda7ff0d118730d597ca3aa28eaf6f2d21c0758",
+    "treatment_report": "04f084a54e81bcb8eeac2a38e4107692d8099057fdbda8cb20060258c5199012",
+    "treatment_gate": "a3ed931d523e9337db9a1c0e41b3657ff862724ab9da65e74fff218e56226c71"
+  }
+}

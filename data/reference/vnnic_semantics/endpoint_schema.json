@@ -1,0 +1,20 @@
+{
+  "endpoint_template": "https://internetatlas.vnnic.vn/i-speed/{network}/overview-place-map?year={year}&month={month}&isp=ALL&cityId=-1",
+  "request_parameters": {
+    "network": "ftth or mobile path component",
+    "year": "calendar year",
+    "month": "calendar month",
+    "isp": "ALL means all enterprises in official interface",
+    "cityId": "-1 means all provinces in official interface"
+  },
+  "observed_fields": [
+    "code",
+    "download",
+    "jitter",
+    "ping",
+    "upload",
+    "value"
+  ],
+  "example_record_count": 63,
+  "schema_note": "Field presence and interface binding verified; internal computation code not published."
+}

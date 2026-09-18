@@ -1,0 +1,54 @@
+{
+  "run_id": "run_20260913T064755Z",
+  "gates": {
+    "G0": {
+      "status": "PASS",
+      "finding": "Output root is separate; all allow-listed roots exist; direct mode; credential exclusions active.",
+      "evidence": {
+        "environment": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T064755Z\\environment.json",
+        "treatment_readiness_evidence": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T064755Z\\treatment_readiness_evidence.json",
+        "credential_files_accessed": false
+      },
+      "updated_at_utc": "2026-09-13T06:47:56.597938+00:00"
+    },
+    "DESCRIPTIVE_INPUT": {
+      "status": "PASS",
+      "finding": "Authoritative panel and protocol/addendum identities verified.",
+      "evidence": {
+        "panel_sha256": "7711c489b5b6da109fa4050cc04d29f252d6dbade99274ccac015a5824b0454e",
+        "addendum_sha256": "f3ab6f4cc7153ec395f67b78bfdd885ef1ea470b16898c03e33162f3aa0d8d0e"
+      },
+      "updated_at_utc": "2026-09-13T06:48:00.992245+00:00"
+    },
+    "DESCRIPTIVE_GATE": {
+      "status": "PASS",
+      "finding": "Bounded univariate descriptive outputs pass with limitations.",
+      "evidence": {
+        "classification": "PASS_WITH_LIMITATIONS",
+        "descriptive_classification": "DESCRIPTIVE_DIVERGENCE",
+        "outlier_flags": 49,
+        "spot_check_provinces": 10
+      },
+      "updated_at_utc": "2026-09-13T06:48:00.992769+00:00"
+    },
+    "DESCRIPTIVE_CLAIM": {
+      "status": "PASS",
+      "finding": "Claim ceiling remains descriptive; H2 was not tested.",
+      "evidence": {
+        "H2_STATUS": "REGISTERED_NOT_TESTED",
+        "causal_gate": "CLOSED",
+        "bivariate_calculations": 0,
+        "models_run": false
+      },
+      "updated_at_utc": "2026-09-13T06:48:00.993152+00:00"
+    },
+    "DESCRIPTIVE_REPRODUCIBILITY": {
+      "status": "WARN",
+      "finding": "First descriptive run; second run required.",
+      "evidence": {
+        "stable_hashes_match": false
+      },
+      "updated_at_utc": "2026-09-13T06:48:00.993495+00:00"
+    }
+  }
+}

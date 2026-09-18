@@ -1,0 +1,60 @@
+{
+  "run_id": "run_20260913T114343Z",
+  "gates": {
+    "G0": {
+      "status": "PASS",
+      "finding": "Output root is separate; all allow-listed roots exist; direct mode; credential exclusions active.",
+      "evidence": {
+        "environment": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T114343Z\\environment.json",
+        "treatment_readiness_evidence": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T114343Z\\treatment_readiness_evidence.json",
+        "credential_files_accessed": false
+      },
+      "updated_at_utc": "2026-09-13T11:43:44.976325+00:00"
+    },
+    "INTERNAL_SCIENTIFIC_REVIEW": {
+      "status": "PASS",
+      "finding": "Revision 02 resolves independent re-review findings.",
+      "evidence": {
+        "INTERNAL_SCIENTIFIC_REVIEW": "PASS",
+        "CLAIM_CEILING_COMPLIANCE": "PASS",
+        "CONSTRUCT_DISTINCTION": "PASS",
+        "CAUSAL_LANGUAGE_AUDIT": "PASS",
+        "NUMERIC_RECONCILIATION": "PASS",
+        "MODEL_RUN": false,
+        "CAUSAL_GATE": "CLOSED",
+        "major_open": 0
+      },
+      "updated_at_utc": "2026-09-13T11:43:45.008752+00:00"
+    },
+    "INTERNAL_REVIEW_CLAIM_GATE": {
+      "status": "PASS",
+      "finding": "Construct wording and claim ceiling pass.",
+      "evidence": {
+        "INTERNAL_SCIENTIFIC_REVIEW": "PASS",
+        "CLAIM_CEILING_COMPLIANCE": "PASS",
+        "CONSTRUCT_DISTINCTION": "PASS",
+        "CAUSAL_LANGUAGE_AUDIT": "PASS",
+        "NUMERIC_RECONCILIATION": "PASS",
+        "MODEL_RUN": false,
+        "CAUSAL_GATE": "CLOSED",
+        "major_open": 0
+      },
+      "updated_at_utc": "2026-09-13T11:43:45.009113+00:00"
+    },
+    "INTERNAL_REVIEW_NUMERIC_GATE": {
+      "status": "PASS",
+      "finding": "Every manuscript body numeric token is reconciled or explicitly exempted.",
+      "evidence": {
+        "INTERNAL_SCIENTIFIC_REVIEW": "PASS",
+        "CLAIM_CEILING_COMPLIANCE": "PASS",
+        "CONSTRUCT_DISTINCTION": "PASS",
+        "CAUSAL_LANGUAGE_AUDIT": "PASS",
+        "NUMERIC_RECONCILIATION": "PASS",
+        "MODEL_RUN": false,
+        "CAUSAL_GATE": "CLOSED",
+        "major_open": 0
+      },
+      "updated_at_utc": "2026-09-13T11:43:45.009401+00:00"
+    }
+  }
+}

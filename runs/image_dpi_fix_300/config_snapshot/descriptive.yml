@@ -1,0 +1,16 @@
+panel_run: run_20260913T063540Z
+years: [2021, 2022, 2023, 2024]
+province_count: 63
+weighting: unweighted_average_province
+logs: natural_log_positive_only
+missing_policy: no_imputation
+outlier_policy: flag_retain
+map_bins:
+  method: pooled_quantiles
+  probabilities: [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
+  shared_across_years: true
+  palette: viridis
+rank_method: average
+convergence_rule:
+  material_relative_change: 0.02
+  measures: [sd_level, sd_log, coefficient_of_variation, interquartile_range, p90_p10_ratio, max_min_ratio]

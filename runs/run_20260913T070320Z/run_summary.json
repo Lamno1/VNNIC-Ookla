@@ -1,0 +1,24 @@
+{
+  "run_id": "run_20260913T070320Z",
+  "requested_stage": "ookla-pilot",
+  "status": "FAIL",
+  "error": "TypeError('Object of type bool is not JSON serializable')",
+  "config_hash": "6cc730af06266e33340e256fa61d481c00336300af59ad5c944ff5737e40c4ce",
+  "created_artifacts": [
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T070320Z\\environment.json",
+    "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T070320Z\\treatment_readiness_evidence.json"
+  ],
+  "artifact_registry": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T070320Z\\artifact_registry.csv",
+  "lineage_edges": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T070320Z\\lineage_edges.csv",
+  "causal_gate": "CLOSED",
+  "decision_2269_gate": "FAIL_PRIMARY_ROUTE",
+  "research_gate": "BLOCKED_BY_SEMANTICS",
+  "analysis_panel_created": true,
+  "descriptive_analysis_run": true,
+  "model_run": false,
+  "h2_status": "REGISTERED_NOT_TESTED",
+  "next_stage": null,
+  "measurement_validation_classification": null,
+  "ch3_status": null,
+  "completed_at_utc": "2026-09-13T07:03:39.423935+00:00"
+}

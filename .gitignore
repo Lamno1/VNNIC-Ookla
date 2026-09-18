@@ -1,13 +1,13 @@
-# Ignore raw data, derived data, and logs as they are usually large
+# Raw/derived data and logs from the data-acquisition scripts (large, regenerable)
 OOKLA/LOGS/
 OOKLA/RAW/
 VNNIC/DERIVED/
 VNNIC/LOGS/
 VNNIC/RAW/
 
-# OS generated files
-.DS_Store
-Thumbs.db
+# Manuscript LaTeX submitted directly to the journal, not tracked here
+latex/
+submission/
 
 # Python
 __pycache__/
@@ -37,3 +37,18 @@ htmlcov/
 .venv/
 venv/
 ENV/
+
+# Credentials / secrets (mirrors config/sources.yml credential_exclusions)
+client_secret*
+*credential*
+*.pem
+*.key
+*token*
+*cookie*
+.env
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

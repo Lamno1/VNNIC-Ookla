@@ -1,0 +1,156 @@
+{
+  "run_id": "run_20260913T074111Z",
+  "gates": {
+    "G0": {
+      "status": "PASS",
+      "finding": "Output root is separate; all allow-listed roots exist; direct mode; credential exclusions active.",
+      "evidence": {
+        "environment": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T074111Z\\environment.json",
+        "treatment_readiness_evidence": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T074111Z\\treatment_readiness_evidence.json",
+        "credential_files_accessed": false
+      },
+      "updated_at_utc": "2026-09-13T07:41:12.316009+00:00"
+    },
+    "PAPER_PROTOCOL": {
+      "status": "PASS",
+      "finding": "Measurement-divergence paper protocol and evidence allow-list are locked.",
+      "evidence": {
+        "protocol_hash": "PASS",
+        "exposure_decision_hash": "PASS",
+        "authorized_tables": [
+          {
+            "path": "artifacts\\tables\\table_02_connectivity_summary_by_year.csv",
+            "sha256": "722f72ad896884ec2c7348387a3501fe6dd29604382f59bb9874b2238a1255de"
+          },
+          {
+            "path": "artifacts\\tables\\table_04_connectivity_dispersion.csv",
+            "sha256": "dacbbef9ba686126bc1c8980c776f683e98b3af29b213dfbcf85f01db89adfd3"
+          },
+          {
+            "path": "artifacts\\tables\\table_05_connectivity_rank_persistence.csv",
+            "sha256": "3df06e9f438d97e1a452404cb0253e3ecec82fbe099aefd8e21493293c3a4d9b"
+          },
+          {
+            "path": "artifacts\\tables\\table_06_connectivity_quartile_transitions.csv",
+            "sha256": "af2e8b5388ddc7c363c06e1c3e95d28c0db942ba856e7c55ff47345c0e9711d8"
+          },
+          {
+            "path": "artifacts\\tables\\table_07_change_distributions.csv",
+            "sha256": "1e13b2d50a6cc448049f0c9b1d2b3e0320d49419146e814b762c2be359581adb"
+          },
+          {
+            "path": "artifacts\\tables\\table_08_measurement_validation_by_year.csv",
+            "sha256": "74118e282d1e3350c5f281b74b8f29337ecb82adb142eba293ba82b9e1607e83"
+          },
+          {
+            "path": "artifacts\\tables\\table_09_measurement_change_concordance.csv",
+            "sha256": "a06e3cbb0e9f833b26946d3d1be890bf24a313fcb6db484b48ea83eb52ab5364"
+          },
+          {
+            "path": "artifacts\\tables\\table_10_dispersion_source_comparison.csv",
+            "sha256": "47795e05f91869353ac184cce824eacb5b1b2ad6487b51056d7570fc77b24dc9"
+          },
+          {
+            "path": "artifacts\\tables\\table_11_ookla_aggregation_sensitivity.csv",
+            "sha256": "79c6b7530250543ef3b1995e2655ca865464edfdada45776fe65c16efbe97dd2"
+          },
+          {
+            "path": "artifacts\\tables\\table_12_aggregation_agreement.csv",
+            "sha256": "3890859069cf684c543119d8949f411049350540562d0e1bf2abfaa30a9bf0d3"
+          },
+          {
+            "path": "artifacts\\tables\\table_13_measurement_influence_audit.csv",
+            "sha256": "90f2c1d9c278dc9bb4b8630e080c13794c27d77054ee90234d73673e463072c7"
+          },
+          {
+            "path": "artifacts\\tables\\table_14_composition_sensitivity.csv",
+            "sha256": "e9582cb7a91b04ec7886a9622138fb418a70b856f4428b27a317a2e5e5cace1b"
+          }
+        ],
+        "authorized_figures": [
+          {
+            "figure": "artifacts\\figures\\figure_01_ftth_distribution_by_year.png",
+            "figure_sha256": "c38f3c032ab58613dcdc33f1f3ed69c21af080dedba7c4d03e0ba6c2ef5684a8",
+            "companion": "artifacts\\figures\\figure_01_ftth_distribution_by_year_data.csv",
+            "companion_sha256": "f39b31d9f8a95dbb917640cf8948a314dae00a243f446a3a868aa2648c5f4ce1"
+          },
+          {
+            "figure": "artifacts\\figures\\figure_02_ftth_average_province_trend.png",
+            "figure_sha256": "932f78b0cdbbd9cb0a7e241bf53a8a38bedf99cd36ebaa28f602c7e6ebcfd7cb",
+            "companion": "artifacts\\figures\\figure_02_ftth_average_province_trend_data.csv",
+            "companion_sha256": "6e02f384ab87aa08b1bac4dff47cca1a272f61c9472aa2f50daf8d9f20af4e98"
+          },
+          {
+            "figure": "artifacts\\figures\\figure_03_ftth_maps_2021_2024.png",
+            "figure_sha256": "0c7c6301447d82f572b7c3453dc65032af90dd5bb83b123a7596189afff479c6",
+            "companion": "artifacts\\figures\\figure_03_ftth_maps_2021_2024_data.csv",
+            "companion_sha256": "a3ffeacdb5c0f43a0308d85a1a83cd602e836e186acf2329166ef649798f6f76"
+          },
+          {
+            "figure": "artifacts\\figures\\figure_04_ftth_change_map_2021_2024.png",
+            "figure_sha256": "9a1da8cd93e33db260dfc479bbf6240a3656b254d5c68f3ffe37910bbb88069d",
+            "companion": "artifacts\\figures\\figure_04_ftth_change_map_2021_2024_data.csv",
+            "companion_sha256": "28ae116513ffdad8a75d4c82c67c83ea2e7c15d8ca504e841c49862cab87f76a"
+          },
+          {
+            "figure": "artifacts\\figures\\figure_05_ftth_rank_mobility.png",
+            "figure_sha256": "95b43134565627242b2fdeb31c83b49e29ebe2af10008cf64edba523ce0ecd1a",
+            "companion": "artifacts\\figures\\figure_05_ftth_rank_mobility_data.csv",
+            "companion_sha256": "2fe981ed0e38eb95e5dc6c010a54ad60e3902769854d749a4dfbce877df60e34"
+          },
+          {
+            "figure": "artifacts\\figures\\figure_10_vnnic_ookla_rank_comparison.png",
+            "figure_sha256": "b6676f39cebabc5ba03198144ad458339ec75124fdb7a995576bbe545e314ba8",
+            "companion": "artifacts\\figures\\figure_10_vnnic_ookla_rank_comparison_data.csv",
+            "companion_sha256": "160d43af028e38cd4f0b3381264c5084f59c6509c09444d9b7b5255a90f79231"
+          },
+          {
+            "figure": "artifacts\\figures\\figure_11_measurement_change_comparison.png",
+            "figure_sha256": "c5f19f48fe53fdf33ca1b9e9d41a3a1ffa731cafccd4096092ecf6d1014b2533",
+            "companion": "artifacts\\figures\\figure_11_measurement_change_comparison_data.csv",
+            "companion_sha256": "cf22817c8db4a61ac5b7c2e7fd9aff24cbb910c029de900e4f03cbbe1ee32321"
+          },
+          {
+            "figure": "artifacts\\figures\\figure_12_dispersion_source_comparison.png",
+            "figure_sha256": "15ea0dffa1bf395c850665b4b81d7cb7cc65c8a518f3fd91413a97a755f11751",
+            "companion": "artifacts\\figures\\figure_12_dispersion_source_comparison_data.csv",
+            "companion_sha256": "8fa052f1bc27056ac6c4b1c19500dfbaf19bf2db460e3d021d5c225c50e237d6"
+          }
+        ],
+        "enterprise_artifacts_authorized": 0,
+        "raw_ookla_files_authorized": 0,
+        "manuscript_started": false,
+        "status": "PASS",
+        "allowed_table_count": 12,
+        "allowed_figure_count": 8,
+        "enterprise_outcome_read": false,
+        "model_run": false,
+        "h2_tested": false,
+        "decision_2269_gate": "FAIL_PRIMARY_ROUTE",
+        "data_challenge": {
+          "artifact_inventory": "PASS",
+          "variable_lineage": "PASS_WITH_LIMITATIONS",
+          "coverage": "PASS_63_BY_4",
+          "quality_findings": "MEASUREMENT_DIVERGENCE",
+          "merge_audit": "NOT_APPLICABLE_NO_NEW_MERGE",
+          "leakage_and_revision_risks": "DOCUMENTED",
+          "unverified_semantics": "SOURCE_ESTIMAND_NON_EQUIVALENCE",
+          "design_support": "DESCRIPTIVE_MEASUREMENT_PAPER_ONLY",
+          "feasibility_verdict": "FEASIBLE_WITH_LIMITATIONS"
+        }
+      },
+      "updated_at_utc": "2026-09-13T07:41:12.349506+00:00"
+    },
+    "PAPER_CLAIM_GATE": {
+      "status": "PASS",
+      "finding": "Claim ceiling is descriptive measurement; enterprise and causal claims are prohibited.",
+      "evidence": {
+        "claim_ceiling": "DESCRIPTIVE_MEASUREMENT",
+        "H2_STATUS": "NOT_TESTABLE_WITH_CURRENT_EXPOSURE",
+        "MODEL_RUN": false,
+        "CAUSAL_GATE": "CLOSED"
+      },
+      "updated_at_utc": "2026-09-13T07:41:12.349919+00:00"
+    }
+  }
+}

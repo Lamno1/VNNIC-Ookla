@@ -1,0 +1,14 @@
+{
+  "skeleton_rows": 252,
+  "panel_rows": 252,
+  "panel_duplicate_key_rows": 0,
+  "province_count_by_year": {
+    "2021": 63,
+    "2022": 63,
+    "2023": 63,
+    "2024": 63
+  },
+  "connectivity_matched": 252,
+  "nso_matched": 252,
+  "entry_rate_field_present": false
+}

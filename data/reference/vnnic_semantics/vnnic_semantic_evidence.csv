@@ -1,0 +1,6 @@
+﻿field,semantic_status,meaning,unit,authoritative_support,limitation
+download,VERIFIED_WITH_LIMITATIONS,Internet download performance,Mbps,Official interface labels; official JS states median method; province-month endpoint parameters bind year/month and province codes.,Test/device composition and retrospective revision policy are not documented.
+upload,VERIFIED_WITH_LIMITATIONS,Internet upload performance,Mbps,Official interface labels and median-method credit.,Secondary measure; same composition/revision limitations.
+ping,VERIFIED_WITH_LIMITATIONS,Latency/ping,ms,Official interface labels and median-method credit.,Secondary measure; exact protocol not documented.
+jitter,VERIFIED_WITH_LIMITATIONS,Latency variation/jitter,ms,Official interface labels and median-method credit.,Secondary measure; exact protocol not documented.
+value,NOT_USED,Unverified endpoint count-like field,UNVERIFIED,Present in endpoint and raw data.,No authoritative field definition located in bounded search; never used as weight.

@@ -1,0 +1,19 @@
+{
+  "G2_VNNIC": "PASS_WITH_LIMITATIONS",
+  "primary_field": "download",
+  "substantive_meaning": "province-month median fixed-broadband download performance in Mbps as published by the official VNNIC Internet Atlas endpoint",
+  "endpoint_officiality": "VERIFIED",
+  "unit": "VERIFIED_Mbps",
+  "aggregation": "VERIFIED_MEDIAN",
+  "entity_time": "VERIFIED_WITH_LIMITATIONS",
+  "minimum_sample_publication_rule": "VERIFIED_MINIMUM_30_SAMPLES_PER_MONTH",
+  "isp_filter": "VERIFIED_ALL",
+  "measurement_population": "VERIFIED_WITH_LIMITATIONS_iSPEED_MEASUREMENT_SAMPLES",
+  "test_device_handling": "UNVERIFIED",
+  "historical_revision_policy": "UNVERIFIED_RISK_RECORDED",
+  "value": "NOT_USED",
+  "bounded_search_result": "Official interface and its production JavaScript located; no authoritative field-level API codebook or revision-policy document located.",
+  "existing_download_log_sha256": "2a91ed144a847cb17e3f44ee550bb42bb495a97c5e748449e0ec9a2a0d9b776c",
+  "existing_example_raw_sha256": "611ee96825072827580e3e504ac2d61ecb9bfaf36a69d32ca236cc9c39b8bcc3",
+  "decision_rationale": "Remaining uncertainty affects sampling/composition and revision risk, but not the substantive interpretation of download as official province-month median fixed-broadband Mbps. Annual unweighted medians remain interpretable as summaries of the published monthly series, with explicit limitations."
+}

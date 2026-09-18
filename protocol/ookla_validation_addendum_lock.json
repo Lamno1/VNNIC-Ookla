@@ -1,0 +1,10 @@
+{
+  "addendum_path": "protocol/ookla_validation_addendum_20260913.md",
+  "sha256": "320e9a08067b870b28bb2e607b3c2ae087fa037631d31c7a542e81f0b1d42321",
+  "frozen_before_spatial_aggregation": true,
+  "authorized_files": 4,
+  "network": "fixed",
+  "quarter": 2,
+  "claim_ceiling": "MEASUREMENT_VALIDATION",
+  "h2_status": "REGISTERED_NOT_TESTED"
+}

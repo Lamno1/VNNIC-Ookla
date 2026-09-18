@@ -1,0 +1,104 @@
+{
+  "run_id": "run_20260913T071002Z",
+  "gates": {
+    "G0": {
+      "status": "PASS",
+      "finding": "Output root is separate; all allow-listed roots exist; direct mode; credential exclusions active.",
+      "evidence": {
+        "environment": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T071002Z\\environment.json",
+        "treatment_readiness_evidence": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T071002Z\\treatment_readiness_evidence.json",
+        "credential_files_accessed": false
+      },
+      "updated_at_utc": "2026-09-13T07:10:03.798986+00:00"
+    },
+    "OOKLA_SEMANTICS": {
+      "status": "PASS",
+      "finding": "Official Ookla definitions support the bounded measures with limitations.",
+      "evidence": {
+        "classification": "PASS_WITH_LIMITATIONS"
+      },
+      "updated_at_utc": "2026-09-13T07:10:21.918193+00:00"
+    },
+    "OOKLA_2024_PILOT": {
+      "status": "PASS",
+      "finding": "2024Q2 pilot passed before scale-out.",
+      "evidence": {
+        "year": 2024,
+        "source_rows": 6492072,
+        "row_groups": 12,
+        "rows_scanned": 6492072,
+        "bbox_candidates": 191857,
+        "assigned_unique": 121163,
+        "outside_vietnam_within_bbox": 70694,
+        "ambiguous": 0,
+        "boundary_review": 0,
+        "invalid_coordinates": 0,
+        "failed_rows": 0,
+        "batch_count": 26,
+        "failed_batches": 0,
+        "provinces_represented": 63,
+        "aggregate_rows": 63,
+        "elapsed_seconds": 3.5320554000209086,
+        "peak_rss_bytes": 571711488,
+        "rows_per_second": 1838043.6501538365,
+        "source_sha256": "e6b0581e5db260f301ac0e719de235d2279613111f6cc826a13e6aeefacffd5b",
+        "geometry_engine": "matplotlib.path.Path",
+        "geometry_engine_version": "3.10.3",
+        "reproducibility_rescan_rows": 6492072,
+        "aggregate_reproducible": true,
+        "pilot_gate": "PASS"
+      },
+      "updated_at_utc": "2026-09-13T07:10:21.918547+00:00"
+    },
+    "MEASUREMENT_VALIDATION_GATE": {
+      "status": "WARN",
+      "finding": "Bounded four-file comparison completed.",
+      "evidence": {
+        "measurement_validation_classification": "MIXED_MEASUREMENT_SUPPORT",
+        "researcher_defined_thresholds": true,
+        "coverage_pass": true,
+        "rank_threshold_pass": false,
+        "change_direction_threshold_pass": true,
+        "dispersion_direction_agreement_count": 5,
+        "dispersion_directions": {
+          "sd_level": {
+            "ookla": 1.0,
+            "vnnic": 1.0
+          },
+          "sd_log": {
+            "ookla": 1.0,
+            "vnnic": 1.0
+          },
+          "coefficient_of_variation": {
+            "ookla": 1.0,
+            "vnnic": 1.0
+          },
+          "interquartile_range": {
+            "ookla": 1.0,
+            "vnnic": 1.0
+          },
+          "p90_p10_ratio": {
+            "ookla": 1.0,
+            "vnnic": -1.0
+          },
+          "max_min_ratio": {
+            "ookla": 1.0,
+            "vnnic": 1.0
+          }
+        },
+        "same_change_direction_proportion": 1.0,
+        "ch3_speed_test_composition": "REMAINS_UNRESOLVED",
+        "vnnic_descriptive_classification": "DESCRIPTIVE_DIVERGENCE_UNCHANGED"
+      },
+      "updated_at_utc": "2026-09-13T07:10:21.918848+00:00"
+    },
+    "OOKLA_REPRODUCIBILITY": {
+      "status": "PASS",
+      "finding": "Stable outputs reproduce.",
+      "evidence": {
+        "stable_hashes_match": true
+      },
+      "updated_at_utc": "2026-09-13T07:10:21.919153+00:00"
+    }
+  }
+}

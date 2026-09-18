@@ -1,0 +1,57 @@
+{
+  "variables": {
+    "ftth_download_median_apr_dec_mbps": {
+      "min": 39.8,
+      "q25": 50.567499999999995,
+      "median": 71.58500000000001,
+      "q75": 89.675,
+      "max": 131.68,
+      "within_province_sd_mean": 21.43870527792167,
+      "between_province_sd": 6.5642894597778945,
+      "zero_within_variation_provinces": 0
+    },
+    "ftth_upload_median_apr_dec_mbps": {
+      "min": 39.84,
+      "q25": 49.81,
+      "median": 67.695,
+      "q75": 86.1525,
+      "max": 109.11,
+      "within_province_sd_mean": 20.129434433484455,
+      "between_province_sd": 6.703506924134952,
+      "zero_within_variation_provinces": 0
+    },
+    "ftth_ping_median_apr_dec_ms": {
+      "min": 7.0,
+      "q25": 9.522499999999999,
+      "median": 11.64,
+      "q75": 13.9475,
+      "max": 25.9,
+      "within_province_sd_mean": 1.2289006745934392,
+      "between_province_sd": 3.762003681628825,
+      "zero_within_variation_provinces": 0
+    },
+    "ftth_jitter_median_apr_dec_ms": {
+      "min": 1.25,
+      "q25": 2.0,
+      "median": 2.495,
+      "q75": 3.13,
+      "max": 11.58,
+      "within_province_sd_mean": 0.8153596478884193,
+      "between_province_sd": 1.0713444840275332,
+      "zero_within_variation_provinces": 0
+    },
+    "active_firms_per_1000": {
+      "min": 1.406853450511,
+      "q25": 3.0,
+      "median": 4.208932673577,
+      "q75": 6.048099368401467,
+      "max": 29.28653576450852,
+      "within_province_sd_mean": 0.26040229154653644,
+      "between_province_sd": 4.871148649265519,
+      "zero_within_variation_provinces": 0
+    }
+  },
+  "lagged_model_potential_observations": 189,
+  "correlations_calculated": false,
+  "models_run": false
+}

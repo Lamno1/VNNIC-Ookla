@@ -1,0 +1,17 @@
+study_id: connectivity_enterprise_vietnam_legacy63
+title: 'Digital Connectivity and Enterprise Dynamism across Vietnam’s Provinces, 2021–2024: A Multi-Source Descriptive Panel Study'
+start_year: 2021
+end_year: 2024
+province_count: 63
+analysis_rows_expected: 252
+unit: province_year
+estimand_weighting: equal_province
+claim_ceiling: ASSOCIATIONAL
+causal_gate: CLOSED
+decision_2269_gate: FAIL_PRIMARY_ROUTE
+random_seed: 2269
+primary_ftth_months: [4, 5, 6, 7, 8, 9, 10, 11, 12]
+primary_ftth_expected_months: 9
+primary_ftth_expected_rows: 2268
+missing_policy: preserve_null
+fuzzy_match_policy: prohibited_without_review

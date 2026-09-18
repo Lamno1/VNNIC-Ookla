@@ -1,0 +1,14 @@
+﻿claim_id,claim,claim_type,supporting_artifacts,status
+R001,Common positive matched-Q2 endpoint direction across 63 provinces,DOCUMENTED_RESULT,table_09_measurement_change_concordance.csv,SUPPORTED
+R002,Five of six dispersion measures agree on endpoint direction,DESCRIPTIVE_SYNTHESIS,table_10_dispersion_source_comparison.csv; figure_12_dispersion_source_comparison,SUPPORTED
+R003,VNNIC endpoint dispersion measures are higher in 2024 than 2021,DOCUMENTED_RESULT,table_04_connectivity_dispersion.csv,SUPPORTED
+R004,VNNIC rank persistence is uneven across year pairs,DESCRIPTIVE_SYNTHESIS,table_05_connectivity_rank_persistence.csv; figure_05_ftth_rank_mobility,SUPPORTED
+R005,VNNIC quartile mobility occurs in both directions,DOCUMENTED_RESULT,table_06_connectivity_quartile_transitions.csv,SUPPORTED
+R006,Cross-source rank and log-level agreement weaken over time,DESCRIPTIVE_SYNTHESIS,table_08_measurement_validation_by_year.csv; figure_10_vnnic_ookla_rank_comparison,SUPPORTED
+R007,Twenty to twenty-nine provinces differ by more than fifteen rank positions,DOCUMENTED_RESULT,table_08_measurement_validation_by_year.csv,SUPPORTED
+R008,Primary province-change rank correlation is negative,DOCUMENTED_RESULT,table_09_measurement_change_concordance.csv,SUPPORTED
+R009,Four aggregation variants retain negative change-rank correlations,DOCUMENTED_RESULT,table_12_aggregation_agreement.csv,SUPPORTED
+R010,Leave-one-province-out diagnostics retain all provinces and do not reverse interpretation,DESCRIPTIVE_SYNTHESIS,table_13_measurement_influence_audit.csv,SUPPORTED
+R011,Observed tests and devices remain a composition sensitivity concern,DESCRIPTIVE_SYNTHESIS,table_14_composition_sensitivity.csv,SUPPORTED_WITH_LIMITATIONS
+R012,Sources measure related but non-equivalent constructs,CONSTRUCT_INTERPRETATION,"tables 08, 09, 12, and 14",SUPPORTED_WITH_LIMITATIONS
+R013,Measured extent and ordering depend partly on construct and system,CONSTRUCT_INTERPRETATION,"tables 08, 10, and 12",SUPPORTED_WITH_LIMITATIONS

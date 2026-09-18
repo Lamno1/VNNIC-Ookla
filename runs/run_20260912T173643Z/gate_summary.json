@@ -1,0 +1,65 @@
+{
+  "run_id": "run_20260912T173643Z",
+  "gates": {
+    "G0": {
+      "status": "PASS",
+      "finding": "Output root is separate; all allow-listed roots exist; direct mode; credential exclusions active.",
+      "evidence": {
+        "environment": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260912T173643Z\\environment.json",
+        "credential_files_accessed": false
+      },
+      "updated_at_utc": "2026-09-12T17:36:44.853249+00:00"
+    },
+    "G1": {
+      "status": "WARN",
+      "finding": "GIS/VNNIC/Ookla/WBES structural provenance is available; NSO and VNNIC semantic provenance remain incomplete.",
+      "evidence": {
+        "source_inventory": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\manifests\\source_inventory.csv",
+        "declared_inputs": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\manifests\\declared_inputs.csv"
+      },
+      "updated_at_utc": "2026-09-12T17:36:45.957281+00:00"
+    },
+    "G2": {
+      "status": "FAIL",
+      "finding": "Primary VNNIC and NSO semantics are unverified; model construction is blocked.",
+      "evidence": {
+        "semantic_registry": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\semantic_registry.csv",
+        "document_request": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\reports\\missing_document_request.md"
+      },
+      "updated_at_utc": "2026-09-12T17:36:45.959185+00:00"
+    },
+    "G3": {
+      "status": "PASS",
+      "finding": "Legacy-63 geography is deterministic, one-to-one, and hash-locked.",
+      "evidence": {
+        "dimension": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\data\\reference\\dim_province_legacy63.parquet",
+        "audit": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\geography_gate.json"
+      },
+      "updated_at_utc": "2026-09-12T17:36:46.259504+00:00"
+    },
+    "G4": {
+      "status": "PASS",
+      "finding": "Primary FTTH April–December structural coverage is complete; semantics remain governed by G2.",
+      "evidence": {
+        "source_rows": 7360,
+        "duplicate_source_key_rows": 0,
+        "province_count": 63,
+        "legacy_expected_cells": 8442,
+        "legacy_observed_cells": 7360,
+        "legacy_missing_expected_cells": 1082,
+        "primary_ftth_rows": 2268,
+        "primary_province_year_cells": 252,
+        "complete_nine_month_cells": 252,
+        "primary_expected_rows": 2268,
+        "semantic_status": "UNVERIFIED"
+      },
+      "updated_at_utc": "2026-09-12T17:36:46.680623+00:00"
+    },
+    "S06_CONNECTIVITY_FEATURES": {
+      "status": "NOT_RUN_DUE_TO_FAILED_GATE",
+      "finding": "Annual exposure construction requires G2, G3 and G4 PASS.",
+      "evidence": {},
+      "updated_at_utc": "2026-09-12T17:36:46.682170+00:00"
+    }
+  }
+}

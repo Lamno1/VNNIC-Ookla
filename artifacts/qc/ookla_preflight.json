@@ -1,0 +1,103 @@
+{
+  "authorized_files": 4,
+  "discovered_files": 4,
+  "expected_rows": 23796365,
+  "expected_bytes": 1251981469,
+  "batch_size": 250000,
+  "workers": 1,
+  "files": [
+    {
+      "year": 2021,
+      "path": "D:\\Q1_RESEARCH\\OOKLA_RAW\\fixed\\2021\\Q2\\2021-04-01_performance_fixed_tiles.parquet",
+      "rows": 4335355,
+      "bytes": 218743050,
+      "sha256": "64e02b523547cf3886d345332b1ef42d1b7fc9070768cf47b154032c8570fd34",
+      "row_groups": 7,
+      "columns": [
+        "quadkey",
+        "tile",
+        "tile_x",
+        "tile_y",
+        "avg_d_kbps",
+        "avg_u_kbps",
+        "avg_lat_ms",
+        "avg_lat_down_ms",
+        "avg_lat_up_ms",
+        "tests",
+        "devices"
+      ],
+      "schema_variant": "EXTENDED_LATENCY_V2",
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "path": "D:\\Q1_RESEARCH\\OOKLA_RAW\\fixed\\2022\\Q2\\2022-04-01_performance_fixed_tiles.parquet",
+      "rows": 6598700,
+      "bytes": 332924853,
+      "sha256": "3bf9c68a7ce66af2e017bd7b39da42d6abe491742e40bd512b96ee39671a2e04",
+      "row_groups": 11,
+      "columns": [
+        "quadkey",
+        "tile",
+        "tile_x",
+        "tile_y",
+        "avg_d_kbps",
+        "avg_u_kbps",
+        "avg_lat_ms",
+        "avg_lat_down_ms",
+        "avg_lat_up_ms",
+        "tests",
+        "devices"
+      ],
+      "schema_variant": "EXTENDED_LATENCY_V2",
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "path": "D:\\Q1_RESEARCH\\OOKLA_RAW\\fixed\\2023\\Q2\\2023-04-01_performance_fixed_tiles.parquet",
+      "rows": 6370238,
+      "bytes": 345915057,
+      "sha256": "3e8ea5fcc570a1030f083f62c45e4ff2065ead83877bc4488c209b9e18a4901d",
+      "row_groups": 12,
+      "columns": [
+        "quadkey",
+        "tile",
+        "tile_x",
+        "tile_y",
+        "avg_d_kbps",
+        "avg_u_kbps",
+        "avg_lat_ms",
+        "avg_lat_down_ms",
+        "avg_lat_up_ms",
+        "tests",
+        "devices"
+      ],
+      "schema_variant": "EXTENDED_LATENCY_V2",
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "path": "D:\\Q1_RESEARCH\\OOKLA_RAW\\fixed\\2024\\Q2\\2024-04-01_performance_fixed_tiles.parquet",
+      "rows": 6492072,
+      "bytes": 354398509,
+      "sha256": "e6b0581e5db260f301ac0e719de235d2279613111f6cc826a13e6aeefacffd5b",
+      "row_groups": 12,
+      "columns": [
+        "quadkey",
+        "tile",
+        "tile_x",
+        "tile_y",
+        "avg_d_kbps",
+        "avg_u_kbps",
+        "avg_lat_ms",
+        "avg_lat_down_ms",
+        "avg_lat_up_ms",
+        "tests",
+        "devices"
+      ],
+      "schema_variant": "EXTENDED_LATENCY_V2",
+      "status": "PASS"
+    }
+  ],
+  "semantics": "PASS_WITH_LIMITATIONS"
+}

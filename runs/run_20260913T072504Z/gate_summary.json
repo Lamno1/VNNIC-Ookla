@@ -1,0 +1,99 @@
+{
+  "run_id": "run_20260913T072504Z",
+  "gates": {
+    "G0": {
+      "status": "PASS",
+      "finding": "Output root is separate; all allow-listed roots exist; direct mode; credential exclusions active.",
+      "evidence": {
+        "environment": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T072504Z\\environment.json",
+        "treatment_readiness_evidence": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T072504Z\\treatment_readiness_evidence.json",
+        "credential_files_accessed": false
+      },
+      "updated_at_utc": "2026-09-13T07:25:05.598580+00:00"
+    },
+    "MEASUREMENT_REVIEW_INPUT": {
+      "status": "PASS",
+      "finding": "Only existing connectivity artifacts were opened.",
+      "evidence": {
+        "enterprise_outcome_read": false,
+        "raw_ookla_files_opened": 0,
+        "allowed_artifact_count": 10
+      },
+      "updated_at_utc": "2026-09-13T07:25:06.313118+00:00"
+    },
+    "MEASUREMENT_REVIEW_DECISION": {
+      "status": "PASS",
+      "finding": "Stage A adjudication completed without retroactive threshold changes.",
+      "evidence": {
+        "diagnostic_label": "POST_HOC_MEASUREMENT_DIAGNOSTIC",
+        "measurement_decision": "EXPOSURE_REDESIGN_REQUIRED",
+        "research_gate": "BLOCKED_EXPOSURE_REDESIGN_REQUIRED",
+        "h2_status": "NOT_TESTABLE_WITH_CURRENT_EXPOSURE",
+        "model_run": false,
+        "causal_gate": "CLOSED",
+        "preregistered_measurement_classification": "MIXED_MEASUREMENT_SUPPORT_UNCHANGED",
+        "preregistered_rank_failure_preserved": true,
+        "common_trend_agreement": true,
+        "yearly_rank_summary_by_variant": [
+          {
+            "aggregation_variant": "devices_weighted_mean",
+            "min": 0.27052780652489306,
+            "median": 0.3914221594970564,
+            "max": 0.4771619903925893
+          },
+          {
+            "aggregation_variant": "tests_weighted_mean",
+            "min": 0.2609989679843569,
+            "median": 0.4069868650171476,
+            "max": 0.4439670692299659
+          },
+          {
+            "aggregation_variant": "unweighted_tile_mean",
+            "min": 0.2745361592610883,
+            "median": 0.386069846904046,
+            "max": 0.46050452453079566
+          },
+          {
+            "aggregation_variant": "unweighted_tile_median",
+            "min": 0.24810983373683076,
+            "median": 0.39207387445570197,
+            "max": 0.5423517271081965
+          }
+        ],
+        "change_rank_spearman_by_variant": {
+          "devices_weighted_mean": -0.16868279569892475,
+          "tests_weighted_mean": -0.17842741935483872,
+          "unweighted_tile_mean": -0.19254032258064516,
+          "unweighted_tile_median": -0.24707181259600616
+        },
+        "all_change_rank_correlations_negative": true,
+        "maximum_absolute_composition_spearman": 0.5448828725038403,
+        "ch3_speed_test_composition": "HEIGHTENED_CONCERN_PENDING_REVIEW",
+        "stage_b_status": "NOT_RUN_STAGE_A_TERMINAL_EXPOSURE_REDESIGN",
+        "stage_b_run": false,
+        "enterprise_outcome_read": false,
+        "source_hashes": {
+          "data\\processed\\ookla_fixed_q2_adm1_2021_2024.parquet": "7e0c6128a8fffb4fd4ed25c47ad792574cd784ea433266b44518045f2eea4dc5",
+          "data\\processed\\vnnic_q2_validation_2021_2024.parquet": "62765b08d4022a0c1c5e1d8c15c97af6777204b632129d004dc03fe40860baeb",
+          "data\\processed\\fact_connectivity_province_year.parquet": "c3d94f3b5e8c17dfc46cfa640e1ce95d499ceb327b1a7f9259c4580878306126",
+          "artifacts\\tables\\table_08_measurement_validation_by_year.csv": "74118e282d1e3350c5f281b74b8f29337ecb82adb142eba293ba82b9e1607e83",
+          "artifacts\\tables\\table_09_measurement_change_concordance.csv": "a06e3cbb0e9f833b26946d3d1be890bf24a313fcb6db484b48ea83eb52ab5364",
+          "artifacts\\tables\\table_10_dispersion_source_comparison.csv": "47795e05f91869353ac184cce824eacb5b1b2ad6487b51056d7570fc77b24dc9",
+          "artifacts\\tables\\table_11_ookla_aggregation_sensitivity.csv": "79c6b7530250543ef3b1995e2655ca865464edfdada45776fe65c16efbe97dd2",
+          "artifacts\\qc\\ookla_composition_audit.csv": "1c4fc229fdbe6cc3aceedff072787f990e978686470fbeb92b704c69e98855a8",
+          "artifacts\\qc\\measurement_validation_decision.json": "2cf862f7e20eef29bd8f2a2e5805d91cebb9d15f57570d3d3ac6e04cf4357b82",
+          "artifacts\\manifests\\ookla_validation_partition_manifest.csv": "178e46f0f9b1c4c890778dd41280caf60df3f669112b2249d8ce2483831d1656"
+        }
+      },
+      "updated_at_utc": "2026-09-13T07:25:06.313492+00:00"
+    },
+    "MEASUREMENT_REVIEW_REPRODUCIBILITY": {
+      "status": "WARN",
+      "finding": "Second Stage A run required.",
+      "evidence": {
+        "stable_hashes_match": false
+      },
+      "updated_at_utc": "2026-09-13T07:25:06.313852+00:00"
+    }
+  }
+}

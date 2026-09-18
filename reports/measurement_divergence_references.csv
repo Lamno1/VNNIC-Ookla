@@ -1,0 +1,4 @@
+﻿reference_id,organization,title,url,accessed,cited
+1,Vietnam Internet Network Information Center,VNNIC Internet Atlas i-Speed,https://internetatlas.vnnic.vn/i-speed,2026-09-13,YES
+2,Ookla,Speedtest Open Data Performance Maps Overview,https://github.com/teamookla/ookla-open-data,2026-09-13,YES
+3,Amazon Web Services Open Data Registry,Speedtest by Ookla Global Fixed and Mobile Network Performance Map Tiles,https://registry.opendata.aws/speedtest-global-performance/,2026-09-13,YES

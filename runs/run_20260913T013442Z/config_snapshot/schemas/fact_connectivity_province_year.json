@@ -1,0 +1,1 @@
+{"primary_key":["province_id_legacy63","year"],"required_columns":["province_id_legacy63","year","ftth_download_median_apr_dec","ftth_upload_median_apr_dec","ftth_ping_median_apr_dec","ftth_jitter_median_apr_dec","months_expected","months_observed","complete_primary_window","source_artifact_id","config_hash"]}

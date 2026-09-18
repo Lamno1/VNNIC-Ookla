@@ -1,0 +1,17 @@
+﻿numeric_id,reported_value,context,source_artifact,source_locator,status
+N001,63,all provinces positive,table_09_measurement_change_concordance.csv,same_change_direction_count,PASS
+N002,0.542,2021 rank correlation,table_08_measurement_validation_by_year.csv,2021:spearman_rank_correlation=0.5423517271081965,PASS
+N003,0.488,2022 rank correlation,table_08_measurement_validation_by_year.csv,2022:spearman_rank_correlation=0.48787278731386163,PASS
+N004,0.296,2023 rank correlation,table_08_measurement_validation_by_year.csv,2023:spearman_rank_correlation=0.29627496159754224,PASS
+N005,0.248,2024 rank correlation,table_08_measurement_validation_by_year.csv,2024:spearman_rank_correlation=0.24810983373683076,PASS
+N006,-0.247,primary change-rank correlation,table_09_measurement_change_concordance.csv,spearman_change_correlation=-0.24707181259600616,PASS
+N007,-0.193,tile mean change-rank,table_12_aggregation_agreement.csv,unweighted_tile_mean=-0.19254032258064516,PASS
+N008,-0.178,tests weighted change-rank,table_12_aggregation_agreement.csv,tests_weighted_mean=-0.17842741935483872,PASS
+N009,-0.169,devices weighted change-rank,table_12_aggregation_agreement.csv,devices_weighted_mean=-0.16868279569892475,PASS
+N010,0.591,speed-tests Pearson,table_14_composition_sensitivity.csv,unweighted_tile_median speed_change_vs_tests_change=0.5912027009340203,PASS
+N011,0.545,speed-tests Spearman,table_14_composition_sensitivity.csv,unweighted_tile_median speed_change_vs_tests_change=0.5448828725038403,PASS
+N012,0.583,speed-devices Pearson,table_14_composition_sensitivity.csv,unweighted_tile_median speed_change_vs_devices_change=0.5832783237991073,PASS
+N013,0.535,speed-devices Spearman,table_14_composition_sensitivity.csv,unweighted_tile_median speed_change_vs_devices_change=0.5352822580645162,PASS
+N014,48.16,VNNIC 2021 mean Mbps,table_02_connectivity_summary_by_year.csv,2021:mean=48.1604761904762,PASS
+N015,89.18,VNNIC 2024 mean Mbps,table_02_connectivity_summary_by_year.csv,2024:mean=89.18444444444444,PASS
+N016,42.34,median VNNIC level change,table_07_change_distributions.csv,ftth_change_2021_2024_mbps:median=42.339999999999996,PASS

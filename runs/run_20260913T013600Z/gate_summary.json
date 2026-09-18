@@ -1,0 +1,85 @@
+{
+  "run_id": "run_20260913T013600Z",
+  "gates": {
+    "G0": {
+      "status": "PASS",
+      "finding": "Output root is separate; all allow-listed roots exist; direct mode; credential exclusions active.",
+      "evidence": {
+        "environment": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T013600Z\\environment.json",
+        "treatment_readiness_evidence": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\runs\\run_20260913T013600Z\\treatment_readiness_evidence.json",
+        "credential_files_accessed": false
+      },
+      "updated_at_utc": "2026-09-13T01:36:01.256598+00:00"
+    },
+    "G1": {
+      "status": "WARN",
+      "finding": "GIS/VNNIC/Ookla/WBES structural provenance is available; NSO and VNNIC semantic provenance remain incomplete.",
+      "evidence": {
+        "source_inventory": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\manifests\\source_inventory.csv",
+        "declared_inputs": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\manifests\\declared_inputs.csv"
+      },
+      "updated_at_utc": "2026-09-13T01:36:02.342022+00:00"
+    },
+    "G2": {
+      "status": "PASS",
+      "finding": "Primary VNNIC and NSO semantics are verified with documented limitations; entry-intensity proxy is unavailable.",
+      "evidence": {
+        "semantic_registry": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\semantic_registry.csv",
+        "vnnic_decision": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\vnnic_semantic_decision.json",
+        "nso_decision": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\nso_semantic_decision.json",
+        "document_request": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\reports\\missing_document_request.md"
+      },
+      "updated_at_utc": "2026-09-13T01:36:02.361726+00:00"
+    },
+    "G3": {
+      "status": "PASS",
+      "finding": "Legacy-63 geography is deterministic, one-to-one, geometry-validated, and hash-locked.",
+      "evidence": {
+        "dimension": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\data\\reference\\dim_province_legacy63.parquet",
+        "audit": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\geography_gate.json"
+      },
+      "updated_at_utc": "2026-09-13T01:36:02.584091+00:00"
+    },
+    "G5": {
+      "status": "PASS",
+      "finding": "Official PXWeb V05.05 snapshot and deterministic 63-code audit pass; local workbook candidates remain quarantined.",
+      "evidence": {
+        "status": "PASS_OFFICIAL_SNAPSHOT_PRIMARY_LOCAL_DERIVATIVES_QUARANTINED",
+        "workbooks": 3,
+        "candidate_fact_rows": 1575,
+        "province_candidates_per_table": 63,
+        "aggregate_exclusions_per_table": 7,
+        "missing_numeric_cells": 0,
+        "name_mapping_review_status": "PENDING",
+        "semantic_status": "UNVERIFIED",
+        "released_fact_nso_measure": false,
+        "released_fact_enterprise_outcomes": false,
+        "official_snapshot_primary_outcome": "PASS_WITH_LIMITATIONS",
+        "local_candidates_remain_quarantined": true,
+        "official_decision": "D:\\Q1_RESEARCH\\CONNECTIVITY_ENTERPRISE_STUDY\\artifacts\\qc\\nso_semantic_decision.json"
+      },
+      "updated_at_utc": "2026-09-13T01:36:11.893599+00:00"
+    },
+    "G4": {
+      "status": "PASS",
+      "finding": "Primary FTTH April-December structural and non-null coverage passes; metric semantics remain governed by G2.",
+      "evidence": {
+        "source_rows": 7360,
+        "duplicate_source_key_rows": 0,
+        "province_count": 63,
+        "legacy_expected_cells": 8442,
+        "legacy_observed_cells": 7360,
+        "legacy_missing_expected_cells": 1082,
+        "unexpected_legacy_cells": 0,
+        "primary_ftth_rows": 2268,
+        "primary_province_year_cells": 252,
+        "complete_nine_month_valid_download_cells": 252,
+        "primary_download_null_or_nonfinite": 0,
+        "primary_download_nonpositive": 0,
+        "primary_expected_rows": 2268,
+        "semantic_status": "UNVERIFIED"
+      },
+      "updated_at_utc": "2026-09-13T01:36:12.111076+00:00"
+    }
+  }
+}

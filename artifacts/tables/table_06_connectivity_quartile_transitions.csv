@@ -1,0 +1,6 @@
+﻿transition,province_count
+down_two_or_more,8
+down_one,12
+unchanged,20
+up_one,18
+up_two_or_more,5

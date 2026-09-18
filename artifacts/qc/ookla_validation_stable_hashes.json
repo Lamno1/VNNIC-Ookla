@@ -1,0 +1,19 @@
+{
+  "data\\processed\\ookla_fixed_q2_adm1_2021_2024.parquet": "7e0c6128a8fffb4fd4ed25c47ad792574cd784ea433266b44518045f2eea4dc5",
+  "data\\processed\\vnnic_q2_validation_2021_2024.parquet": "62765b08d4022a0c1c5e1d8c15c97af6777204b632129d004dc03fe40860baeb",
+  "artifacts\\manifests\\ookla_validation_partition_manifest.csv": "178e46f0f9b1c4c890778dd41280caf60df3f669112b2249d8ce2483831d1656",
+  "artifacts\\lineage\\ookla_validation_lineage.csv": "91e48435cbc8e3f287cf31016c9d71778cfe4518d7d0c2fd56f27dbb593ae54c",
+  "artifacts\\qc\\ookla_preflight.json": "8fff4ebd3fd73615597c44bbdee113fe81b7e38312f85a6b078086a20cac8c34",
+  "artifacts\\qc\\ookla_spatial_assignment_audit.csv": "b4c3caf262759756cd0a1d076ad98c2c4377b164680505767b4ac1e93e1ff676",
+  "artifacts\\qc\\ookla_composition_audit.csv": "1c4fc229fdbe6cc3aceedff072787f990e978686470fbeb92b704c69e98855a8",
+  "artifacts\\qc\\measurement_validation_decision.json": "2cf862f7e20eef29bd8f2a2e5805d91cebb9d15f57570d3d3ac6e04cf4357b82",
+  "artifacts\\tables\\table_08_measurement_validation_by_year.csv": "74118e282d1e3350c5f281b74b8f29337ecb82adb142eba293ba82b9e1607e83",
+  "artifacts\\tables\\table_09_measurement_change_concordance.csv": "a06e3cbb0e9f833b26946d3d1be890bf24a313fcb6db484b48ea83eb52ab5364",
+  "artifacts\\tables\\table_10_dispersion_source_comparison.csv": "47795e05f91869353ac184cce824eacb5b1b2ad6487b51056d7570fc77b24dc9",
+  "artifacts\\tables\\table_11_ookla_aggregation_sensitivity.csv": "79c6b7530250543ef3b1995e2655ca865464edfdada45776fe65c16efbe97dd2",
+  "artifacts\\figures\\figure_10_vnnic_ookla_rank_comparison_data.csv": "160d43af028e38cd4f0b3381264c5084f59c6509c09444d9b7b5255a90f79231",
+  "artifacts\\figures\\figure_11_measurement_change_comparison_data.csv": "cf22817c8db4a61ac5b7c2e7fd9aff24cbb910c029de900e4f03cbbe1ee32321",
+  "artifacts\\figures\\figure_12_dispersion_source_comparison_data.csv": "8fa052f1bc27056ac6c4b1c19500dfbaf19bf2db460e3d021d5c225c50e237d6",
+  "protocol\\ookla_validation_addendum_lock.json": "36f731f616a907a2baf36d069d22d3aeb632559aac4818778a4da74bbeb88a52",
+  "data\\reference\\ookla_methodology\\ookla_semantic_evidence.csv": "cf605c1a56e8900af124f9612da2ae9ba21cd967a0fa58e9a396feb350adf5bf"
+}
