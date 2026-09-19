@@ -1,15 +1,20 @@
-# Raw/derived data and logs from the data-acquisition scripts (large, regenerable)
+# Raw acquisition files and logs are regenerated locally and are not committed.
 OOKLA/LOGS/
 OOKLA/RAW/
 VNNIC/DERIVED/
 VNNIC/LOGS/
 VNNIC/RAW/
+OOKLA_RAW/
+OOKLA_LOGS/
+VNNIC_DERIVED/
+VNNIC_LOGS/
+VNNIC_RAW/
 
-# Manuscript LaTeX submitted directly to the journal, not tracked here
+# Manuscript and local generated outputs.
 latex/
 submission/
 
-# Python
+# Python and local environments.
 __pycache__/
 *.py[cod]
 *$py.class
@@ -17,28 +22,17 @@ __pycache__/
 .Python
 env/
 build/
-develop-eggs/
 dist/
 downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
 *.egg-info/
-.installed.cfg
 *.egg
 .pytest_cache/
 .coverage
-htmlcov/
 .venv/
 venv/
 ENV/
 
-# Credentials / secrets (mirrors config/sources.yml credential_exclusions)
+# Credentials and secrets.
 client_secret*
 *credential*
 *.pem
@@ -47,7 +41,7 @@ client_secret*
 *cookie*
 .env
 
-# OS / editor cruft
+# OS/editor files.
 .DS_Store
 Thumbs.db
 .vscode/

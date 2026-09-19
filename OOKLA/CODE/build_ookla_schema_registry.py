@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 import csv
 import hashlib
 import json
@@ -8,7 +9,7 @@ from datetime import datetime, timezone
 import pyarrow.parquet as pq
 
 
-ROOT = Path(r"D:\Q1_RESEARCH")
+ROOT = Path(os.environ.get("VNNIC_OOKLA_ROOT", Path(__file__).resolve().parents[2])).resolve()
 OOKLA_ROOT = ROOT / "OOKLA_RAW"
 SOURCE_MANIFEST = OOKLA_ROOT / "SHA256_manifest.csv"
 LOG_DIR = ROOT / "OOKLA_LOGS"
