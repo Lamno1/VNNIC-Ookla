@@ -1,0 +1,7 @@
+﻿rule,k,overlap_count,overlap_fraction,expected_overlap_by_chance,overlap_vs_chance_ratio
+smallest_2021_2024_gain,5,1,0.2,0.3968253968253968,2.52
+smallest_2021_2024_gain,10,2,0.2,1.5873015873015872,1.26
+smallest_2021_2024_gain,15,4,0.26666666666666666,3.5714285714285716,1.1199999999999999
+lowest_absolute_2024_level,5,1,0.2,0.3968253968253968,2.52
+lowest_absolute_2024_level,10,4,0.4,1.5873015873015872,2.52
+lowest_absolute_2024_level,15,6,0.4,3.5714285714285716,1.68

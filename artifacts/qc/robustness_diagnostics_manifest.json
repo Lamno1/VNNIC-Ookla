@@ -1,0 +1,18 @@
+{
+  "diagnostic_label": "POST_HOC_ROBUSTNESS_DIAGNOSTIC",
+  "purpose": "Resubmission robustness supplement (bootstrap CI, trend test, top/bottom-k overlap)",
+  "rng_seed": 20260922,
+  "n_boot": 10000,
+  "source_files": [
+    "data/processed/ookla_fixed_q2_adm1_2021_2024.parquet",
+    "data/processed/vnnic_q2_validation_2021_2024.parquet"
+  ],
+  "outputs": [
+    "artifacts\\tables\\table_15a_yearly_spearman_bootstrap_ci.csv",
+    "artifacts\\tables\\table_15b_change_rank_spearman_bootstrap_ci.csv",
+    "artifacts\\tables\\table_15c_yearly_trend_bootstrap_test.csv",
+    "artifacts\\tables\\table_16_topbottom_k_overlap.csv",
+    "reports\\robustness_diagnostics_supplement.md"
+  ],
+  "modifies_locked_pipeline": false
+}
