@@ -16,6 +16,7 @@ Several scripts contain absolute Windows paths from the authors' machine, for ex
 - `halfyear_analysis_*`, `postshift_*`, `common_cells*`, `coverage_*`, `decision_*`: exploratory extensions, each with its `validate_*` check where present.
 - `build_ookla_*`, `build_coverage_tiles_*`, `build_external_delta_supplement.py`, `build_figure*`: data construction and figures.
 - `rev14_tools/`: regression checks.
+- `spatial_block_bootstrap_20261103.py`, `spatial_block_coverage_20261103.py`, `validate_spatial_block_20261103.py`: spatial block bootstrap (12 Ward neighbour blocks and six administrative regions), its coverage simulation, and a second-implementation check. These need two inputs that are not in this repository: the six-region mapping table (`region_mapping_6.csv`, built from the General Statistics Office region table) and, for the coverage script, the earlier spatial-simulation engine (`spatial_pilot.py`, `spatial_main.py`). Both are referenced by absolute paths on the authors' machine.
 
 File names carry internal stage labels (`x9`-`x18`, `revNN`); they are labels of the authors' work sequence, not versions of a package.
 
