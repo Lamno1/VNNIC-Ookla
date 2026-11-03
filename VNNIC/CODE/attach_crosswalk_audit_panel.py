@@ -1,7 +1,8 @@
 from pathlib import Path
+import os
 import pandas as pd
 
-ROOT = Path(r"D:\Q1_RESEARCH")
+ROOT = Path(os.environ.get("VNNIC_OOKLA_ROOT", Path(__file__).resolve().parents[2])).resolve()
 
 PANEL = ROOT / "VNNIC_DERIVED" / "vnnic_province_month_raw.csv"
 XWALK = ROOT / "GIS_DERIVED" / "vnnic_adm1_crosswalk_63.csv"

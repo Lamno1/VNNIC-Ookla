@@ -4,6 +4,11 @@ OOKLA/RAW/
 VNNIC/DERIVED/
 VNNIC/LOGS/
 VNNIC/RAW/
+OOKLA_RAW/
+OOKLA_LOGS/
+VNNIC_DERIVED/
+VNNIC_LOGS/
+VNNIC_RAW/
 
 # Manuscript LaTeX submitted directly to the journal, not tracked here
 latex/

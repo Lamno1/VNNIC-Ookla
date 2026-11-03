@@ -4,10 +4,11 @@ import json
 import time
 import urllib.request
 import urllib.error
+import os
 from pathlib import Path
 from datetime import datetime, timezone
 
-ROOT = Path(r"D:\Q1_RESEARCH")
+ROOT = Path(os.environ.get("VNNIC_OOKLA_ROOT", Path(__file__).resolve().parents[2])).resolve()
 RAW = ROOT / "VNNIC_RAW"
 LOGS = ROOT / "VNNIC_LOGS"
 
