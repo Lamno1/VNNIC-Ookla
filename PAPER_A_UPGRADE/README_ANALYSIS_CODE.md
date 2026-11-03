@@ -17,6 +17,7 @@ Several scripts contain absolute Windows paths from the authors' machine, for ex
 - `build_ookla_*`, `build_coverage_tiles_*`, `build_external_delta_supplement.py`, `build_figure*`: data construction and figures.
 - `rev14_tools/`: regression checks.
 - `spatial_block_bootstrap_20261103.py`, `spatial_block_coverage_20261103.py`, `validate_spatial_block_20261103.py`: spatial block bootstrap (12 Ward neighbour blocks and six administrative regions), its coverage simulation, and a second-implementation check. These need two inputs that are not in this repository: the six-region mapping table (`region_mapping_6.csv`, built from the General Statistics Office region table) and, for the coverage script, the earlier spatial-simulation engine (`spatial_pilot.py`, `spatial_main.py`). Both are referenced by absolute paths on the authors' machine.
+- `spatial_block_contiguous_20261103.py`, `spatial_block_coverage_k_20261103.py`, `spatial_range_20261103.py`: contiguity-constrained blocks with 8, 10, 12, 15 and 20 blocks, the coverage simulation by number of blocks, and the dependence-range (Moran's I by distance band) and block-extent summary. They need the same two inputs that are not in this repository (the six-region mapping table and the earlier spatial-simulation engine).
 
 File names carry internal stage labels (`x9`-`x18`, `revNN`); they are labels of the authors' work sequence, not versions of a package.
 
