@@ -42,6 +42,9 @@ Run from `PAPER_A_UPGRADE/`. Each step writes into `results_spatial_block_202611
    A quick test of the same code: add `--simulations 20 --bootstrap 199 --tag smoke`; the output is not comparable with the reported coverage.
 7. Compare with the reported outputs: `python check_reproduction_20261103.py`.
 
+## Measured run times
+Measured on one Windows 11 machine with 14 workers, in a clean copy of the files listed above: steps 1 to 5 about 11 minutes in total (bootstrap 280 s, contiguity-constrained blocks about 6 minutes); coverage simulation of step 6, first script 23 minutes, second script 39 minutes. Every output compared in step 7 was identical to the reference copy.
+
 ## Seeds and determinism
 Bootstrap seed 20261010 (5,000 replicates; the same draws are used for every statistic and both sources); the block clustering has no random element; the simulation uses fixed root seeds inside `spatial_engine/spatial_main.py`.
 
