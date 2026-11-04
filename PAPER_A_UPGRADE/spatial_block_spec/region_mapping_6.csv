@@ -1,0 +1,64 @@
+﻿vnnic_code,province_canonical,shapeISO,nso_label,nso_region
+01,Ha Noi,VN-HN,Hà Nội,Đồng bằng sông Hồng
+02,Ha Giang,VN-03,Hà Giang,Trung du và miền núi phía Bắc
+04,Cao Bang,VN-04,Cao Bằng,Trung du và miền núi phía Bắc
+06,Bac Kan,VN-53,Bắc Kạn,Trung du và miền núi phía Bắc
+08,Tuyen Quang,VN-07,Tuyên Quang,Trung du và miền núi phía Bắc
+10,Lao Cai,VN-02,Lào Cai,Trung du và miền núi phía Bắc
+11,Dien Bien,VN-71,Điện Biên,Trung du và miền núi phía Bắc
+12,Lai Chau,VN-01,Lai Châu,Trung du và miền núi phía Bắc
+14,Son La,VN-05,Sơn La,Trung du và miền núi phía Bắc
+15,Yen Bai,VN-06,Yên Bái,Trung du và miền núi phía Bắc
+17,Hoa Binh,VN-14,Hòa Bình,Trung du và miền núi phía Bắc
+19,Thai Nguyen,VN-69,Thái Nguyên,Trung du và miền núi phía Bắc
+20,Lang Son,VN-09,Lạng Sơn,Trung du và miền núi phía Bắc
+22,Quang Ninh,VN-13,Quảng Ninh,Đồng bằng sông Hồng
+24,Bac Giang,VN-54,Bắc Giang,Trung du và miền núi phía Bắc
+25,Phu Tho,VN-68,Phú Thọ,Trung du và miền núi phía Bắc
+26,Vinh Phuc,VN-70,Vĩnh Phúc,Đồng bằng sông Hồng
+27,Bac Ninh,VN-56,Bắc Ninh,Đồng bằng sông Hồng
+30,Hai Duong,VN-61,Hải Dương,Đồng bằng sông Hồng
+31,Hai Phong,VN-HP,Hải Phòng,Đồng bằng sông Hồng
+33,Hung Yen,VN-66,Hưng Yên,Đồng bằng sông Hồng
+34,Thai Binh,VN-20,Thái Bình,Đồng bằng sông Hồng
+35,Ha Nam,VN-63,Hà Nam,Đồng bằng sông Hồng
+36,Nam Dinh,VN-67,Nam Định,Đồng bằng sông Hồng
+37,Ninh Binh,VN-18,Ninh Bình,Đồng bằng sông Hồng
+38,Thanh Hoa,VN-21,Thanh Hóa,Bắc Trung Bộ và duyên hải miền Trung
+40,Nghe An,VN-22,Nghệ An,Bắc Trung Bộ và duyên hải miền Trung
+42,Ha Tinh,VN-23,Hà Tĩnh,Bắc Trung Bộ và duyên hải miền Trung
+44,Quang Binh,VN-24,Quảng Bình,Bắc Trung Bộ và duyên hải miền Trung
+45,Quang Tri,VN-25,Quảng Trị,Bắc Trung Bộ và duyên hải miền Trung
+46,Thua Thien - Hue,VN-26,Thừa Thiên - Huế,Bắc Trung Bộ và duyên hải miền Trung
+48,Da Nang,VN-DN,Đà Nẵng,Bắc Trung Bộ và duyên hải miền Trung
+49,Quang Nam,VN-27,Quảng Nam,Bắc Trung Bộ và duyên hải miền Trung
+51,Quang Ngai,VN-29,Quảng Ngãi,Bắc Trung Bộ và duyên hải miền Trung
+52,Binh Dinh,VN-31,Bình Định,Bắc Trung Bộ và duyên hải miền Trung
+54,Phu Yen,VN-38,Phú Yên,Bắc Trung Bộ và duyên hải miền Trung
+56,Khanh Hoa,VN-34,Khánh Hòa,Bắc Trung Bộ và duyên hải miền Trung
+58,Ninh Thuan,VN-36,Ninh Thuận,Bắc Trung Bộ và duyên hải miền Trung
+60,Binh Thuan,VN-40,Bình Thuận,Bắc Trung Bộ và duyên hải miền Trung
+62,Kon Tum,VN-28,Kon Tum,Tây Nguyên
+64,Gia Lai,VN-30,Gia Lai,Tây Nguyên
+66,Dak Lak,VN-33,Đắk Lắk,Tây Nguyên
+67,Dak Nong,VN-72,Đắk Nông,Tây Nguyên
+68,Lam Dong,VN-35,Lâm Đồng,Tây Nguyên
+70,Binh Phuoc,VN-58,Bình Phước,Đông Nam Bộ
+72,Tay Ninh,VN-37,Tây Ninh,Đông Nam Bộ
+74,Binh Duong,VN-57,Bình Dương,Đông Nam Bộ
+75,Dong Nai,VN-39,Đồng Nai,Đông Nam Bộ
+77,Ba Ria - Vung Tau,VN-43,Bà Rịa - Vũng Tàu,Đông Nam Bộ
+79,TP. Ho Chi Minh,VN-SG,TP. Hồ Chí Minh,Đông Nam Bộ
+80,Long An,VN-41,Long An,Đồng bằng sông Cửu Long
+82,Tien Giang,VN-46,Tiền Giang,Đồng bằng sông Cửu Long
+83,Ben Tre,VN-50,Bến Tre,Đồng bằng sông Cửu Long
+84,Tra Vinh,VN-51,Trà Vinh,Đồng bằng sông Cửu Long
+86,Vinh Long,VN-49,Vĩnh Long,Đồng bằng sông Cửu Long
+87,Dong Thap,VN-45,Đồng Tháp,Đồng bằng sông Cửu Long
+89,An Giang,VN-44,An Giang,Đồng bằng sông Cửu Long
+91,Kien Giang,VN-47,Kiên Giang,Đồng bằng sông Cửu Long
+92,Can Tho,VN-CT,Cần Thơ,Đồng bằng sông Cửu Long
+93,Hau Giang,VN-73,Hậu Giang,Đồng bằng sông Cửu Long
+94,Soc Trang,VN-52,Sóc Trăng,Đồng bằng sông Cửu Long
+95,Bac Lieu,VN-55,Bạc Liêu,Đồng bằng sông Cửu Long
+96,Ca Mau,VN-59,Cà Mau,Đồng bằng sông Cửu Long

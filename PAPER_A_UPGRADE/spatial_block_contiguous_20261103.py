@@ -1,8 +1,9 @@
-"""Contiguous spatial blocks and sensitivity over the grouping. Specification: reports/spatial_block_bootstrap_20261103/AMENDMENT_2.md
+"""Contiguous spatial blocks and sensitivity over the grouping. Specification: spatial_block_spec/AMENDMENT_2.md
 (SHA-256 in AMENDMENT_2.sha256, written before this run). Statistic definitions are executed from the source of
 spatial_block_bootstrap_20261103.py (arrays and stat_set), so they cannot drift. Nominal intervals; no p-values."""
 import json, hashlib, itertools
 from upg_common import *
+from paths import GEO, SPEC as SPEC_DIR
 from scipy.sparse.csgraph import connected_components
 from sklearn.cluster import AgglomerativeClustering
 from shapely.geometry import shape
@@ -12,7 +13,7 @@ from pyproj import Transformer
 D = Data(with_ext=True)
 n = D.n
 OUT = HERE / "results_spatial_block_20261103"
-SPEC = ROOT / "reports" / "spatial_block_bootstrap_20261103"
+SPEC = SPEC_DIR
 YRS = (2021, 2022, 2023, 2024)
 KS = (8, 10, 12, 15, 20)
 
@@ -21,7 +22,7 @@ a = src.index("# ---------------- arrays"); b = src.index("# ---------------- po
 exec(compile(src[a:b], "stat_definitions", "exec"))
 
 # ---------------- adjacency (A1) and contiguous blocks (A2)
-gj = json.load(open(r"D:\Q1_RESEARCH\GIS_DERIVED\CANONICAL_ADM1_63.geojson", encoding="utf-8"))
+gj = json.load(open(GEO, encoding="utf-8"))
 tr = Transformer.from_crs(4326, 32648, always_xy=True)
 geom = {f["properties"]["shapeISO"]: transform(tr.transform, shape(f["geometry"])).buffer(0) for f in gj["features"]}
 isos = [D.iso[p] for p in D.pids]

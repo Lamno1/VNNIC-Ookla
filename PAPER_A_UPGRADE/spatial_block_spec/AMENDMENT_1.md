@@ -1,0 +1,2 @@
+# Amendment 1 (3 November 2026, before any bootstrap was run)
+Clarification of implementation only; SPEC.md is unchanged (hash in SPEC.sha256). Section 3 says to project the province centroids to UTM 48N. The code projects each province polygon to EPSG:32648 and then takes the area centroid; the difference from projecting the geographic centroid is negligible and no block rule or k was changed. Block membership was shown to the authors before the run.

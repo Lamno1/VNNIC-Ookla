@@ -1,5 +1,6 @@
 """X9 build: Ookla fixed and mobile tiles -> province x quarter (download, upload, latency medians, tiles, tests, devices), 2021Q1-2025Q2.
 Reuses the validated geometry/assignment/decoding functions of build_ookla_quarters.py (imported, not modified). Run after x9_replication_specification.md was hashed."""
+from paths import RAW_OOKLA
 import os, sys, time, importlib.util
 os.environ.setdefault("OMP_NUM_THREADS", "1")
 from pathlib import Path
@@ -9,7 +10,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 HERE = Path(__file__).resolve().parent
 SRC = HERE.parent / "RED_TEAM_DIAGNOSTICS/within_source_reliability/build_ookla_quarters.py"
 spec = importlib.util.spec_from_file_location("bq", SRC); bq = importlib.util.module_from_spec(spec); spec.loader.exec_module(bq)
-RAW = Path(r"D:\Q1_RESEARCH\VNNIC-Ookla\OOKLA\RAW"); GEO = bq.GEO; OUT = HERE / "data" / "ookla_x9"
+RAW = RAW_OOKLA; GEO = bq.GEO; OUT = HERE / "data" / "ookla_x9"
 
 
 def do(job):

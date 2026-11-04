@@ -1,0 +1,43 @@
+{
+ "B": 5000,
+ "seed": 20261010,
+ "blocks": 12,
+ "block_sizes": [
+  1,
+  2,
+  3,
+  4,
+  4,
+  4,
+  4,
+  6,
+  6,
+  7,
+  10,
+  12
+ ],
+ "provinces_per_replicate": {
+  "min": 30,
+  "p2_5": 44.0,
+  "median": 63.0,
+  "mean": 63.2906,
+  "p97_5": 85.0,
+  "max": 101
+ },
+ "distinct_provinces_per_replicate": {
+  "min": 18,
+  "mean": 40.8606,
+  "max": 62
+ },
+ "distinct_blocks_per_replicate": {
+  "min": 4,
+  "mean": 7.7642,
+  "max": 11
+ },
+ "share_replicates_with_a_repeated_block": 1.0,
+ "largest_block": {
+  "size": 12,
+  "share_absent": 0.3378,
+  "share_drawn_twice_or_more": 0.2698
+ }
+}

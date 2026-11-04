@@ -1,0 +1,35 @@
+{
+ "spec_sha256": "64479550e22cdebb172fb7b6a2075a5b0250e91c24d619de3c33aa9075e3e400",
+ "B": 5000,
+ "seed": 20261010,
+ "K_neigh": 12,
+ "block_sizes": {
+  "neigh12": [
+   4,
+   4,
+   1,
+   7,
+   12,
+   6,
+   4,
+   6,
+   10,
+   3,
+   2,
+   4
+  ],
+  "region6": [
+   14,
+   14,
+   5,
+   6,
+   13,
+   11
+  ]
+ },
+ "inputs_sha256": {
+  "upg_common.py": "e0b876aa8dfbbd97b2c179f61142cde9e384d0eff518e42fe466b2b386e0cbee",
+  "spatial_block_bootstrap_20261103.py": "30752fbb95ee2aac0dcdd227a4b379c64b8b587b7fa1e6706a3dad94cc2ce4b7",
+  "region_mapping_6.csv": "51ef57c38dcb343eb944377d394b9c2fb896f6b1ff5d5c9b17a56af2388ed0b7"
+ }
+}

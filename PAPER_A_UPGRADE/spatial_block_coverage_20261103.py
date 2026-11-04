@@ -9,8 +9,8 @@ import sys
 from pathlib import Path
 import numpy as np, pandas as pd
 
-RC = Path(r"D:\Q1_RESEARCH\CONNECTIVITY_ENTERPRISE_STUDY\reports\reviewer_checks_20261023")
-BL = Path(r"D:\Q1_RESEARCH\CONNECTIVITY_ENTERPRISE_STUDY\PAPER_A_UPGRADE\results_spatial_block_20261103\block_assignments.csv")
+from paths import ENGINE as RC, HERE
+BL = HERE / "results_spatial_block_20261103" / "block_assignments.csv"
 sys.path.insert(0, str(RC))
 import spatial_pilot as s
 import spatial_main as m
@@ -37,5 +37,6 @@ s.geometry = geometry
 if __name__ == "__main__":
     import multiprocessing as mp
     mp.freeze_support()
-    sys.argv = [sys.argv[0], "--set", "matched", "--tag", "blocks_20261103"]
+    extra = sys.argv[1:]
+    sys.argv = [sys.argv[0], "--set", "matched"] + ([] if "--tag" in extra else ["--tag", "blocks_20261103"]) + extra
     m.main()

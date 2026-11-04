@@ -57,3 +57,9 @@ client_secret*
 Thumbs.db
 .vscode/
 .idea/
+
+# Large regenerable outputs of the spatial block reproduction
+PAPER_A_UPGRADE/results_spatial_block_20261103/draws_*.csv
+PAPER_A_UPGRADE/spatial_engine/spatial_main_runs/*/chunk_*.csv
+PAPER_A_UPGRADE/spatial_engine/spatial_main_runs/*/replicates.csv
+PAPER_A_UPGRADE/spatial_engine/__pycache__/

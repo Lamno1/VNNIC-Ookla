@@ -4,6 +4,7 @@ Usage: python run_x16.py gates   -> runs only the gates (no source-DTI statistic
 import json, re, sys, unicodedata, hashlib
 import upg_common as U
 from upg_common import *
+from paths import DTI_2023
 sys.stdout.reconfigure(encoding="utf-8")
 GATES_ONLY = len(sys.argv) > 1 and sys.argv[1] == "gates"
 U.SEED, U.PSEED = 20261026, 20261027
@@ -107,7 +108,7 @@ for y in (2021, 2023): G("G16.6", f"Ha tang so {y} in (0,1) for 63 provinces", i
 rk5 = r21.r_ha_tang_table5.to_numpy(float); G("G16.7", "2021: Table 5 Ha tang so rank equals value-derived minimum rank (mismatches)", int((stats.rankdata(-r21.ha_tang.to_numpy(float), method="min") != rk5).sum()), 0, (stats.rankdata(-r21.ha_tang.to_numpy(float), method="min") == rk5).all())
 pr23 = f23["rank"].to_numpy(float); sc23 = f23["dti"].to_numpy(float); G("G16.7", "2023 main-index table: printed DTI rank equals minimum rank of its dti column (mismatches)", int((stats.rankdata(-sc23, method="min") != pr23).sum()), 0, (stats.rankdata(-sc23, method="min") == pr23).all())
 # descriptive (not a gate): does the DTI 2023 text mention 98 component indices
-t23 = Path("D:/Q1_RESEARCH/SOURCE_ACQUISITION_20261009/DTI_2023.txt")
+t23 = DTI_2023
 if t23.exists():
     _t = re.sub(r"\s+", " ", unicodedata.normalize("NFC", t23.read_text(encoding="utf-8", errors="ignore")))
     G("descriptive", "DTI 2023 text: occurrences of '98 chỉ số thành phần' (not a gate)", len(re.findall(r"98 chỉ số thành phần", _t)), "n/a", True)

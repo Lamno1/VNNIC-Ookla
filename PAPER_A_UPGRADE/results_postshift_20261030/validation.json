@@ -1,0 +1,7 @@
+{
+ "main": 74,
+ "variant_without_aprmay_2024": 74,
+ "passed": true,
+ "scope": "point estimates for L1, L3, L4 and stability, and bootstrap intervals for L4 and stability, reproduced with an independent implementation; L2 and the L1/L3 intervals were not re-derived",
+ "not_independent_team": true
+}

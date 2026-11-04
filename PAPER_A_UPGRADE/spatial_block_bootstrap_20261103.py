@@ -1,8 +1,9 @@
-"""Spatial block bootstrap of the provincial intervals. Specification: reports/spatial_block_bootstrap_20261103/SPEC.md
+"""Spatial block bootstrap of the provincial intervals. Specification: spatial_block_spec/SPEC.md
 (SHA-256 in SPEC.sha256, written and approved before this run). Same data accessors and statistic definitions as
 all_quarter_framework.py, run_x18.py and postshift_*_analysis_20261030.py. Nominal intervals; no p-values."""
 import sys, json, hashlib, itertools
 from upg_common import *
+from paths import GEO, SPEC as SPEC_DIR
 from scipy.cluster.hierarchy import linkage, fcluster
 from shapely.geometry import shape
 from shapely.ops import transform
@@ -11,12 +12,12 @@ from pyproj import Transformer
 D = Data(with_ext=True)
 n = D.n
 OUT = HERE / "results_spatial_block_20261103"; OUT.mkdir(exist_ok=True)
-SPEC = ROOT / "reports" / "spatial_block_bootstrap_20261103"
+SPEC = SPEC_DIR
 YRS = (2021, 2022, 2023, 2024)
 K_NEIGH = 12
 
 # ---------------- blocks
-gj = json.load(open(r"D:\Q1_RESEARCH\GIS_DERIVED\CANONICAL_ADM1_63.geojson", encoding="utf-8"))
+gj = json.load(open(GEO, encoding="utf-8"))
 tr = Transformer.from_crs(4326, 32648, always_xy=True)
 cent = {}
 for f in gj["features"]:

@@ -1,0 +1,6 @@
+gate,ok,detail
+G18.1,True,max abs deviation of 16 matched-quarter rho = 0.00000
+G18.2,True,max abs deviation of 4 log-change correlations = 0.00000
+G18.3,True,max abs deviation of 12 dispersion log ratios = 0.000000
+G18.5,True,minimum fixed province-month value_raw 2021-2024 = 33; share >= 30 = 0.9997
+G18.4,True,"[{""year"": 2021, ""gate_match_count"": 63}, {""year"": 2022, ""gate_match_count"": 63}, {""year"": 2023, ""gate_match_count"": 63}, {""year"": 2024, ""gate_match_count"": 63}]"

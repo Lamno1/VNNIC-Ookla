@@ -1,6 +1,7 @@
 """Dependence range and block extent (AMENDMENT_3.md, C1). Descriptive; uses no statistic of the study."""
 import json
 from upg_common import *
+from paths import GEO
 from shapely.geometry import shape
 from shapely.ops import transform
 from pyproj import Transformer
@@ -9,7 +10,7 @@ D = Data(with_ext=True)
 n = D.n
 OUT = HERE / "results_spatial_block_20261103"
 YRS = (2021, 2024)
-gj = json.load(open(r"D:\Q1_RESEARCH\GIS_DERIVED\CANONICAL_ADM1_63.geojson", encoding="utf-8"))
+gj = json.load(open(GEO, encoding="utf-8"))
 tr = Transformer.from_crs(4326, 32648, always_xy=True)
 cent = {f["properties"]["shapeISO"]: transform(tr.transform, shape(f["geometry"])).centroid for f in gj["features"]}
 isos = [D.iso[p] for p in D.pids]

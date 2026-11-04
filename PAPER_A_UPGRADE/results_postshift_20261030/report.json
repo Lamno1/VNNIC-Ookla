@@ -1,0 +1,54 @@
+{
+ "spec": "postshift_specification_20261030.md",
+ "B": 5000,
+ "seed": 20261010,
+ "n": 63,
+ "window": [
+  2023,
+  2024
+ ],
+ "rule1_vnnic_less_stable_retained": false,
+ "stability_diff_means": -0.16820276497695857,
+ "stability_diff_ci": [
+  -0.349555407588328,
+  0.02015430657085416
+ ],
+ "rule2_no_stable_sign_retained": true,
+ "L4_log_quarterly": [
+  {
+   "window": 1,
+   "rho": 0.1914842549923195,
+   "lo": -0.04805295642721542,
+   "hi": 0.41081926957005394
+  },
+  {
+   "window": 2,
+   "rho": -0.11256720430107527,
+   "lo": -0.3387802378322331,
+   "hi": 0.1373327251686801
+  },
+  {
+   "window": 3,
+   "rho": -0.02606566820276498,
+   "lo": -0.28811787921013565,
+   "hi": 0.2186481670867821
+  },
+  {
+   "window": 4,
+   "rho": -0.210397465437788,
+   "lo": -0.44272078881395655,
+   "hi": 0.040182217419361094
+  }
+ ],
+ "rule3_growth_sign_reversal_retained": false,
+ "growth_diff_by_quarter": [
+  -0.24013103944986558,
+  -0.16399503672940918,
+  -0.2995891038419817,
+  -0.2952995609441118
+ ],
+ "inputs_sha256": {
+  "upg_common.py": "e0b876aa8dfbbd97b2c179f61142cde9e384d0eff518e42fe466b2b386e0cbee",
+  "postshift_analysis_20261030.py": "8baf5acf70086e56091122f594fbc0cad6b9f2c76af7c2e7fafc44eb5652cf99"
+ }
+}

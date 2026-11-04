@@ -1,0 +1,28 @@
+statement,est,prov_excl0,neigh12_excl0,region6_excl0,agree
+"L1 diff excludes 0, 2021-24 q1",-0.124,True,True,True,same
+"L1 diff excludes 0, 2021-24 q2",0.18,True,True,True,same
+"L1 diff excludes 0, 2021-24 q3",-0.192,True,True,True,same
+"L1 diff excludes 0, 2021-24 q4",-0.122,True,True,True,same
+L3 change 2021->2024 q1,0.245,True,False,True,DIFFERS
+L3 change 2021->2024 q2,-0.294,False,True,True,DIFFERS
+L3 change 2021->2024 q3,0.215,True,False,False,DIFFERS
+L3 change 2021->2024 q4,0.431,True,False,False,DIFFERS
+L3 mean-of-4 higher in 2024,-0.149,True,False,False,DIFFERS
+L3 year-level higher in 2024,-0.237,True,True,False,DIFFERS
+L4 log corr q1,0.398,True,True,True,same
+L4 log corr q2,-0.425,True,True,True,same
+L4 log corr q3,0.526,True,True,True,same
+L4 log corr q4,0.031,False,False,False,same
+L4 year-level +0.250,0.25,True,False,False,DIFFERS
+L4 start 2022Q2,-0.214,False,False,False,same
+stability: VNNIC less stable (windows from 2021),0.469,True,True,True,same
+2023-24 L1 diff q1,-0.24,True,True,True,same
+2023-24 L1 diff q2,-0.164,True,True,True,same
+2023-24 L1 diff q3,-0.3,True,True,True,same
+2023-24 L1 diff q4,-0.295,True,True,True,same
+2023-24 L4 q1,0.191,False,False,False,same
+2023-24 L4 q2,-0.113,False,False,False,same
+2023-24 L4 q3,-0.026,False,False,False,same
+2023-24 L4 q4,-0.21,False,True,True,DIFFERS
+2023-24 stability diff (rule 1),-0.168,False,True,True,DIFFERS
+2023-24 stability diff w/o Apr-May,-0.04,False,False,False,same

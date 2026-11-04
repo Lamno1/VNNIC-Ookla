@@ -1,5 +1,6 @@
 """Figure 1 (analytical framework) for the next manuscript revision: left-to-right pipeline with pictograms.
 Pictograms are schematic (no data). The map is the 63-province frame used in the analysis (read from the canonical boundary file; drawn only)."""
+from paths import GEO as GEO_PATH
 import json, numpy as np, matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -7,7 +8,7 @@ from matplotlib.patches import FancyBboxPatch, FancyArrowPatch, Polygon, Rectang
 from pathlib import Path
 
 H = Path(__file__).parent; O = H / "figures_rev15"; O.mkdir(exist_ok=True)
-GJ = Path(r"D:\Q1_RESEARCH\GIS_DERIVED\CANONICAL_ADM1_63.geojson")
+GJ = GEO_PATH
 plt.rcParams.update({"font.family": "serif", "font.serif": ["Times New Roman", "STIXGeneral"], "mathtext.fontset": "stix"})
 BLUE, ORNG, INK, GREY = "#0072B2", "#D55E00", "#222222", "#6b6b6b"
 LVL, SUP, BND, PAN = "#DCE9F7", "#ECECEC", "#FBEFD2", "#F5F7FA"

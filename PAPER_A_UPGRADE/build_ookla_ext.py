@@ -1,6 +1,7 @@
 """Aggregate Ookla fixed-broadband tiles to province x quarter (2021Q1-2024Q4), reusing the tile-to-province
 point-in-polygon logic of the frozen Q2 pilot (s10_ookla_pilot.py) and the same canonical geometry.
 Extension build for PAPER_A_UPGRADE (X7); run after upgrade_specification.md was hashed. 2024Q2 is rebuilt as a code-path check."""
+from paths import RAW_OOKLA, GEO as GEO_PATH
 import os, sys, json, time
 os.environ.setdefault("OMP_NUM_THREADS", "1")
 import math
@@ -12,8 +13,8 @@ from matplotlib.path import Path as MplPath
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
 HERE = Path(__file__).resolve().parent
-RAW = Path(r"D:\Q1_RESEARCH\VNNIC-Ookla\OOKLA\RAW\fixed")
-GEO = r"D:\Q1_RESEARCH\GIS_DERIVED\CANONICAL_ADM1_63.geojson"
+RAW = RAW_OOKLA / "fixed"
+GEO = str(GEO_PATH)
 OUTD = HERE / "data" / "ookla_quarter_parts_ext"
 OUTD.mkdir(parents=True, exist_ok=True)
 BATCH = 250000

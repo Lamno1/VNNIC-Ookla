@@ -1,0 +1,8 @@
+{
+  "run": "spatial_engine/spatial_main_runs/blocks_k_20261103",
+  "configurations": 6,
+  "datasets": 12000,
+  "records": 432000,
+  "invalid_bootstrap_draws": 0,
+  "elapsed_seconds": 2621.7347544999793
+}
