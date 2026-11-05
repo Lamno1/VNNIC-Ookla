@@ -10,6 +10,20 @@ This folder reproduces the spatial block bootstrap, the coverage simulations and
 ## Environment
 Python 3.13.2 on Windows 11; packages and versions in `requirements_repro.txt` (`pip install -r PAPER_A_UPGRADE/requirements_repro.txt`). The coverage simulation uses `multiprocessing` (default 14 workers; `--workers N` changes it). Other operating systems have not been tested.
 
+## Start from a fresh checkout
+
+From a terminal in a directory where you want to create the checkout:
+
+```text
+git clone --branch analysis-code-vnnic-ookla-2021-2024 --single-branch https://github.com/Lamno1/VNNIC-Ookla.git
+cd VNNIC-Ookla
+python --version
+python -m pip install -r PAPER_A_UPGRADE/requirements_repro.txt
+cd PAPER_A_UPGRADE
+```
+
+Use the intended Python 3.13 environment for both installation and every command below. The installation command above runs from the repository root; the numbered reproduction commands run from `PAPER_A_UPGRADE/`. If you use a virtual environment, activate it before installing and running. The commands read the included processed inputs; downloading the raw archives or running `src/` is not part of this procedure.
+
 ## Inputs (all in the repository)
 | File | Content |
 |---|---|
@@ -41,6 +55,13 @@ Run from `PAPER_A_UPGRADE/`. Each step writes into `results_spatial_block_202611
    then `python summarize_coverage_20261103.py` (writes `coverage_by_k_pooled.csv`, the numbers of Table S35).
    A quick test of the same code: add `--simulations 20 --bootstrap 199 --tag smoke`; the output is not comparable with the reported coverage.
 7. Compare with the reported outputs: `python check_reproduction_20261103.py`.
+
+### Success criteria
+
+- Step 1 must print `GATE PASSED`; no failed gate should be ignored.
+- Complete all numbered steps for a full reproduction. The short `--tag smoke` simulations only check execution and do not reproduce Table S35.
+- Step 7 should print `identical` for all 15 reference files, with no `DIFFERENT` and no `not run` lines. The checker currently allows missing outputs to be labelled `not run` without changing its exit status, so exit code zero alone is not evidence that every step ran.
+- Keep the console logs and generated `run_log.json`/`validation.json` when recording a reproduction. The measured times below describe the authors' earlier full clean-copy run, not an estimate that every machine will match.
 
 ## Measured run times
 Measured on one Windows 11 machine with 14 workers, in a clean copy of the files listed above: steps 1 to 5 about 11 minutes in total (bootstrap 280 s, contiguity-constrained blocks about 6 minutes); coverage simulation of step 6, first script 23 minutes, second script 39 minutes. Every output compared in step 7 was identical to the reference copy.

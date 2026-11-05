@@ -6,7 +6,11 @@ Data-acquisition and analysis code supporting *"Common Direction, Window-Depende
 
 **Earlier stage.** The sections below describe the earlier data-acquisition and validation pipeline: the scripts that acquire the two raw sources live under `OOKLA/` and `VNNIC/`, and the earlier descriptive and validation stages under `src/connectivity_enterprise/`. That pipeline keeps a fixed workspace root (`D:\Q1_RESEARCH`) and is not needed to reproduce the results of the current manuscript.
 
-Current claim ceiling: `ASSOCIATIONAL`.
+## Legacy pipeline notes
+
+The gates and commands in the remaining sections describe the earlier pipeline, not the reproduction procedure for the current manuscript.
+
+Earlier pipeline claim ceiling: `ASSOCIATIONAL`.
 
 ```text
 CAUSAL_GATE = CLOSED
@@ -17,6 +21,9 @@ DECISION_2269_GATE = FAIL_PRIMARY_ROUTE
 
 ```
 VNNIC-Ookla/
+├── PAPER_A_UPGRADE/  # Current manuscript analyses and reproduction guide
+├── data/            # Processed inputs included for reproduction
+├── RED_TEAM_DIAGNOSTICS/within_source_reliability/data/  # Quarterly input table
 ├── OOKLA/
 │   └── CODE/       # Ookla schema-registration script
 ├── VNNIC/
@@ -29,7 +36,7 @@ VNNIC-Ookla/
 
 ## Data acquisition (`OOKLA/`, `VNNIC/`)
 
-Actual raw and derived data files are not pushed to this repository, due to GitHub storage limits and the sensitivity of some source data. They are reproduced locally with the following scripts:
+Raw VNNIC responses and the full Ookla tile archive are not redistributed. Processed inputs and reference outputs for the current manuscript are included, as listed in `PAPER_A_UPGRADE/README_REPRODUCTION.md`. The following acquisition commands document the earlier workflow; they are not required by that reproduction guide.
 
 ### Step 1: Download raw VNNIC data
 ```bash
@@ -51,7 +58,7 @@ Builds the schema registry used to validate the Ookla Open Data quarterly tile f
 
 ## Analysis pipeline (`src/connectivity_enterprise/`)
 
-This is the earlier-stage pipeline; it does not produce the results of the current manuscript (see `PAPER_A_UPGRADE/`). It produces: dispersion measures (Table 1/4), cross-source Spearman rank and change-rank correlations with 95% confidence intervals (Tables 4/6/7, Figures 4–6), robustness diagnostics (leave-one-province-out, aggregation sensitivity), and all VNNIC/Ookla comparison figures.
+This earlier pipeline produced historical descriptive and validation outputs. Its stage labels and table/figure numbers are not the current manuscript numbering. For the current spatial bootstrap, coverage simulations and Table S34, use `PAPER_A_UPGRADE/README_REPRODUCTION.md`.
 
 ### Safety
 
