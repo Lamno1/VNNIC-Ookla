@@ -1,6 +1,10 @@
 # VNNIC-Ookla Repository
 
-Data-acquisition and analysis code supporting *"Common Direction, Divergent Rankings: A Multi-Level Comparison of VNNIC and Ookla Broadband Measurements in Vietnam, 2021–2024."* This repository backs the manuscript's Data Availability statement: the primary analytical dataset and analysis scripts referenced there live under `src/connectivity_enterprise/`, and the scripts that acquire the two raw sources live under `OOKLA/` and `VNNIC/`.
+Data-acquisition and analysis code supporting *"Common Direction, Window-Dependent Rankings: A Multi-Level Comparison of VNNIC and Ookla Broadband Measurements in Vietnam, 2021–2024."*
+
+**Current manuscript.** The analyses of the present manuscript, including the spatial block bootstrap, the coverage simulations and Table S34, are in `PAPER_A_UPGRADE/`. They run with relative paths from the files in this repository; start with [`PAPER_A_UPGRADE/README_REPRODUCTION.md`](PAPER_A_UPGRADE/README_REPRODUCTION.md) (environment, inputs, steps in order, run times and a comparison with the reported outputs) and see `PAPER_A_UPGRADE/README_ANALYSIS_CODE.md` for the layout.
+
+**Earlier stage.** The sections below describe the earlier data-acquisition and validation pipeline: the scripts that acquire the two raw sources live under `OOKLA/` and `VNNIC/`, and the earlier descriptive and validation stages under `src/connectivity_enterprise/`. That pipeline keeps a fixed workspace root (`D:\Q1_RESEARCH`) and is not needed to reproduce the results of the current manuscript.
 
 Current claim ceiling: `ASSOCIATIONAL`.
 
@@ -47,7 +51,7 @@ Builds the schema registry used to validate the Ookla Open Data quarterly tile f
 
 ## Analysis pipeline (`src/connectivity_enterprise/`)
 
-This is the code that produces the paper's reported statistics, tables, and figures: dispersion measures (Table 1/4), cross-source Spearman rank and change-rank correlations with 95% confidence intervals (Tables 4/6/7, Figures 4–6), robustness diagnostics (leave-one-province-out, aggregation sensitivity), and all VNNIC/Ookla comparison figures.
+This is the earlier-stage pipeline; it does not produce the results of the current manuscript (see `PAPER_A_UPGRADE/`). It produces: dispersion measures (Table 1/4), cross-source Spearman rank and change-rank correlations with 95% confidence intervals (Tables 4/6/7, Figures 4–6), robustness diagnostics (leave-one-province-out, aggregation sensitivity), and all VNNIC/Ookla comparison figures.
 
 ### Safety
 
