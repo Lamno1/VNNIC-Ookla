@@ -1,0 +1,330 @@
+{
+  "schema": 1,
+  "scope": "spatial block package, Notes S8/Tables S33-S35; not raw acquisition or every paper analysis",
+  "files": [
+    {
+      "path": "data/analysis/analysis_panel_2021_2024.parquet",
+      "role": "processed_input",
+      "text": false,
+      "sha256": "7711c489b5b6da109fa4050cc04d29f252d6dbade99274ccac015a5824b0454e"
+    },
+    {
+      "path": "data/interim/fact_vnnic_province_month.parquet",
+      "role": "processed_input",
+      "text": false,
+      "sha256": "52acfd907715a1bd3016a4b3f0911058da6b5eb08f8eb3463ee63ec871033431"
+    },
+    {
+      "path": "data/processed/ookla_fixed_q2_adm1_2021_2024.parquet",
+      "role": "processed_input",
+      "text": false,
+      "sha256": "7e0c6128a8fffb4fd4ed25c47ad792574cd784ea433266b44518045f2eea4dc5"
+    },
+    {
+      "path": "data/processed/vnnic_q2_validation_2021_2024.parquet",
+      "role": "processed_input",
+      "text": false,
+      "sha256": "62765b08d4022a0c1c5e1d8c15c97af6777204b632129d004dc03fe40860baeb"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/block_resampling_facts_20261103.py",
+      "role": "code",
+      "text": true,
+      "sha256": "6fa2771bc7a581a38001f0178fb9f9b0b13b0fc81fcfa7925e6cffd147f7d60e"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/check_reproduction_20261103.py",
+      "role": "code",
+      "text": true,
+      "sha256": "992ab7dbfa973b857d62122e936c9356bdc1d39e88627f709e2e118d54a506fc"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/data/CANONICAL_ADM1_63.geojson",
+      "role": "processed_input",
+      "text": true,
+      "sha256": "c64a07c3fd5d3ca0339a5002983dc76ddd60a0ef88e889522e37ca2408f74400"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/data/ookla_province_quarter_ext.parquet",
+      "role": "processed_input",
+      "text": false,
+      "sha256": "7a26c0922123d40d4725df82cf27e6c9b459210f017e4c2a253d71438fd9e8c8"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/make_table_s34_20261103.py",
+      "role": "code",
+      "text": true,
+      "sha256": "397a47b8c3575a1f7d71111db8388fee6a66772f01198a23c6d482a532d2a097"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/paths.py",
+      "role": "code",
+      "text": true,
+      "sha256": "a9a6455480f890b79f1539ddddb5a9eacb5065569161acafe58345cfecfd772d"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/reference_results/block_assignments.csv",
+      "role": "reference_output",
+      "text": true,
+      "sha256": "90ecb52fbb9a19bc4243d77ef721a7462654d79a33da89c61f72fc57ebd96d94"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/reference_results/block_assignments_contig.csv",
+      "role": "reference_output",
+      "text": true,
+      "sha256": "30b970fda0a87fa28b9b1377e255f14f71f7d6174e3b1fabbb6acaf13b2c8349"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/reference_results/block_extent.csv",
+      "role": "reference_output",
+      "text": true,
+      "sha256": "72bc0840401e1ab18a83a829d9494b772e9264ef7c474d74c970ed5c5c4d634a"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/reference_results/block_sizes.csv",
+      "role": "reference_output",
+      "text": true,
+      "sha256": "8208eb2f2d0198bed41e07c59ee3bfb79e58464a1a5643947ce83416af7f6ff7"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/reference_results/block_sizes_contig.csv",
+      "role": "reference_output",
+      "text": true,
+      "sha256": "df7ceade1cb840808751be24d914b9f641e08bc93e43a368aa8c6b9d8d5731ca"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/reference_results/coverage_by_k_pooled.csv",
+      "role": "reference_output",
+      "text": true,
+      "sha256": "43b3370f395689f49963ad50a14bb2e5178b1b33ca9ee083e33f20ce5b31cfac"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/reference_results/coverage_summary_blocks_vs_province.csv",
+      "role": "reference_output",
+      "text": true,
+      "sha256": "af90b0e91c5ac3b10a8bd899a56c21dca71250cffdf0bdc7535b3d15913d2963"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/reference_results/dependence_range.json",
+      "role": "reference_output",
+      "text": true,
+      "sha256": "732254f264888d0b4ade0769ecbfbfc09fed685c0c21249ec35befce00bf2ee1"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/reference_results/intervals.csv",
+      "role": "reference_output",
+      "text": true,
+      "sha256": "be21b3be9df5b96bd3b0170af1abdea2a43d3100f16929dcdc289bb396e14c3a"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/reference_results/intervals_contig.csv",
+      "role": "reference_output",
+      "text": true,
+      "sha256": "6bc6c0aba142604bcb1b9dbb9e0ea5f82bf1266b9f1a8687cb5a0effb4d56b32"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/reference_results/moran_correlogram_median.csv",
+      "role": "reference_output",
+      "text": true,
+      "sha256": "2bb4c1e86418691aa307fa201bf3e67883f1f497583e2a463e0c0612c4a7213c"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/reference_results/reproduction_gate.csv",
+      "role": "reference_output",
+      "text": true,
+      "sha256": "679d82bcb44824e8fb221cf24792dac8491885d56b31939fe089c7c526b7df61"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/reference_results/resampling_facts.json",
+      "role": "reference_output",
+      "text": true,
+      "sha256": "b75359fd9acb6d28c4f1c18e0d0c8105e2973064f7b0358369e5c46a29d6dfd9"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/reference_results/table_S34.csv",
+      "role": "reference_output",
+      "text": true,
+      "sha256": "105d96816ffb676145fc5ba15a2a11620a078dabc30c16a5ffbcbb5f42624021"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/reference_results/validation.json",
+      "role": "reference_output",
+      "text": true,
+      "sha256": "821c930c46040f055c7c832812358924e55c83d47b669d67ca73c4129ca0f774"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/requirements_repro.txt",
+      "role": "code",
+      "text": true,
+      "sha256": "1aaceb6e0a0ed89771a93f95953f6f3502952b2757310c0b0cfc37a46ec1095b"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/results_allq/allq_L1_growth.csv",
+      "role": "baseline_gate_input",
+      "text": true,
+      "sha256": "e1dfb0e8b9f0bac171ac2b8d99e5c5bb25f251053d74cd8901aa3b69a4f8ac6d"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/results_allq/allq_L3_change.csv",
+      "role": "baseline_gate_input",
+      "text": true,
+      "sha256": "ea220ec652f1cc6496519c90241ad354820e1081eb927ce23fba8bd930f6bed0"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/results_postshift_20261030/L4.csv",
+      "role": "baseline_gate_input",
+      "text": true,
+      "sha256": "2b93a466eb78ada22003c6b2e7a6dbd61d445a083c89aba6e199da3fd8af782f"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/results_postshift_20261030/stability.csv",
+      "role": "baseline_gate_input",
+      "text": true,
+      "sha256": "941f31d0af449073ce5c1847f0d52e1ec11f181699fe8b67f101e00d3a855150"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/results_x18/s2_difference.csv",
+      "role": "baseline_gate_input",
+      "text": true,
+      "sha256": "20e20f7acc8c6f8925061e66d7a56d52a4e594bf892b92ee04506feecfd0bea8"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_block_bootstrap_20261103.py",
+      "role": "code",
+      "text": true,
+      "sha256": "c05fc4a46b9fd878f0766ab8e35a67525ef9c8321675c9990c4f23d7520a48f5"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_block_contiguous_20261103.py",
+      "role": "code",
+      "text": true,
+      "sha256": "f578137fe2c6aa49ed21deb0a2f9f0732d53c18249495a372e310832f7f2bc3a"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_block_coverage_20261103.py",
+      "role": "code",
+      "text": true,
+      "sha256": "45ba5f5bdcab7c21c5dcfd316b3aad1eda69b5bf236f928ea20753c378e42c9c"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_block_coverage_k_20261103.py",
+      "role": "code",
+      "text": true,
+      "sha256": "ade81a021893f6fc20293548e702bc3705128711e6187e45bb3590c3f265e0ae"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_block_spec/AMENDMENT_1.md",
+      "role": "specification",
+      "text": true,
+      "sha256": "39ef54afc253cf8e3d6323dbc6edf9c47f538c0c80e77078dfa55775b69fbf14"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_block_spec/AMENDMENT_2.md",
+      "role": "specification",
+      "text": true,
+      "sha256": "3e916808bc68947bd3f650ee3ca45243ff55c52757c0095787fba2208de40d9d"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_block_spec/AMENDMENT_2.sha256",
+      "role": "specification",
+      "text": true,
+      "sha256": "35a1d3ce09188955659fd89ded8b9f10750e9c3a9834ecf2f64aa18d2a368ba3"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_block_spec/AMENDMENT_3.md",
+      "role": "specification",
+      "text": true,
+      "sha256": "5c0fc56f08f02ec785975a6adc2260e26683d080566d7c6d966b05c99fe3d967"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_block_spec/AMENDMENT_3.sha256",
+      "role": "specification",
+      "text": true,
+      "sha256": "82dcd791c743d7f7d7e480f44fb4bca960d6c81ec869bc85ab767f0ef1f62290"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_block_spec/MAPPING.sha256",
+      "role": "specification",
+      "text": true,
+      "sha256": "5039b9524cb4d5856564be9747fb532b75437cb041d1eaccdca4aa40ffcfe977"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_block_spec/region_mapping_6.csv",
+      "role": "specification",
+      "text": true,
+      "sha256": "34370f8c479ebc62156e61d09299417ad0745792cd902570bd50c1675e207379"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_block_spec/REGION_MAPPING_SOURCE.md",
+      "role": "specification",
+      "text": true,
+      "sha256": "49d62bdfdc520883dc057a1eb18f69f46604be102e7f3a53fb76ba120b83c2af"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_block_spec/SPEC.md",
+      "role": "specification",
+      "text": true,
+      "sha256": "64479550e22cdebb172fb7b6a2075a5b0250e91c24d619de3c33aa9075e3e400"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_block_spec/SPEC.sha256",
+      "role": "specification",
+      "text": true,
+      "sha256": "649be61338bc2dfe721e4dea529a3ed073a48405145c6bd417834def0eec9468"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_engine/spatial_main.py",
+      "role": "code",
+      "text": true,
+      "sha256": "fa769303013fa32a18e4f16af8ec4b47402469406f46d252e72ddfa2af7587c5"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_engine/SPATIAL_MAIN_ADDENDUM.md",
+      "role": "code",
+      "text": true,
+      "sha256": "3707cbde01eda43004a9bb88c5443a2043433ea4191bd5df10fb68ac929a863d"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_engine/spatial_pilot.py",
+      "role": "code",
+      "text": true,
+      "sha256": "52a258613602a719e4138014736c442df7d1d8e38c51d1a9e16576946fc2895a"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_engine/SPATIAL_PILOT_ADDENDUM.md",
+      "role": "code",
+      "text": true,
+      "sha256": "e9c4db450ffcc210dc0b159d140142b99567e8e6da42bef63d256ddf9319f176"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/spatial_range_20261103.py",
+      "role": "code",
+      "text": true,
+      "sha256": "c4de55b4ba2aecb078c13273866c595ceacc3e0e0ee9a30d0bd72108c1d1c777"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/summarize_coverage_20261103.py",
+      "role": "code",
+      "text": true,
+      "sha256": "e417657983bf7bf1a4706ba3990a5dc3beaeba9f83411834c68acaaa861abbf9"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/upg_common.py",
+      "role": "code",
+      "text": true,
+      "sha256": "e0b876aa8dfbbd97b2c179f61142cde9e384d0eff518e42fe466b2b386e0cbee"
+    },
+    {
+      "path": "PAPER_A_UPGRADE/validate_spatial_block_20261103.py",
+      "role": "code",
+      "text": true,
+      "sha256": "80cdf8f06e0ca4cb895e50ab014a6a36d05f0594c5a536073309ec8205e7e215"
+    },
+    {
+      "path": "RED_TEAM_DIAGNOSTICS/within_source_reliability/data/ookla_province_quarter.parquet",
+      "role": "processed_input",
+      "text": false,
+      "sha256": "aa0e3875e690d4803cf9494064ac478e32a24d79671799898e79d5c68bbe238d"
+    }
+  ]
+}
