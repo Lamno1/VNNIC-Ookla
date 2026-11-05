@@ -1,8 +1,30 @@
-# VNNIC--Ookla Repository
+# VNNIC–Ookla reproduction code
 
-Data-acquisition code and selected reproducibility artifacts supporting *Common Direction, Divergent Rankings: A Multi-Level Comparison of VNNIC and Ookla Broadband Measurements in Vietnam, 2021--2024*.
+Code and data supporting *Common Direction, Window-Dependent Rankings: A Multi-Level Comparison of VNNIC and Ookla Broadband Measurements in Vietnam, 2021–2024*.
 
-The frozen analysis version cited by the manuscript is commit `0473a09d3d61c49237a0083586e8ce23c2f3c2d6`.
+## Current manuscript: start here
+
+The current analysis is on the **[analysis-code-vnnic-ookla-2021-2024 branch](https://github.com/Lamno1/VNNIC-Ookla/tree/analysis-code-vnnic-ookla-2021-2024)**. The manuscript cites the fixed snapshot **[`8f8376bd1b94`](https://github.com/Lamno1/VNNIC-Ookla/tree/8f8376bd1b949eeca2c23019787e120b6ae9a061)**.
+
+- **[Reproduction instructions](https://github.com/Lamno1/VNNIC-Ookla/blob/8f8376bd1b949eeca2c23019787e120b6ae9a061/PAPER_A_UPGRADE/README_REPRODUCTION.md)**: Python environment, included inputs, commands in order, run times and output comparison.
+- [Analysis code and folder layout](https://github.com/Lamno1/VNNIC-Ookla/blob/8f8376bd1b949eeca2c23019787e120b6ae9a061/PAPER_A_UPGRADE/README_ANALYSIS_CODE.md).
+- [Browse the exact code/data snapshot cited in the manuscript](https://github.com/Lamno1/VNNIC-Ookla/tree/8f8376bd1b949eeca2c23019787e120b6ae9a061).
+
+To get that snapshot:
+
+```text
+git clone --branch analysis-code-vnnic-ookla-2021-2024 --single-branch https://github.com/Lamno1/VNNIC-Ookla.git
+cd VNNIC-Ookla
+git checkout 8f8376bd1b949eeca2c23019787e120b6ae9a061
+python -m pip install -r PAPER_A_UPGRADE/requirements_repro.txt
+cd PAPER_A_UPGRADE
+```
+
+Use the documented Python 3.13 environment, then follow the numbered commands in the reproduction guide. It covers the spatial block bootstrap, coverage simulations and Table S34 from the included processed inputs. A complete output comparison should show `identical` for all 15 reference files, without `DIFFERENT` or `not run`. Raw VNNIC responses and the full Ookla tile archive are not redistributed.
+
+## Historical material on main
+
+The remaining sections describe the earlier code snapshot stored on `main`, including the earlier frozen analysis `0473a09d3d61c49237a0083586e8ce23c2f3c2d6`. They are historical acquisition/pipeline instructions, not the reproduction procedure for the current submission. For the current manuscript use the links and snapshot above.
 
 ## What is included
 
