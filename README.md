@@ -1,86 +1,59 @@
-# VNNIC–Ookla reproduction code
+# VNNIC–Ookla: reproducible analysis
 
-Code and data supporting *Common Direction, Window-Dependent Rankings: A Multi-Level Comparison of VNNIC and Ookla Broadband Measurements in Vietnam, 2021–2024*.
+Code and processed inputs supporting *Common Direction, Window-Dependent Rankings: A Multi-Level Comparison of VNNIC and Ookla Broadband Measurements in Vietnam, 2021–2024*.
 
-## Current manuscript: start here
+## Current submission: start here
 
-The current analysis is on the **[analysis-code-vnnic-ookla-2021-2024 branch](https://github.com/Lamno1/VNNIC-Ookla/tree/analysis-code-vnnic-ookla-2021-2024)**. The manuscript cites the fixed snapshot **[`8f8376bd1b94`](https://github.com/Lamno1/VNNIC-Ookla/tree/8f8376bd1b949eeca2c23019787e120b6ae9a061)**.
+The current execution workflow is on the **[analysis branch](https://github.com/Lamno1/VNNIC-Ookla/tree/analysis-code-vnnic-ookla-2021-2024)**, at fixed snapshot **[`fe27ad440874`](https://github.com/Lamno1/VNNIC-Ookla/tree/fe27ad44087439657d63b8f5e23443f5136150b7)**. This default branch retains earlier pipeline code; use the snapshot below for the current manuscript.
 
-- **[Reproduction instructions](https://github.com/Lamno1/VNNIC-Ookla/blob/8f8376bd1b949eeca2c23019787e120b6ae9a061/PAPER_A_UPGRADE/README_REPRODUCTION.md)**: Python environment, included inputs, commands in order, run times and output comparison.
-- [Analysis code and folder layout](https://github.com/Lamno1/VNNIC-Ookla/blob/8f8376bd1b949eeca2c23019787e120b6ae9a061/PAPER_A_UPGRADE/README_ANALYSIS_CODE.md).
-- [Browse the exact code/data snapshot cited in the manuscript](https://github.com/Lamno1/VNNIC-Ookla/tree/8f8376bd1b949eeca2c23019787e120b6ae9a061).
+**[Complete reproduction guide](https://github.com/Lamno1/VNNIC-Ookla/blob/fe27ad44087439657d63b8f5e23443f5136150b7/PAPER_A_UPGRADE/README_REPRODUCTION.md)** · **[Result-to-script map](https://github.com/Lamno1/VNNIC-Ookla/blob/fe27ad44087439657d63b8f5e23443f5136150b7/PAPER_A_UPGRADE/RESULTS_MAP.md)**
 
-To get that snapshot:
+The guide specifies what to run, input/output paths, which manuscript results each output supports, numerical tolerances, failure criteria and run evidence. The tested reference environment is Python 3.13.2 on Windows 11; exact packages are in `PAPER_A_UPGRADE/requirements_repro.txt`.
+
+[Entry-point execution check, 6 November 2026](https://github.com/Lamno1/VNNIC-Ookla/blob/fe27ad44087439657d63b8f5e23443f5136150b7/PAPER_A_UPGRADE/VALIDATION_REPRODUCTION_20261106.md): 13/13 table artifacts reproduced, both reduced simulation paths exercised; full-size coverage simulations were not rerun for that check.
+
+Obtain the current analysis snapshot, then run from its repository root using the intended Python environment:
 
 ```text
 git clone --branch analysis-code-vnnic-ookla-2021-2024 --single-branch https://github.com/Lamno1/VNNIC-Ookla.git
 cd VNNIC-Ookla
-git checkout 8f8376bd1b949eeca2c23019787e120b6ae9a061
+git checkout fe27ad44087439657d63b8f5e23443f5136150b7
 python -m pip install -r PAPER_A_UPGRADE/requirements_repro.txt
-cd PAPER_A_UPGRADE
+python PAPER_A_UPGRADE/reproduce.py --mode tables
 ```
 
-Use the documented Python 3.13 environment, then follow the numbered commands in the reproduction guide. It covers the spatial block bootstrap, coverage simulations and Table S34 from the included processed inputs. A complete output comparison should show `identical` for all 15 reference files, without `DIFFERENT` or `not run`. Raw VNNIC responses and the full Ookla tile archive are not redistributed.
-
-## Historical material on main
-
-The remaining sections describe the earlier code snapshot stored on `main`, including the earlier frozen analysis `0473a09d3d61c49237a0083586e8ce23c2f3c2d6`. They are historical acquisition/pipeline instructions, not the reproduction procedure for the current submission. For the current manuscript use the links and snapshot above.
-
-## What is included
-
-The repository contains acquisition and validation scripts under `VNNIC/CODE/` and `OOKLA/CODE/`, the full analysis pipeline under `src/connectivity_enterprise/`, selected processed datasets under `data/`, and tables, figures, companion figure CSV files, manifests, protocols, quality-control artifacts, and tests.
-
-The repository does not redistribute the raw VNNIC response files or the large Ookla tile Parquet archive. These raw files and local logs are excluded by `.gitignore`. Selected processed and validation artifacts are included; therefore, it would be inaccurate to describe all derived data as absent from the repository.
-
-## Raw data and provenance
-
-VNNIC data are retrieved from the public VNNIC Internet Atlas endpoint used by `VNNIC/CODE/download_vnnic.py`. The script preserves raw response bytes and writes SHA256 values to a local manifest and download log. By default, these files are written under `VNNIC_RAW/`, `VNNIC_DERIVED/`, and `VNNIC_LOGS/` at the repository root.
-
-Ookla fixed-broadband data are obtained from the [Ookla Open Data archive](https://registry.opendata.aws/speedtest-global-performance/). The repository does not download the large tile archive automatically. Download the required fixed-broadband Q2 files for 2021--2024, place them under `OOKLA_RAW/fixed/<year>/Q<quarter>/`, and create `OOKLA_RAW/SHA256_manifest.csv` before running `OOKLA/CODE/build_ookla_schema_registry.py`. That script validates an already downloaded archive; it is not an Ookla downloader.
-
-The authoritative input inventory and hashes used for the frozen run are recorded in `artifacts/manifests/declared_inputs.csv` and `artifacts/manifests/source_inventory.csv`. Their `D:\Q1_RESEARCH\...` paths are provenance paths from the original analysis machine and must not be copied literally on another computer.
-
-## Reproduction setup
-
-Use Python 3.11 or newer and install the dependencies:
-
-```powershell
-python -m pip install -r requirements.txt
-```
-
-The acquisition scripts use the repository root by default. To place raw, derived, and log directories elsewhere, set `VNNIC_OOKLA_ROOT`:
-
-```powershell
-$env:VNNIC_OOKLA_ROOT = (Get-Location).Path
-```
-
-From the repository root, run the full pipeline with:
-
-```powershell
-python run_pipeline.py --stage all
-python validate_project.py
-```
-
-For only the acquisition and validation scripts:
-
-```powershell
-python VNNIC/CODE/download_vnnic.py
-python VNNIC/CODE/attach_crosswalk_audit_panel.py
-python OOKLA/CODE/build_ookla_schema_registry.py
-```
-
-The crosswalk script additionally requires the canonical geometry and province crosswalk specified by the project's source configuration. The full pipeline reads its remaining source paths from `config/sources.yml`.
-
-At the current checkpoint, the full pipeline records semantic blockers and does not run causal models. The study's claim ceiling is descriptive/associational; neither source is treated as ground truth.
-
-## Frozen protocol and limitations
-
-The authoritative protocol is `protocol/research_protocol.md`; its lock and any amendments are recorded under `protocol/`. Re-running the VNNIC downloader may retrieve revised data, so the frozen commit and recorded input manifests should be retained with any reproduction.
-
-## Citation
-
-Please cite the manuscript and the frozen repository commit:
+The command creates a **new** directory in `reproduction_runs/`, regenerates the spatial bootstrap tables, runs the second-implementation check and compares 13 generated files against immutable references. It does not overwrite repository results. For coverage simulations as well:
 
 ```text
-Lamno1. (2026). VNNIC--Ookla: Data acquisition and analysis code supporting the VNNIC and Ookla broadband measurement comparison. GitHub repository, commit 0473a09d3d61c49237a0083586e8ce23c2f3c2d6.
+python PAPER_A_UPGRADE/reproduce.py --mode full --workers 14
 ```
+
+Full means the documented **spatial-results package**, not every analysis or raw-data acquisition in the paper. Full mode compares 15 reference files. See the guide for boundaries and run times.
+
+## Layout of the analysis snapshot above
+
+```text
+VNNIC-Ookla/
+├── README.md                            # entry point
+├── README_LEGACY_PIPELINE.md             # historical acquisition instructions
+├── data/                                # deposited processed input tables
+├── RED_TEAM_DIAGNOSTICS/
+│   └── within_source_reliability/data/   # deposited Ookla quarter table
+├── PAPER_A_UPGRADE/
+│   ├── README_REPRODUCTION.md            # commands, workflow, evidence
+│   ├── RESULTS_MAP.md                    # manuscript ↔ script ↔ output
+│   ├── reproduce.py                      # isolated execution entry point
+│   ├── reproduction_manifest.json        # input/code/reference checksums
+│   ├── requirements_repro.txt            # pinned reference environment
+│   ├── data/                            # boundary and extended-quarter input
+│   ├── spatial_block_spec/               # specification, amendments, mapping
+│   ├── reference_results/               # expected outputs, never run products
+│   ├── spatial_engine/                  # simulation implementation
+│   └── *_20261103.py                    # individual scientific steps
+├── reproduction_runs/                   # new local runs; ignored by Git
+└── src/, OOKLA/, VNNIC/                 # earlier acquisition pipeline
+```
+
+Raw VNNIC response files and the large Ookla tile archive are not redistributed. The supplied processed inputs support the documented comparison. Source definitions, third-party access terms, nominal uncertainty and same-team replication limits are described in the guide and manuscript. An output match verifies computation from the supplied inputs, not measurement accuracy or causal validity.
+
+Historical acquisition instructions are preserved in [README_LEGACY_PIPELINE.md](https://github.com/Lamno1/VNNIC-Ookla/blob/fe27ad44087439657d63b8f5e23443f5136150b7/README_LEGACY_PIPELINE.md). They are separate from the current reproduction contract.
